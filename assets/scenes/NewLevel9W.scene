@@ -1,0 +1,799 @@
+{
+    "id": "a2fec1ff-7793-450b-85d1-b7714fc602b1",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapWidth": 40,
+        "snapHeight": 37,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "NewLevel9W",
+        "borderWidth": 320,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "71fd3b2c-184e-45d3-ab57-70f6d7d0238b",
+            "label": "bgLevel1",
+            "components": [
+                "FixedToCamera"
+            ],
+            "texture": {
+                "key": "bgLevel1"
+            },
+            "x": 153,
+            "y": 110
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "f54c6115-3d48-4d2b-9024-9d6d01080716",
+            "label": "noCollide_1",
+            "components": [],
+            "tilemapId": "55c2bd99-68cb-4e9a-8c34-43f81d067472",
+            "layerName": "NoCollide",
+            "tilesets": [
+                "finalStage"
+            ]
+        },
+        {
+            "prefabId": "d983bda3-3906-4cca-89ee-13f2180c8940",
+            "id": "5ca2bdd2-827f-45ef-937f-9c417a66c24c",
+            "unlock": [
+                "x",
+                "y",
+                "goToLevel"
+            ],
+            "label": "smallDoor",
+            "goToLevel": "NewLevel9X",
+            "components": [],
+            "x": 143,
+            "y": 673,
+            "nestedPrefabs": []
+        },
+        {
+            "type": "Image",
+            "id": "3d8d7c89-5845-4571-a554-554f3667717d",
+            "label": "damagedDoor_instance_10000",
+            "components": [],
+            "texture": {
+                "key": "propsNew",
+                "frame": "damagedDoor instance 10000"
+            },
+            "x": 2449,
+            "y": 800
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "ff4d8534-cac6-4562-89cc-dbbcc2287892",
+            "label": "noCollideFX",
+            "components": [],
+            "tilemapId": "55c2bd99-68cb-4e9a-8c34-43f81d067472",
+            "layerName": "NoCollideFX",
+            "tilesets": [
+                "finalStage"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "a8eec79f-6f57-44b9-96de-b2c3e113dcd8",
+            "label": "layer",
+            "scope": "CLASS",
+            "components": [],
+            "tilemapId": "55c2bd99-68cb-4e9a-8c34-43f81d067472",
+            "layerName": "Collide",
+            "tilesets": [
+                "finalStage"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "6d0323f6-9532-4fc1-bd46-cf4667aa9c6b",
+            "label": "collideFX_1",
+            "components": [],
+            "tilemapId": "dec86220-7b0b-427f-832f-4d6ca179229f",
+            "layerName": "CollideFX",
+            "tilesets": [
+                "finalStage"
+            ]
+        },
+        {
+            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
+            "id": "542be585-4c52-403a-9c1f-4e7b3d91bd71",
+            "unlock": [
+                "x",
+                "y",
+                "distance",
+                "timeTravel"
+            ],
+            "label": "platform2",
+            "distance": 400,
+            "timeTravel": 3500,
+            "components": [],
+            "x": 2032,
+            "y": 800
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "62ce490a-85ed-4d96-9c0d-e9b37bc2ea0d",
+            "unlock": [
+                "x",
+                "y",
+                "isHorizontal"
+            ],
+            "label": "platform1",
+            "isHorizontal": true,
+            "components": [],
+            "x": 2505,
+            "y": 400
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "4881ee60-3048-4240-b0d0-de74639ed01d",
+            "unlock": [
+                "x",
+                "y",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon_1",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 2510,
+            "y": 321
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "889aa1c4-fc8e-4ea9-8bad-fdd345ea3f37",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon",
+            "components": [],
+            "x": 2510,
+            "y": 105,
+            "angle": -90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "0a701415-d73b-4916-8c2c-9720bc76b447",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_2",
+            "components": [],
+            "x": 2096,
+            "y": 105,
+            "angle": -135
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "1b66bb03-b77a-4c4e-a1c4-3662d9a33325",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "angle"
+            ],
+            "label": "portalCannon_3",
+            "components": [],
+            "x": 2000,
+            "y": 213,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "angle": -58.00000000000006
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "4c7f7c66-6654-43e2-8258-b8d55041c5c7",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_2_1",
+            "components": [],
+            "x": 1741,
+            "y": 73,
+            "angle": -135
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "9240e13c-e8c3-4695-a4f4-18c09710533f",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "angle"
+            ],
+            "label": "portalCannon_3_1",
+            "components": [],
+            "x": 1620,
+            "y": 209,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "angle": -45.00000000000006
+        },
+        {
+            "prefabId": "0f8a81a2-5a4b-4383-b9f0-cf2ce6a24410",
+            "id": "7841531b-644a-4375-b994-2d7d4a884a2c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "angrySpin",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1190,
+            "y": 111
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "c2bbb7ba-aa7b-473a-901f-f70a6f3df6fd",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon_4",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 1077,
+            "y": 139,
+            "angle": -59.99999999999994
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "149f256f-23f7-4811-9dbd-378d0725603c",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_2_1_1",
+            "components": [],
+            "x": 907,
+            "y": 67,
+            "angle": -135
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "1cfbb3dd-774d-4df1-a6bb-1d70074311d9",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_2_1_1_1",
+            "components": [],
+            "x": 595,
+            "y": 58,
+            "angle": -135
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "0cb67a38-5ffa-41e6-b505-0cd3bc8681db",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "angle"
+            ],
+            "label": "portalCannon_3_1_1",
+            "components": [],
+            "x": 784,
+            "y": 207,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "angle": -45.00000000000006
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "e9f9ce82-9f4f-4745-a417-84b5d7c2e2a0",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_5",
+            "components": [],
+            "x": 422,
+            "y": 237,
+            "angle": -90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "7af1f98b-552c-4cc1-9995-14b66a40e693",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "portalCannon_6",
+            "components": [],
+            "x": 55,
+            "y": 236
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "fba00aa4-d899-4482-8f93-1d9d9845e165",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_7",
+            "components": [],
+            "x": 55,
+            "y": 56,
+            "angle": 90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "610336c4-a853-4a65-8b0e-4f5b40a9e57a",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_8",
+            "components": [],
+            "x": 223,
+            "y": 56,
+            "angle": -180
+        },
+        {
+            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
+            "id": "88be9390-757c-4ad0-8d65-d376a298e448",
+            "unlock": [
+                "x",
+                "y",
+                "timeTravel",
+                "distance"
+            ],
+            "label": "platform2_1",
+            "distance": 250,
+            "timeTravel": 3500,
+            "components": [],
+            "x": 358,
+            "y": 660
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "bc42de46-2cce-4ccc-b783-f76910a398c6",
+            "unlock": [
+                "x",
+                "y",
+                "timeTravel",
+                "isHorizontal"
+            ],
+            "label": "platform1_1",
+            "timeTravel": 5000,
+            "isHorizontal": true,
+            "components": [],
+            "x": 830,
+            "y": 405
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "d8de3abe-2a51-4346-8909-4576e8c8bcef",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon_9",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 1094,
+            "y": 1107,
+            "angle": 45
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "8365e7b6-1107-4a63-a730-eab15feab986",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_10",
+            "components": [],
+            "x": 1303,
+            "y": 897,
+            "angle": 135
+        },
+        {
+            "prefabId": "b772f3cd-be85-4685-b964-8294fd3e3ab5",
+            "id": "833d3841-41c0-464e-b681-10678b75fcb5",
+            "unlock": [
+                "x",
+                "y",
+                "power"
+            ],
+            "label": "catapulta",
+            "power": 850,
+            "components": [],
+            "x": 1600,
+            "y": 1135
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "8ba75291-5329-40a7-89d0-903d2d6c8dca",
+            "unlock": [
+                "x",
+                "y",
+                "IsFirstCannon",
+                "angle"
+            ],
+            "label": "portalCannon_11",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 1830,
+            "y": 415,
+            "angle": -180
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "7b303270-5a2f-4efc-a4b6-e880785e869e",
+            "unlock": [
+                "x",
+                "y",
+                "isHorizontal",
+                "timeTravel"
+            ],
+            "label": "platform1_2",
+            "timeTravel": 3000,
+            "isHorizontal": true,
+            "components": [],
+            "x": 1616,
+            "y": 1455
+        },
+        {
+            "prefabId": "757564b1-48e3-4c4f-9257-3a1d5bd5505d",
+            "id": "61becf83-f6bb-4e49-8885-7bdbbf2198c0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "switchPanel",
+            "components": [],
+            "x": 128,
+            "y": 1450
+        },
+        {
+            "prefabId": "1925181b-f823-418a-823d-bb8741a2e2be",
+            "id": "2138859f-9b74-4f07-9e56-68f33031d71e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "energyStation",
+            "components": [],
+            "x": 2447,
+            "y": 1013,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "3bbd72ae-a6ab-40ee-bcf5-91381cf55ba2",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile",
+            "components": [],
+            "x": 2650,
+            "y": 1416
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "02da5cb4-71fb-4843-bb02-ffbd7c5badba",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile_1",
+            "components": [],
+            "x": 2800,
+            "y": 1478
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "5313196c-773c-4dd3-95cb-7cbe55157e5a",
+            "unlock": [
+                "x",
+                "y",
+                "isHorizontal",
+                "timeTravel"
+            ],
+            "label": "platform1_3",
+            "timeTravel": 3000,
+            "isHorizontal": true,
+            "components": [],
+            "x": 1293,
+            "y": 1555
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "0e8d1a70-897f-4550-bccd-3980e4d4afc8",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile_2",
+            "components": [],
+            "x": 2950,
+            "y": 1477
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "1e406e09-9a8d-4c02-846a-3ff5cfebad6e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile_3",
+            "components": [],
+            "x": 3100,
+            "y": 1416
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "1dc176e2-cc15-4c9a-80eb-7a1a04832b3d",
+            "unlock": [
+                "x",
+                "y",
+                "isHorizontal",
+                "timeTravel"
+            ],
+            "label": "platform1_3_1",
+            "timeTravel": 3000,
+            "isHorizontal": true,
+            "components": [],
+            "x": 1068,
+            "y": 1455
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "0a739498-f40f-41b0-b336-841e50e347c9",
+            "unlock": [
+                "x",
+                "y",
+                "isHorizontal",
+                "timeTravel"
+            ],
+            "label": "platform1_3_2",
+            "timeTravel": 3000,
+            "isHorizontal": true,
+            "components": [],
+            "x": 783,
+            "y": 1556
+        },
+        {
+            "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
+            "id": "417436ca-f48c-4a39-85bb-6eda2723c7f4",
+            "unlock": [
+                "x",
+                "y",
+                "isHorizontal",
+                "timeTravel"
+            ],
+            "label": "platform1_3_3",
+            "timeTravel": 3000,
+            "isHorizontal": true,
+            "components": [],
+            "x": 499,
+            "y": 1457
+        },
+        {
+            "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
+            "id": "d2800736-9db9-492e-85d2-5b568e6c820d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "player",
+            "scope": "CLASS",
+            "components": [],
+            "x": 2441,
+            "y": 813
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "4c12a388-46fc-4f50-91cc-861aa09ba49d",
+            "unlock": [
+                "x",
+                "y",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon_12",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 55,
+            "y": 1456
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "71eec022-14f9-40c6-b95d-7854d7d2d829",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_13",
+            "components": [],
+            "x": 55,
+            "y": 1276,
+            "angle": 90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "19b120d4-3480-4eaf-9b42-40e19f29ab57",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_14",
+            "components": [],
+            "x": 2530,
+            "y": 1276,
+            "angle": -180
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "e2a1ed43-584d-4270-82d3-0213143b89ae",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_14_1",
+            "components": [],
+            "x": 2530,
+            "y": 1521,
+            "angle": -90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "dc91f155-df47-48d4-997c-8bc60511bb8a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "portalCannon_15",
+            "components": [],
+            "x": 2110,
+            "y": 1521
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "76b20bfb-7e70-43f0-8789-daf7280c16f7",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_16",
+            "components": [],
+            "x": 2110,
+            "y": 1127,
+            "angle": 90
+        },
+        {
+            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
+            "id": "4cf28890-5b28-466e-9636-910a72bdcff0",
+            "unlock": [
+                "x",
+                "y",
+                "timeTravel",
+                "distance"
+            ],
+            "label": "platform2_2",
+            "distance": 140,
+            "timeTravel": 3500,
+            "components": [],
+            "x": 2070,
+            "y": 1059
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "55c2bd99-68cb-4e9a-8c34-43f81d067472",
+            "type": "Tilemap",
+            "label": "mapa",
+            "key": "new_level9W",
+            "tilesets": [
+                {
+                    "name": "finalStage",
+                    "imageKey": "finalStage"
+                }
+            ]
+        },
+        {
+            "id": "dec86220-7b0b-427f-832f-4d6ca179229f",
+            "type": "Tilemap",
+            "label": "new_level9W",
+            "key": "new_level9W",
+            "tilesets": [
+                {
+                    "name": "finalStage",
+                    "imageKey": "finalStage"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 2
+    },
+    "lists": [
+        {
+            "id": "0e080d9c-0b39-4755-a5d5-57ae5501d356",
+            "label": "doors",
+            "objectIds": [
+                "5ca2bdd2-827f-45ef-937f-9c417a66c24c"
+            ]
+        },
+        {
+            "id": "a5839e13-79a6-473b-b910-924096033370",
+            "label": "switches",
+            "objectIds": [
+                "9a1b8a13-4e2f-4e74-9b76-aacfaf3b136f"
+            ]
+        },
+        {
+            "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
+            "label": "enemies",
+            "objectIds": [
+                "7841531b-644a-4375-b994-2d7d4a884a2c"
+            ]
+        },
+        {
+            "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",
+            "label": "platforms",
+            "objectIds": [
+                "542be585-4c52-403a-9c1f-4e7b3d91bd71",
+                "62ce490a-85ed-4d96-9c0d-e9b37bc2ea0d",
+                "88be9390-757c-4ad0-8d65-d376a298e448",
+                "bc42de46-2cce-4ccc-b783-f76910a398c6",
+                "7b303270-5a2f-4efc-a4b6-e880785e869e",
+                "5313196c-773c-4dd3-95cb-7cbe55157e5a",
+                "1dc176e2-cc15-4c9a-80eb-7a1a04832b3d",
+                "0a739498-f40f-41b0-b336-841e50e347c9",
+                "4cf28890-5b28-466e-9636-910a72bdcff0",
+                "417436ca-f48c-4a39-85bb-6eda2723c7f4"
+            ]
+        },
+        {
+            "id": "9ebda1ea-a3d2-410b-b328-4358561cbdf7",
+            "label": "coins"
+        },
+        {
+            "id": "b383c0e6-a04f-4afa-b7ac-20a74e4cbe4c",
+            "label": "catapultas",
+            "objectIds": [
+                "833d3841-41c0-464e-b681-10678b75fcb5"
+            ]
+        },
+        {
+            "id": "c178e26c-494b-4400-b756-424719a97c29",
+            "label": "revivingPods"
+        },
+        {
+            "id": "05b55c93-d737-42fc-948f-bc35aa612a87",
+            "label": "tutorials"
+        }
+    ]
+}

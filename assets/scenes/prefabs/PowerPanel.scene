@@ -1,0 +1,89 @@
+{
+    "id": "3c78b4a7-1f61-4c36-9a18-8fef22dc96de",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 320,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "de91d843-e314-443c-ae40-d05b64eaba37",
+            "label": "container_1",
+            "components": [],
+            "x": -119,
+            "y": -1,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "eeafdb7f-8de9-4341-ae8f-d6e901de7836",
+                    "label": "powersPanel",
+                    "components": [],
+                    "texture": {
+                        "key": "powersPanel"
+                    },
+                    "x": 119,
+                    "y": 1
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e0f22657-3283-4975-aeec-b3f7eac784c8",
+                    "label": "energyPanel_doubleJump",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "energyPanel_doubleJump"
+                    },
+                    "x": 19,
+                    "y": -8
+                },
+                {
+                    "type": "Sprite",
+                    "id": "0501dd17-f9d2-4933-99c2-a9cfec525728",
+                    "label": "energyPanel_cannonStrike",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "energyPanel_cannonStrike"
+                    },
+                    "x": 120,
+                    "y": -6
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4138ead9-d989-4cb7-bbf5-1dc7c8b627e5",
+                    "label": "energyPanel_jetpack",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "energyPanel_jetpack"
+                    },
+                    "x": 206,
+                    "y": 1
+                },
+                {
+                    "type": "Sprite",
+                    "id": "099e4043-42de-490e-88c7-1892807f6a05",
+                    "label": "selector",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "energyPanel_selector"
+                    },
+                    "x": 117,
+                    "y": -4
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

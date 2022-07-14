@@ -1,0 +1,94 @@
+
+// You can write more code here
+
+/* START OF COMPILED CODE */
+
+class SwitchPanel extends Phaser.GameObjects.Sprite {
+	
+	constructor(scene, x, y, texture, frame) {
+		super(scene, x, y, texture || "propsNew", frame !== undefined && frame !== null ? frame : "swtich0000");
+		
+		// this (components)
+		new Physics(this);
+		const thisPhysicsBody = new PhysicsBody(this);
+		thisPhysicsBody.bodyX = -16;
+		thisPhysicsBody.bodyWidth = 60;
+		
+		/* START-USER-CTR-CODE */
+		this.scene.events.on("create", () => this.create());
+		/* END-USER-CTR-CODE */
+	}
+	
+	/** @type {number} */
+	doorID = 1;
+	
+	/* START-USER-CODE */
+
+	create() {
+
+		
+		this.downKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+		this.scene.physics.add.overlap(this.scene.player, this, this.activateSwitch, false, this);
+		this.setInteractive();
+		this.isEnable = true;
+		this.canActivate = false;
+	
+
+		this.on('pointerup', function (pointer) {
+			var ponterup_timer = this.scene.time.addEvent({
+				delay: 250,                // ms
+				callback: function(){
+					this.canActivate = false;
+					
+				},
+				//args: [],
+				callbackScope: this,
+				loop: false
+			});
+			this.canActivate = true;
+			
+			
+
+		});	
+
+	}
+
+	disableSwitch() {
+		this.isEnable = true;
+	}
+
+	activateSwitch() {
+		
+		this.downKey.on('down', function(){
+		
+			
+		
+			this.scene.enableDoorID(this.doorID);
+			this.play("switchOn", true);
+			this.scene.envi_switch_02.play();
+			this.canActivate = false;
+			this.isEnable = false;
+	
+	
+
+	}, this)
+
+		if (this.isEnable && this.canActivate) {
+
+		
+
+				this.scene.enableDoorID(this.doorID);
+				this.play("switchOn", true);
+				this.scene.envi_switch_02.play();
+				this.canActivate = false;
+				this.isEnable = false;
+	
+		}
+
+	}
+	/* END-USER-CODE */
+}
+
+/* END OF COMPILED CODE */
+
+// You can write more code here

@@ -120,6 +120,14 @@ class Coin extends Phaser.GameObjects.Sprite {
 				this.fxcoinlist[randomFx].play();
 
 		this.scene.coinsCollected++;
+		this.scene.animateCoinCollectText();
+		this.scene.coins.pop();
+		console.log(this.scene.coins.length);
+	
+		if(this.scene.coins.length<=0){
+			console.log("you win")
+		}
+		
 		if(this.scene.game.playerData.coins < 9999){
 			this.scene.game.playerData.coins++;
 		}
@@ -140,7 +148,7 @@ class Coin extends Phaser.GameObjects.Sprite {
 		
 		});
 
-		this.scene.coinText.text = this.scene.game.playerData.coins;
+		this.scene.coinText.text = this.scene.coins.length;
 
 	}
 

@@ -23,12 +23,49 @@
             },
             "x": 144,
             "y": 96
+        },
+        {
+            "type": "Sprite",
+            "id": "e9e0db46-dca5-4373-a48b-c164d7689bb0",
+            "label": "weveanaLogo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "weveanaLogo"
+            },
+            "x": 147,
+            "y": 70
+        },
+        {
+            "type": "Sprite",
+            "id": "b7ef0d5c-7e8b-4bd8-b56a-e9756bb214fc",
+            "label": "sBLogo",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "SBLogo"
+            },
+            "x": 231,
+            "y": 247
+        },
+        {
+            "type": "Sprite",
+            "id": "72f290d9-546b-455d-b05b-5768f93db3d8",
+            "label": "loadingBorder",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "loadingBorder"
+            },
+            "x": 15,
+            "y": 248
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

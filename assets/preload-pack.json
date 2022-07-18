@@ -7,9 +7,24 @@
                 "key": "loading"
             },
             {
+                "url": "assets/images/loadingBorder.png",
+                "type": "image",
+                "key": "loadingBorder"
+            },
+            {
                 "url": "assets/scenes/Preloader.js",
                 "type": "sceneFile",
                 "key": "Preloader"
+            },
+            {
+                "url": "assets/images/SBLogo.png",
+                "type": "image",
+                "key": "SBLogo"
+            },
+            {
+                "url": "assets/images/weveanaLogo.png",
+                "type": "image",
+                "key": "weveanaLogo"
             }
         ]
     },
@@ -17,6 +32,7 @@
         "app": "Phaser Editor 2D - Asset Pack Editor",
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
-        "version": 2
+        "version": 2,
+        "showAllFilesInBlocks": false
     }
 }

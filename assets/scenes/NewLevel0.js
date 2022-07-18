@@ -19,7 +19,6 @@ class NewLevel0 extends BaseScene {
 		// mapa
 		const mapa = this.add.tilemap("new_level0");
 		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
-		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
 		// bg1Tile
 		const bg1Tile = this.add.image(0, 0, "bg1Tile");
@@ -33,17 +32,11 @@ class NewLevel0 extends BaseScene {
 		const handPointer = new HandPointer(this, 688, 426);
 		this.add.existing(handPointer);
 
-		// gotoLevelWall
-		const gotoLevelWall = new GotoLevelWall(this, 1627, 462);
-		this.add.existing(gotoLevelWall);
-		gotoLevelWall.scaleX = 1;
-		gotoLevelWall.scaleY = 10;
-
 		// nocollide2_1
-		mapa.createLayer("nocollide2", ["new_ciudad_tiles","new_ciudad_tiles"], 0, 0);
+		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
 
 		// nocollide
-		mapa.createLayer("nocollide", ["new_ciudad_tiles","new_ciudad_tiles"], 0, 0);
+		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
 
 		// layer
 		const layer = mapa.createLayer("collide", ["new_ciudad_tiles"], 0, 0);
@@ -51,10 +44,6 @@ class NewLevel0 extends BaseScene {
 		// player
 		const player = new Player(this, 87, 459);
 		this.add.existing(player);
-
-		// handPointer_1
-		const handPointer_1 = new HandPointer(this, 60, 404);
-		this.add.existing(handPointer_1);
 
 		// wallLight
 		this.add.image(157, 331, "wallLight");
@@ -87,39 +76,12 @@ class NewLevel0 extends BaseScene {
 		const lightBean_1_1 = new LightBeam(this, 697, 331);
 		this.add.existing(lightBean_1_1);
 
-		// lamp
-		this.add.image(1119, 345, "lamp");
-
-		// lightBean_1_1_1
-		const lightBean_1_1_1 = new LightBeam(this, 1116, 250);
-		this.add.existing(lightBean_1_1_1);
-
-		// sunsetSign
-		this.add.image(990, 380, "sunsetSign");
-
-		// coffeshop
-		const coffeshop = this.add.image(1331, 384, "coffeshop");
-		coffeshop.scaleX = 0.850709740577582;
-		coffeshop.scaleY = 0.850709740577582;
-
 		// rocoPop
-		this.add.image(1181, 428, "rocoPop");
-
-		// hand
-		const hand = this.add.image(1539, 399, "hand");
+		this.add.image(1365, 428, "rocoPop");
 
 		// poste
-		const poste = new Poste(this, 391, 386);
+		const poste = new Poste(this, 88, 386);
 		this.add.existing(poste);
-
-		// textInfo
-		const textInfo = new TextInfo(this, 30, 550);
-		this.add.existing(textInfo);
-
-		// police_line
-		const police_line = this.add.image(31, 484, "police line");
-		police_line.scaleX = 0.8;
-		police_line.scaleY = 0.8;
 
 		// lists
 		const doors = [];
@@ -129,17 +91,10 @@ class NewLevel0 extends BaseScene {
 		const coins = [];
 		const catapultas = [];
 		const revivingPods = [];
-		const tutorials = [tuto1, hand];
+		const tutorials = [tuto1];
 
 		// tilespriteBG (components)
 		new FixedToCamera(tilespriteBG);
-
-		// gotoLevelWall (prefab fields)
-		gotoLevelWall.gotoLevelName = "NewLevel0A";
-		gotoLevelWall.showScore = false;
-
-		// textInfo (prefab fields)
-		textInfo.textToDisplay = "Wait for me Sput! I will rescue you.";
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;

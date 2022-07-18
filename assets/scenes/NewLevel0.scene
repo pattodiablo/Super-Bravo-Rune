@@ -53,26 +53,6 @@
             "y": 426
         },
         {
-            "prefabId": "98617903-7395-4e97-bcd4-2600c23cbefd",
-            "id": "c7cc0a40-b38f-43d9-ac11-ddff3710e347",
-            "unlock": [
-                "scaleX",
-                "scaleY",
-                "gotoLevelName",
-                "x",
-                "y",
-                "showScore"
-            ],
-            "label": "gotoLevelWall",
-            "gotoLevelName": "NewLevel0A",
-            "showScore": false,
-            "components": [],
-            "x": 1627,
-            "y": 462,
-            "scaleX": 1,
-            "scaleY": 10
-        },
-        {
             "type": "TilemapLayer",
             "id": "67a0d4c1-6645-4d40-b01b-09a1ec632ce0",
             "label": "nocollide2_1",
@@ -80,7 +60,6 @@
             "tilemapId": "a7f712c9-c796-4cba-b0e3-9ec7f8f27155",
             "layerName": "nocollide2",
             "tilesets": [
-                "new_ciudad_tiles",
                 "new_ciudad_tiles"
             ]
         },
@@ -92,7 +71,6 @@
             "tilemapId": "a7f712c9-c796-4cba-b0e3-9ec7f8f27155",
             "layerName": "nocollide",
             "tilesets": [
-                "new_ciudad_tiles",
                 "new_ciudad_tiles"
             ]
         },
@@ -105,7 +83,6 @@
             "tilemapId": "a7f712c9-c796-4cba-b0e3-9ec7f8f27155",
             "layerName": "collide",
             "tilesets": [
-                "new_ciudad_tiles",
                 "new_ciudad_tiles"
             ]
         },
@@ -121,18 +98,6 @@
             "components": [],
             "x": 87,
             "y": 459
-        },
-        {
-            "prefabId": "1f5ce768-fa76-41bd-a1f4-a85fc1eb6292",
-            "id": "0dfb6479-963e-4f67-bdc1-2f6925129fd3",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "handPointer_1",
-            "components": [],
-            "x": 60,
-            "y": 404
         },
         {
             "type": "Image",
@@ -231,72 +196,14 @@
         },
         {
             "type": "Image",
-            "id": "928c93a6-21fd-46b0-943d-922bf080a223",
-            "label": "lamp",
-            "components": [],
-            "texture": {
-                "key": "lamp"
-            },
-            "x": 1119,
-            "y": 345
-        },
-        {
-            "prefabId": "61c1e748-4eae-419c-9015-d72902ae7e3a",
-            "id": "181e2a23-f348-4e8e-a74d-a0c7911d34e4",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "lightBean_1_1_1",
-            "components": [],
-            "x": 1116,
-            "y": 250
-        },
-        {
-            "type": "Image",
-            "id": "dbe4a81f-743e-4710-af13-7a778c3f56dd",
-            "label": "sunsetSign",
-            "components": [],
-            "texture": {
-                "key": "sunsetSign"
-            },
-            "x": 990,
-            "y": 380
-        },
-        {
-            "type": "Image",
-            "id": "1eb43007-f491-4417-8287-66289ed35396",
-            "label": "coffeshop",
-            "components": [],
-            "texture": {
-                "key": "coffeshop"
-            },
-            "x": 1331,
-            "y": 384,
-            "scaleX": 0.850709740577582,
-            "scaleY": 0.850709740577582
-        },
-        {
-            "type": "Image",
             "id": "a92dc7d1-ebd2-4a36-b271-8ad53c8bd03b",
             "label": "rocoPop",
             "components": [],
             "texture": {
                 "key": "rocoPop"
             },
-            "x": 1181,
+            "x": 1365,
             "y": 428
-        },
-        {
-            "type": "Image",
-            "id": "9b5bd2d5-0203-4a6f-8410-b5b6565e457f",
-            "label": "hand",
-            "components": [],
-            "texture": {
-                "key": "hand"
-            },
-            "x": 1539,
-            "y": 399
         },
         {
             "prefabId": "1e0f2c1c-4e1b-4e8c-b361-2189476fec7e",
@@ -307,35 +214,8 @@
             ],
             "label": "poste",
             "components": [],
-            "x": 391,
+            "x": 88,
             "y": 386
-        },
-        {
-            "prefabId": "75d835c0-6224-43cc-87ae-e8b3636c0536",
-            "id": "947e5705-2efd-4bb4-867a-8e5802803f38",
-            "unlock": [
-                "x",
-                "y",
-                "textToDisplay"
-            ],
-            "label": "textInfo",
-            "textToDisplay": "Wait for me Sput! I will rescue you.",
-            "components": [],
-            "x": 30,
-            "y": 550
-        },
-        {
-            "type": "Image",
-            "id": "99273685-9af0-49f0-bab7-1b049bb95397",
-            "label": "police_line",
-            "components": [],
-            "texture": {
-                "key": "police line"
-            },
-            "x": 31,
-            "y": 484,
-            "scaleX": 0.8,
-            "scaleY": 0.8
         }
     ],
     "plainObjects": [
@@ -345,10 +225,6 @@
             "label": "mapa",
             "key": "new_level0",
             "tilesets": [
-                {
-                    "name": "new_ciudad_tiles",
-                    "imageKey": "new_ciudad_tiles"
-                },
                 {
                     "name": "new_ciudad_tiles",
                     "imageKey": "new_ciudad_tiles"
@@ -398,8 +274,7 @@
             "id": "31eff47d-130c-4018-bf6a-df9ab7135d98",
             "label": "tutorials",
             "objectIds": [
-                "1df68b49-413f-4eb0-9372-060ae4a5fd87",
-                "9b5bd2d5-0203-4a6f-8410-b5b6565e457f"
+                "1df68b49-413f-4eb0-9372-060ae4a5fd87"
             ]
         }
     ]

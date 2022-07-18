@@ -47,16 +47,6 @@
                 "key": "backJetPackStation"
             },
             {
-                "url": "assets/images/BADEYES.png",
-                "type": "image",
-                "key": "BADEYES"
-            },
-            {
-                "url": "assets/images/bangta.png",
-                "type": "image",
-                "key": "bangta"
-            },
-            {
                 "url": "assets/scenes/prefabs/Bangta.js",
                 "type": "script",
                 "key": "Bangta"
@@ -80,21 +70,6 @@
                 "url": "assets/images/bg1TileBG.png",
                 "type": "image",
                 "key": "bg1TileBG"
-            },
-            {
-                "url": "assets/images/bgLevel1.png",
-                "type": "image",
-                "key": "bgLevel1"
-            },
-            {
-                "url": "assets/images/bigWindow.png",
-                "type": "image",
-                "key": "bigWindow"
-            },
-            {
-                "url": "assets/images/bite.png",
-                "type": "image",
-                "key": "bite"
             },
             {
                 "url": [
@@ -304,11 +279,6 @@
                 "key": "Catapulta"
             },
             {
-                "url": "assets/images/chandelier.png",
-                "type": "image",
-                "key": "chandelier"
-            },
-            {
                 "url": "assets/images/closeBtn.png",
                 "type": "image",
                 "key": "closeBtn"
@@ -336,24 +306,9 @@
                 "key": "coinDisplay"
             },
             {
-                "url": "assets/images/counter.png",
-                "type": "image",
-                "key": "counter"
-            },
-            {
                 "url": "assets/images/crakedHead.png",
                 "type": "image",
                 "key": "crakedHead"
-            },
-            {
-                "url": "assets/images/creditos.png",
-                "type": "image",
-                "key": "creditos"
-            },
-            {
-                "url": "assets/images/creditsButton.png",
-                "type": "image",
-                "key": "creditsButton"
             },
             {
                 "atlasURL": "assets/atlas/CyberPigeon.json",
@@ -384,26 +339,6 @@
                 ],
                 "type": "scripts",
                 "key": "DeditoButton"
-            },
-            {
-                "url": "assets/images/demoScene.png",
-                "type": "image",
-                "key": "demoScene"
-            },
-            {
-                "url": "assets/scenes/DemoScene.js",
-                "type": "sceneFile",
-                "key": "DemoScene"
-            },
-            {
-                "url": "assets/images/desk.png",
-                "type": "image",
-                "key": "desk"
-            },
-            {
-                "url": "assets/images/door.png",
-                "type": "image",
-                "key": "door"
             },
             {
                 "url": "assets/scenes/prefabs/Door.js",
@@ -479,28 +414,6 @@
                 ],
                 "type": "scripts",
                 "key": "EmptyWall"
-            },
-            {
-                "url": [
-                    "assets/video/ending.mp4"
-                ],
-                "type": "video",
-                "key": "ending"
-            },
-            {
-                "url": "assets/scenes/EndingScene.js",
-                "type": "sceneFile",
-                "key": "EndingScene"
-            },
-            {
-                "url": "assets/images/endingSupa.png",
-                "type": "image",
-                "key": "endingSupa"
-            },
-            {
-                "url": "assets/images/endingSupa2.png",
-                "type": "image",
-                "key": "endingSupa2"
             },
             {
                 "url": [
@@ -820,11 +733,6 @@
                 "key": "Explotion"
             },
             {
-                "url": "assets/images/Final_Stage_Back.png",
-                "type": "image",
-                "key": "Final_Stage_Back"
-            },
-            {
                 "url": [
                     "assets/audio/fx/finalboss_armhit_01.mp3"
                 ],
@@ -937,11 +845,6 @@
                 "key": "finalboss_upanddown_02"
             },
             {
-                "url": "assets/environment/finalStage.png",
-                "type": "image",
-                "key": "finalStage"
-            },
-            {
                 "atlasURL": "assets/atlas/flares.json",
                 "textureURL": "assets/atlas/flares.png",
                 "type": "atlas",
@@ -968,16 +871,6 @@
                 "url": "assets/images/gameOver.png",
                 "type": "image",
                 "key": "gameOver"
-            },
-            {
-                "url": "assets/scenes/gameOverScene.js",
-                "type": "sceneFile",
-                "key": "gameOverScene"
-            },
-            {
-                "url": "assets/images/getCoinsBtn.png",
-                "type": "image",
-                "key": "getCoinsBtn"
             },
             {
                 "url": "assets/images/gotoLevelWall.png",
@@ -1040,11 +933,6 @@
                 "key": "HandPull"
             },
             {
-                "url": "assets/images/hangOn.png",
-                "type": "image",
-                "key": "hangOn"
-            },
-            {
                 "url": [
                     "assets/scenes/prefabs/Heart.js"
                 ],
@@ -1074,46 +962,6 @@
                 "key": "inkDot"
             },
             {
-                "url": "assets/images/interludeBg.jpg",
-                "type": "image",
-                "key": "interludeBg"
-            },
-            {
-                "url": "assets/images/interludeBg.png",
-                "type": "image",
-                "key": "interludeBg_1"
-            },
-            {
-                "url": "assets/scenes/InterludeMap.js",
-                "type": "sceneFile",
-                "key": "InterludeMap"
-            },
-            {
-                "url": "assets/scenes/IntroMovie.js",
-                "type": "sceneFile",
-                "key": "IntroMovie"
-            },
-            {
-                "url": "assets/environment/Invernadero_tiles.png",
-                "type": "image",
-                "key": "Invernadero_tiles"
-            },
-            {
-                "url": "assets/images/invernaderoBg.png",
-                "type": "image",
-                "key": "invernaderoBg"
-            },
-            {
-                "url": "assets/images/invernaderoBG.png",
-                "type": "image",
-                "key": "invernaderoBG"
-            },
-            {
-                "url": "assets/images/invernaderoTile.png",
-                "type": "image",
-                "key": "invernaderoTile"
-            },
-            {
                 "url": "assets/images/jetPackShot.png",
                 "type": "image",
                 "key": "jetPackShot"
@@ -1122,11 +970,6 @@
                 "url": "assets/images/jetpackSuitOffline.png",
                 "type": "image",
                 "key": "jetpackSuitOffline"
-            },
-            {
-                "url": "assets/images/jumpingSupa.png",
-                "type": "image",
-                "key": "jumpingSupa"
             },
             {
                 "url": "assets/images/knob.png",
@@ -1139,29 +982,9 @@
                 "key": "knobCannon"
             },
             {
-                "url": "assets/images/LabBg.png",
-                "type": "image",
-                "key": "LabBg"
-            },
-            {
-                "url": "assets/images/LabNewBg.png",
-                "type": "image",
-                "key": "LabNewBg"
-            },
-            {
-                "url": "assets/environment/Laboratorio_tiles.png",
-                "type": "image",
-                "key": "Laboratorio_tiles"
-            },
-            {
                 "url": "assets/images/lamp.png",
                 "type": "image",
                 "key": "lamp"
-            },
-            {
-                "url": "assets/scenes/LevelMap.js",
-                "type": "sceneFile",
-                "key": "LevelMap"
             },
             {
                 "url": "assets/images/lifeBar.png",
@@ -1215,21 +1038,6 @@
                 "key": "lightBean"
             },
             {
-                "url": "assets/images/logo.png",
-                "type": "image",
-                "key": "logo"
-            },
-            {
-                "url": "assets/images/logosMinisterio.png",
-                "type": "image",
-                "key": "logosMinisterio"
-            },
-            {
-                "url": "assets/images/maceta.png",
-                "type": "image",
-                "key": "maceta"
-            },
-            {
                 "url": [
                     "assets/scenes/prefabs/MainEntrance.js"
                 ],
@@ -1240,16 +1048,6 @@
                 "url": "assets/scenes/prefabs/MainStomp.js",
                 "type": "script",
                 "key": "MainStomp"
-            },
-            {
-                "url": "assets/images/mapLevelBg.png",
-                "type": "image",
-                "key": "mapLevelBg"
-            },
-            {
-                "url": "assets/images/mapLevelBuilding.png",
-                "type": "image",
-                "key": "mapLevelBuilding"
             },
             {
                 "url": "assets/images/mapRoad.png",
@@ -1369,644 +1167,9 @@
                 "key": "new_level0"
             },
             {
-                "url": "assets/maps/new_level0A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level0A"
-            },
-            {
-                "url": "assets/maps/new_level0B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level0B"
-            },
-            {
-                "url": "assets/maps/new_level0C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level0C"
-            },
-            {
-                "url": "assets/maps/new_level0D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level0D"
-            },
-            {
-                "url": "assets/maps/new_level1.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1"
-            },
-            {
-                "url": "assets/maps/new_level10X.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level10X"
-            },
-            {
-                "url": "assets/maps/new_level10Y.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level10Y"
-            },
-            {
-                "url": "assets/maps/new_level1A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1A"
-            },
-            {
-                "url": "assets/maps/new_level1B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1B"
-            },
-            {
-                "url": "assets/maps/new_level1C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1C"
-            },
-            {
-                "url": "assets/maps/new_level1D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1D"
-            },
-            {
-                "url": "assets/maps/new_level1E.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1E"
-            },
-            {
-                "url": "assets/maps/new_level1F.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1F"
-            },
-            {
-                "url": "assets/maps/new_level1X.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1X"
-            },
-            {
-                "url": "assets/maps/new_level1Y.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level1Y"
-            },
-            {
-                "url": "assets/maps/new_level2.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2"
-            },
-            {
-                "url": "assets/maps/new_level2A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2A"
-            },
-            {
-                "url": "assets/maps/new_level2B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2B"
-            },
-            {
-                "url": "assets/maps/new_level2C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2C"
-            },
-            {
-                "url": "assets/maps/new_level2D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2D"
-            },
-            {
-                "url": "assets/maps/new_level2E.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2E"
-            },
-            {
-                "url": "assets/maps/new_level2F.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2F"
-            },
-            {
-                "url": "assets/maps/new_level2G.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level2G"
-            },
-            {
-                "url": "assets/maps/new_level3.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3"
-            },
-            {
-                "url": "assets/maps/new_level3A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3A"
-            },
-            {
-                "url": "assets/maps/new_level3B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3B"
-            },
-            {
-                "url": "assets/maps/new_level3C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3C"
-            },
-            {
-                "url": "assets/maps/new_level3D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3D"
-            },
-            {
-                "url": "assets/maps/new_level3E.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3E"
-            },
-            {
-                "url": "assets/maps/new_level3F.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3F"
-            },
-            {
-                "url": "assets/maps/new_level3X.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3X"
-            },
-            {
-                "url": "assets/maps/new_level3Y.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level3Y"
-            },
-            {
-                "url": "assets/maps/new_level4.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level4"
-            },
-            {
-                "url": "assets/maps/new_level4A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level4A"
-            },
-            {
-                "url": "assets/maps/new_level4B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level4B"
-            },
-            {
-                "url": "assets/maps/new_level4C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level4C"
-            },
-            {
-                "url": "assets/maps/new_level4D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level4D"
-            },
-            {
-                "url": "assets/maps/new_level5.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level5"
-            },
-            {
-                "url": "assets/maps/new_level5A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level5A"
-            },
-            {
-                "url": "assets/maps/new_level5B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level5B"
-            },
-            {
-                "url": "assets/maps/new_level5C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level5C"
-            },
-            {
-                "url": "assets/maps/new_level5X.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level5X"
-            },
-            {
-                "url": "assets/maps/new_level6.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level6"
-            },
-            {
-                "url": "assets/maps/new_level6A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level6A"
-            },
-            {
-                "url": "assets/maps/new_level6B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level6B"
-            },
-            {
-                "url": "assets/maps/new_level6C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level6C"
-            },
-            {
-                "url": "assets/maps/new_level6D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level6D"
-            },
-            {
-                "url": "assets/maps/new_level7.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level7"
-            },
-            {
-                "url": "assets/maps/new_level7A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level7A"
-            },
-            {
-                "url": "assets/maps/new_level7B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level7B"
-            },
-            {
-                "url": "assets/maps/new_level7C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level7C"
-            },
-            {
-                "url": "assets/maps/new_level7X.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level7X"
-            },
-            {
-                "url": "assets/maps/new_level8.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level8"
-            },
-            {
-                "url": "assets/maps/new_level8A.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level8A"
-            },
-            {
-                "url": "assets/maps/new_level8B.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level8B"
-            },
-            {
-                "url": "assets/maps/new_level8C.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level8C"
-            },
-            {
-                "url": "assets/maps/new_level8D.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level8D"
-            },
-            {
-                "url": "assets/maps/new_level8S.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level8S"
-            },
-            {
-                "url": "assets/maps/new_level9.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level9"
-            },
-            {
-                "url": "assets/maps/new_level9W.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level9W"
-            },
-            {
-                "url": "assets/maps/new_level9X.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level9X"
-            },
-            {
-                "url": "assets/maps/new_level9Y.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level9Y"
-            },
-            {
-                "url": "assets/maps/new_level9Z.json",
-                "type": "tilemapTiledJSON",
-                "key": "new_level9Z"
-            },
-            {
-                "url": "assets/images/newInroBg.png",
-                "type": "image",
-                "key": "newInroBg"
-            },
-            {
                 "url": "assets/scenes/NewLevel0.js",
                 "type": "sceneFile",
                 "key": "NewLevel0"
-            },
-            {
-                "url": "assets/scenes/NewLevel0A.js",
-                "type": "sceneFile",
-                "key": "NewLevel0A"
-            },
-            {
-                "url": "assets/scenes/NewLevel0B.js",
-                "type": "sceneFile",
-                "key": "NewLevel0B"
-            },
-            {
-                "url": "assets/scenes/NewLevel0C.js",
-                "type": "sceneFile",
-                "key": "NewLevel0C"
-            },
-            {
-                "url": "assets/scenes/NewLevel0D.js",
-                "type": "sceneFile",
-                "key": "NewLevel0D"
-            },
-            {
-                "url": "assets/scenes/NewLevel1.js",
-                "type": "sceneFile",
-                "key": "NewLevel1"
-            },
-            {
-                "url": "assets/scenes/NewLevel10X.js",
-                "type": "sceneFile",
-                "key": "NewLevel10X"
-            },
-            {
-                "url": "assets/scenes/NewLevel10Y.js",
-                "type": "sceneFile",
-                "key": "NewLevel10Y"
-            },
-            {
-                "url": "assets/scenes/NewLevel1A.js",
-                "type": "sceneFile",
-                "key": "NewLevel1A"
-            },
-            {
-                "url": "assets/scenes/NewLevel1B.js",
-                "type": "sceneFile",
-                "key": "NewLevel1B"
-            },
-            {
-                "url": "assets/scenes/NewLevel1C.js",
-                "type": "sceneFile",
-                "key": "NewLevel1C"
-            },
-            {
-                "url": "assets/scenes/NewLevel1D.js",
-                "type": "sceneFile",
-                "key": "NewLevel1D"
-            },
-            {
-                "url": "assets/scenes/NewLevel1E.js",
-                "type": "sceneFile",
-                "key": "NewLevel1E"
-            },
-            {
-                "url": "assets/scenes/NewLevel1F.js",
-                "type": "sceneFile",
-                "key": "NewLevel1F"
-            },
-            {
-                "url": "assets/scenes/NewLevel1X.js",
-                "type": "sceneFile",
-                "key": "NewLevel1X"
-            },
-            {
-                "url": "assets/scenes/NewLevel1Y.js",
-                "type": "sceneFile",
-                "key": "NewLevel1Y"
-            },
-            {
-                "url": "assets/scenes/NewLevel2.js",
-                "type": "sceneFile",
-                "key": "NewLevel2"
-            },
-            {
-                "url": "assets/scenes/NewLevel2A.js",
-                "type": "sceneFile",
-                "key": "NewLevel2A"
-            },
-            {
-                "url": "assets/scenes/NewLevel2B.js",
-                "type": "sceneFile",
-                "key": "NewLevel2B"
-            },
-            {
-                "url": "assets/scenes/NewLevel2C.js",
-                "type": "sceneFile",
-                "key": "NewLevel2C"
-            },
-            {
-                "url": "assets/scenes/NewLevel2D.js",
-                "type": "sceneFile",
-                "key": "NewLevel2D"
-            },
-            {
-                "url": "assets/scenes/NewLevel2E.js",
-                "type": "sceneFile",
-                "key": "NewLevel2E"
-            },
-            {
-                "url": "assets/scenes/NewLevel2F.js",
-                "type": "sceneFile",
-                "key": "NewLevel2F"
-            },
-            {
-                "url": "assets/scenes/NewLevel2G.js",
-                "type": "sceneFile",
-                "key": "NewLevel2G"
-            },
-            {
-                "url": "assets/scenes/NewLevel3.js",
-                "type": "sceneFile",
-                "key": "NewLevel3"
-            },
-            {
-                "url": "assets/scenes/NewLevel3A.js",
-                "type": "sceneFile",
-                "key": "NewLevel3A"
-            },
-            {
-                "url": "assets/scenes/NewLevel3B.js",
-                "type": "sceneFile",
-                "key": "NewLevel3B"
-            },
-            {
-                "url": "assets/scenes/NewLevel3C.js",
-                "type": "sceneFile",
-                "key": "NewLevel3C"
-            },
-            {
-                "url": "assets/scenes/NewLevel3D.js",
-                "type": "sceneFile",
-                "key": "NewLevel3D"
-            },
-            {
-                "url": "assets/scenes/NewLevel3E.js",
-                "type": "sceneFile",
-                "key": "NewLevel3E"
-            },
-            {
-                "url": "assets/scenes/NewLevel3F.js",
-                "type": "sceneFile",
-                "key": "NewLevel3F"
-            },
-            {
-                "url": "assets/scenes/NewLevel3X.js",
-                "type": "sceneFile",
-                "key": "NewLevel3X"
-            },
-            {
-                "url": "assets/scenes/NewLevel3Y.js",
-                "type": "sceneFile",
-                "key": "NewLevel3Y"
-            },
-            {
-                "url": "assets/scenes/NewLevel4.js",
-                "type": "sceneFile",
-                "key": "NewLevel4"
-            },
-            {
-                "url": "assets/scenes/NewLevel4A.js",
-                "type": "sceneFile",
-                "key": "NewLevel4A"
-            },
-            {
-                "url": "assets/scenes/NewLevel4B.js",
-                "type": "sceneFile",
-                "key": "NewLevel4B"
-            },
-            {
-                "url": "assets/scenes/NewLevel4C.js",
-                "type": "sceneFile",
-                "key": "NewLevel4C"
-            },
-            {
-                "url": "assets/scenes/NewLevel4D.js",
-                "type": "sceneFile",
-                "key": "NewLevel4D"
-            },
-            {
-                "url": "assets/scenes/NewLevel5.js",
-                "type": "sceneFile",
-                "key": "NewLevel5"
-            },
-            {
-                "url": "assets/scenes/NewLevel5A.js",
-                "type": "sceneFile",
-                "key": "NewLevel5A"
-            },
-            {
-                "url": "assets/scenes/NewLevel5B.js",
-                "type": "sceneFile",
-                "key": "NewLevel5B"
-            },
-            {
-                "url": "assets/scenes/NewLevel5C.js",
-                "type": "sceneFile",
-                "key": "NewLevel5C"
-            },
-            {
-                "url": "assets/scenes/NewLevel5X.js",
-                "type": "sceneFile",
-                "key": "NewLevel5X"
-            },
-            {
-                "url": "assets/scenes/NewLevel6.js",
-                "type": "sceneFile",
-                "key": "NewLevel6"
-            },
-            {
-                "url": "assets/scenes/NewLevel6A.js",
-                "type": "sceneFile",
-                "key": "NewLevel6A"
-            },
-            {
-                "url": "assets/scenes/NewLevel6B.js",
-                "type": "sceneFile",
-                "key": "NewLevel6B"
-            },
-            {
-                "url": "assets/scenes/NewLevel6C.js",
-                "type": "sceneFile",
-                "key": "NewLevel6C"
-            },
-            {
-                "url": "assets/scenes/NewLevel6D.js",
-                "type": "sceneFile",
-                "key": "NewLevel6D"
-            },
-            {
-                "url": "assets/scenes/NewLevel7.js",
-                "type": "sceneFile",
-                "key": "NewLevel7"
-            },
-            {
-                "url": "assets/scenes/NewLevel7A.js",
-                "type": "sceneFile",
-                "key": "NewLevel7A"
-            },
-            {
-                "url": "assets/scenes/NewLevel7B.js",
-                "type": "sceneFile",
-                "key": "NewLevel7B"
-            },
-            {
-                "url": "assets/scenes/NewLevel7C.js",
-                "type": "sceneFile",
-                "key": "NewLevel7C"
-            },
-            {
-                "url": "assets/scenes/NewLevel7X.js",
-                "type": "sceneFile",
-                "key": "NewLevel7X"
-            },
-            {
-                "url": "assets/scenes/NewLevel8.js",
-                "type": "sceneFile",
-                "key": "NewLevel8"
-            },
-            {
-                "url": "assets/scenes/NewLevel8A.js",
-                "type": "sceneFile",
-                "key": "NewLevel8A"
-            },
-            {
-                "url": "assets/scenes/NewLevel8B.js",
-                "type": "sceneFile",
-                "key": "NewLevel8B"
-            },
-            {
-                "url": "assets/scenes/NewLevel8C.js",
-                "type": "sceneFile",
-                "key": "NewLevel8C"
-            },
-            {
-                "url": "assets/scenes/NewLevel8D.js",
-                "type": "sceneFile",
-                "key": "NewLevel8D"
-            },
-            {
-                "url": "assets/scenes/NewLevel8S.js",
-                "type": "sceneFile",
-                "key": "NewLevel8S"
-            },
-            {
-                "url": "assets/scenes/NewLevel9.js",
-                "type": "sceneFile",
-                "key": "NewLevel9"
-            },
-            {
-                "url": "assets/scenes/NewLevel9W.js",
-                "type": "sceneFile",
-                "key": "NewLevel9W"
-            },
-            {
-                "url": "assets/scenes/NewLevel9X.js",
-                "type": "sceneFile",
-                "key": "NewLevel9X"
-            },
-            {
-                "url": "assets/scenes/NewLevel9Y.js",
-                "type": "sceneFile",
-                "key": "NewLevel9Y"
-            },
-            {
-                "url": "assets/scenes/NewLevel9Z.js",
-                "type": "sceneFile",
-                "key": "NewLevel9Z"
             },
             {
                 "url": "assets/newPropsAnimations.json",
@@ -2025,21 +1188,6 @@
                 "key": "newSupaAnimations"
             },
             {
-                "url": "assets/images/NewtechBg.png",
-                "type": "image",
-                "key": "NewtechBg"
-            },
-            {
-                "url": "assets/images/NewTechBg2.png",
-                "type": "image",
-                "key": "NewTechBg2"
-            },
-            {
-                "url": "assets/images/nextBtn.png",
-                "type": "image",
-                "key": "nextBtn"
-            },
-            {
                 "url": "assets/images/arrow-down-left.png",
                 "type": "image",
                 "key": "nextPage"
@@ -2055,11 +1203,6 @@
                 ],
                 "type": "scripts",
                 "key": "PassCard"
-            },
-            {
-                "url": "assets/images/pilar.png",
-                "type": "image",
-                "key": "pilar"
             },
             {
                 "url": [
@@ -2097,16 +1240,6 @@
                 "key": "Platform2"
             },
             {
-                "url": "assets/images/playAgainBtn.png",
-                "type": "image",
-                "key": "playAgainBtn"
-            },
-            {
-                "url": "assets/images/playBtn.png",
-                "type": "image",
-                "key": "playBtn"
-            },
-            {
                 "url": "assets/scenes/prefabs/Player.js",
                 "type": "script",
                 "key": "Player"
@@ -2122,11 +1255,6 @@
                 "url": "assets/images/pointerArrow.png",
                 "type": "image",
                 "key": "pointerArrow"
-            },
-            {
-                "url": "assets/images/pointerDown.png",
-                "type": "image",
-                "key": "pointerDown"
             },
             {
                 "url": [
@@ -2192,16 +1320,6 @@
                 "key": "PowerUp"
             },
             {
-                "url": "assets/images/powerUp1.png",
-                "type": "image",
-                "key": "powerUp1"
-            },
-            {
-                "url": "assets/sprites/press-enter-text.png",
-                "type": "image",
-                "key": "press-enter-text"
-            },
-            {
                 "url": "assets/propAnimations.json",
                 "type": "animation",
                 "key": "propAnimations"
@@ -2230,13 +1348,6 @@
                 ],
                 "type": "scripts",
                 "key": "ProxySpyke"
-            },
-            {
-                "url": [
-                    "assets/video/pruebaVideo.mp4"
-                ],
-                "type": "video",
-                "key": "pruebaVideo"
             },
             {
                 "atlasURL": "assets/atlas/puerco espin.json",
@@ -2286,16 +1397,6 @@
                 "url": "assets/images/red.png",
                 "type": "image",
                 "key": "red"
-            },
-            {
-                "url": "assets/images/reviveStripe.png",
-                "type": "image",
-                "key": "reviveStripe"
-            },
-            {
-                "url": "assets/images/ring.png",
-                "type": "image",
-                "key": "ring"
             },
             {
                 "url": [
@@ -2359,39 +1460,9 @@
                 "key": "Saw"
             },
             {
-                "url": "assets/images/sector1.png",
-                "type": "image",
-                "key": "sector1"
-            },
-            {
-                "url": "assets/images/sector3.png",
-                "type": "image",
-                "key": "sector3"
-            },
-            {
-                "url": "assets/images/Sector32.png",
-                "type": "image",
-                "key": "Sector3"
-            },
-            {
-                "url": "assets/images/Sector4.png",
-                "type": "image",
-                "key": "Sector4"
-            },
-            {
-                "url": "assets/environment/Servidores_tiles.png",
-                "type": "image",
-                "key": "Servidores_tiles"
-            },
-            {
                 "url": "assets/images/shadowGeneral.png",
                 "type": "image",
                 "key": "shadowGeneral"
-            },
-            {
-                "url": "assets/images/shield.png",
-                "type": "image",
-                "key": "shield"
             },
             {
                 "url": [
@@ -2399,11 +1470,6 @@
                 ],
                 "type": "scripts",
                 "key": "ShieldBtn"
-            },
-            {
-                "url": "assets/images/shot.png",
-                "type": "image",
-                "key": "shot"
             },
             {
                 "url": [
@@ -2418,11 +1484,6 @@
                 ],
                 "type": "scripts",
                 "key": "SideDoorLocked"
-            },
-            {
-                "url": "assets/images/skipVideo.png",
-                "type": "image",
-                "key": "skipVideo"
             },
             {
                 "url": "assets/images/sky1.png",
@@ -2462,21 +1523,6 @@
                 "key": "SpikeHorizontal"
             },
             {
-                "url": "assets/images/splashLogo.png",
-                "type": "image",
-                "key": "splashLogo"
-            },
-            {
-                "url": "assets/images/spot.png",
-                "type": "image",
-                "key": "spot"
-            },
-            {
-                "url": "assets/images/star.png",
-                "type": "image",
-                "key": "star"
-            },
-            {
                 "url": [
                     "assets/scenes/prefabs/StarEarn.js"
                 ],
@@ -2508,16 +1554,6 @@
                 "url": "assets/images/stomperShadow.png",
                 "type": "image",
                 "key": "stomperShadow"
-            },
-            {
-                "url": "assets/images/sunsetEmpire.png",
-                "type": "image",
-                "key": "sunsetEmpire"
-            },
-            {
-                "url": "assets/images/sunsetEmpire2.png",
-                "type": "image",
-                "key": "sunsetEmpire2"
             },
             {
                 "url": "assets/images/sunsetSign.png",
@@ -2670,11 +1706,6 @@
                 "key": "supaEntrance"
             },
             {
-                "url": "assets/images/supaHead.png",
-                "type": "image",
-                "key": "supaHead"
-            },
-            {
                 "url": "assets/images/supaJet.png",
                 "type": "image",
                 "key": "supaJet"
@@ -2699,11 +1730,6 @@
                 ],
                 "type": "scripts",
                 "key": "SupaShotBtn"
-            },
-            {
-                "url": "assets/images/supaTitle.png",
-                "type": "image",
-                "key": "supaTitle"
             },
             {
                 "url": [
@@ -2805,18 +1831,6 @@
             },
             {
                 "url": [
-                    "assets/audio/music/superbravo_splashscreen.mp3"
-                ],
-                "type": "audio",
-                "key": "superbravo_splashscreen"
-            },
-            {
-                "url": "assets/images/sweetFlowers.png",
-                "type": "image",
-                "key": "sweetFlowers"
-            },
-            {
-                "url": [
                     "assets/scenes/prefabs/SwitchPanel.js"
                 ],
                 "type": "scripts",
@@ -2826,11 +1840,6 @@
                 "url": "assets/images/targetRing.png",
                 "type": "image",
                 "key": "targetRing"
-            },
-            {
-                "url": "assets/images/tech_back.png",
-                "type": "image",
-                "key": "tech_back"
             },
             {
                 "url": "assets/images/tech_lab2.png",
@@ -2854,16 +1863,6 @@
                 "textureURL": "assets/atlas/TheGuardBoss.png",
                 "type": "atlas",
                 "key": "TheGuardBoss"
-            },
-            {
-                "url": "assets/images/titleLogo.png",
-                "type": "image",
-                "key": "titleLogo"
-            },
-            {
-                "url": "assets/scenes/TitleScreen.js",
-                "type": "sceneFile",
-                "key": "TitleScreen"
             },
             {
                 "url": [

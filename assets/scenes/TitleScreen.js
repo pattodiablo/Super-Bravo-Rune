@@ -270,7 +270,7 @@ class TitleScreen extends Phaser.Scene {
 	audioCtx.resume();
 //	console.log(audioCtx);
 //this.sceneToGo.setLevel("NewLevel1X",0,0,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
-this.sceneToGo.setLevel("IntroMovie",0,0,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
+this.sceneToGo.setLevel("NewLevel0",0,0,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
 		this.sceneToGo.isMainScene = false;
 
 		activeLeveles.forEach(level => {

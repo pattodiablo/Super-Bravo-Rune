@@ -17,19 +17,6 @@ class BaseScene extends Phaser.Scene {
 
 	
 
-	onBlur(){
-	
-		this.scene.pause(); //pausa el juego
-	}
-
-	onFocus(){
-
-		this.scene.resume(); //resume el juego
-	}
-
-	onResume(){
-		//console.log("resuming");
-	}
 
 	create(){
 		
@@ -38,9 +25,7 @@ class BaseScene extends Phaser.Scene {
 		//console.log("level key " + this.scene.key);
 		activeLeveles.push(this.scene.key);
 		//console.log("active leveles " + activeLeveles);
-		// this.game.events.addListener(Phaser.Core.Events.FOCUS, this.onFocus, this);
-		// this.game.events.addListener(Phaser.Core.Events.BLUR, this.onBlur, this);
-		this.game.events.addListener(Phaser.Core.Events.RESUME, this.onResume, this);
+
 	
 
 		this.physics.world.TILE_BIAS = 40;
@@ -51,12 +36,13 @@ class BaseScene extends Phaser.Scene {
 		this.emptyWallsRack = [];
 		this.acidWallsRack = [];
 		this.wasMusicLaunched = false;
+		
 	
 		this.wallsID = 49; //si en el mapa dice 21 entonces aca es 22
 		this.coinsID = 93; //si en el mapa dice 21 entonces aca es 22
 		this.emptyWallsId = 47 
 
-		this.coinsCollected = 0;
+		
 
 		this.isRestartingGame = false;
 		this.isPowerPanelEnabled=true;
@@ -93,108 +79,8 @@ class BaseScene extends Phaser.Scene {
 		
 			this.tilespriteBG.width= this.layer.width;
 			this.tilespriteBG.height=this.layer.height;
-
-			if(this.scene.key=="NewLevel3" ||  this.scene.key=="NewLevel3B" || this.scene.key=="NewLevel3C" || this.scene.key=="NewLevel3D" || this.scene.key=="NewLevel3E" || this.scene.key=="NewLevel3F" || this.scene.key=="NewLevel3X" || this.scene.key=="NewLevel3Y" || this.scene.key=="NewLevel4" || this.scene.key=="NewLevel4A" || this.scene.key=="NewLevel4B" || this.scene.key=="NewLevel4C" || this.scene.key=="NewLevel4D"){
-		
-				this.tilespriteBG.x=0
-				this.tilespriteBG.y=this.player.y+300;
-			}else if(this.scene.key=="NewLevel0"  || this.scene.key=="NewLevel0C"    || this.scene.key=="NewLevel1D"  || this.scene.key=="NewLevel1E"  || this.scene.key=="NewLevel1F"  ){ 
-
-				this.tilespriteBG.y=this.player.y+350;
-				this.tilespriteBG.height=900;
-			}else if(this.scene.key=="NewLevel0A" || this.scene.key=="NewLevel0B" || this.scene.key=="NewLevel0D"  ){
-
-				this.tilespriteBG.y=this.player.y+450;
-				this.tilespriteBG.x=-30;
-				this.tilespriteBG.height=900;
-			}
-			
-				
-			else if(this.scene.key=="NewLevel1" ){
-
-				this.tilespriteBG.y=this.player.y+270;
-				this.tilespriteBG.height=900;
-			}
-
-			else if(this.scene.key=="NewLevel1A" ||  this.scene.key=="NewLevel1B"  ){
-
-				this.tilespriteBG.y=this.player.y+320;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel1C" ){
-
-				this.tilespriteBG.y=this.player.y+400;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel1Y" ){
-
-				this.tilespriteBG.y=this.player.y+460;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel1X" ){
-
-				this.tilespriteBG.y=this.player.y+80;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel2" ){
-
-				this.tilespriteBG.y=this.player.y+380;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel2A" ){
-
-				this.tilespriteBG.y=this.player.y+180;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel2D" ){
-
-				this.tilespriteBG.y=this.player.y-180;
-				this.tilespriteBG.height=900;
-			}
-			else if(this.scene.key=="NewLevel2E" ){
-
-				this.tilespriteBG.y=this.player.y-180;
-				this.tilespriteBG.height=900;
-			}
-			
-			
-
-			else if(this.scene.key=="NewLevel3A" ){
-
-				this.tilespriteBG.y=this.player.y+600;
-				this.tilespriteBG.height=900;
-			}else if(this.scene.key=="NewLevel7B" ){
-
-				this.tilespriteBG.y=this.cameras.main.centerY+500;
-				this.tilespriteBG.height=900;
-			}else if(this.scene.key=="NewLevel7C"   ){
-
-				this.tilespriteBG.y=this.cameras.main.centerY+500;
-				this.tilespriteBG.height=900;
-			}else if( this.scene.key=="NewLevel8" || this.scene.key=="NewLevel8A" || this.scene.key=="NewLevel8B" || this.scene.key=="NewLevel8C" || this.scene.key=="NewLevel8D" || this.scene.key=="NewLevel8S"){
-
-				this.tilespriteBG.y=this.cameras.main.centerY+400;
-				this.tilespriteBG.height=900;
-
-			}
-			else if(this.scene.key=="NewLevel9X"|| this.scene.key=="NewLevel9Y"|| this.scene.key=="NewLevel10Y"   ){
-
-				this.tilespriteBG.y=this.cameras.main.centerY+250;
-				this.tilespriteBG.height=480;
-			}else if(this.scene.key=="NewLevel10X" ){
-
-				this.tilespriteBG.y=this.cameras.main.centerY+300;
-				this.tilespriteBG.height=480;
-			}
-		
-			else{
-				this.tilespriteBG.y=this.player.y+100;
-			}
-		
-			
+			this.tilespriteBG.setOrigin(0.5,0.5);
 		}
-
-		
 		//MUSIC
 		this.superbravo_gameplay_chip01 = this.sound.add('superbravo_gameplay_chip01');
 		this.superbravo_gameplay_chip02 = this.sound.add('superbravo_gameplay_chip02');
@@ -647,9 +533,10 @@ class BaseScene extends Phaser.Scene {
 		const coinDisplay = this.add.sprite(40, 32, "coinDisplay");
 		
 		// text
-		const coinText = this.add.text(22, 36, "", {});
+		const coinText = this.add.text(40, 46, "", {});
 		coinText.text = "0000";
-		coinText.setStyle({"fontFamily":"Arial","fontSize":"16px","fontStyle":"bold","align":"center", });
+		coinText.setOrigin(0.5);
+		coinText.setStyle({"fontFamily":"Arial","fontSize":"18px","fontStyle":"bold","align":"center", });
 		
 		// coinDisplay (components)
 		new FixedToCamera(coinDisplay);
@@ -680,10 +567,12 @@ class BaseScene extends Phaser.Scene {
 		// fuelBarFrame
 		const fuelBarFrame = new FuelBar(this, this.cameras.main.centerX-80, 66);
 		this.add.existing(fuelBarFrame);
+
 		// fuelBarFrame (components)
 		new FixedToCamera(fuelBarFrame);
 		this.fuelBarFrame = fuelBarFrame;
 		fuelBarFrame.emit("components-awake");
+		fuelBarFrame.visible=false;
 
 		// readyText (components)
 		const readyText = this.add.sprite(this.cameras.main.centerX, this.cameras.main.centerY, "readyText");
@@ -693,7 +582,7 @@ class BaseScene extends Phaser.Scene {
 
 			// menuBtn
 			const menuBtn = new MenuBtn(this, this.cameras.main.width-30, 37);
-			this.add.existing(menuBtn);
+		//	this.add.existing(menuBtn);
 			// menuBtn (prefab fields)
 		menuBtn.emit("prefab-awake");
 		// menuBtn (components)
@@ -720,7 +609,7 @@ class BaseScene extends Phaser.Scene {
 		this.initLevel();
 
 	
-		this.coinText.text = this.game.playerData.coins;
+		this.coinText.text = this.coins.length;
 		
 		this.tooglePowerScreen = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
 		this.tooglePowerScreen.on('down', function(){
@@ -731,7 +620,30 @@ class BaseScene extends Phaser.Scene {
 	
 
 	}, this);
+
+	this.originalPlayerY= this.player.y;
+
+	}
+
+
+	animateCoinCollectText(){
+
 	
+
+		var aniamteText = this.tweens.createTimeline();
+		aniamteText.add({
+			targets: this.coinText,
+			callbackScope: this,
+			scale: 1.3,
+			duration: 50,
+			ease: 'Linear',
+			repeat: 0,
+			yoyo:true
+
+		});
+
+		aniamteText.play();
+
 	}
 
 	handlePowerPanel(){
@@ -880,7 +792,7 @@ class BaseScene extends Phaser.Scene {
 			//this.randomFx = Math.round((Math.random()*(7-6)+6));
 		
 		if(this.scene.key=="NewLevel0" || this.scene.key=="NewLevel0A" || this.scene.key=="NewLevel0B" || this.scene.key=="NewLevel0C"|| this.scene.key=="NewLevel0D"){
-			this.randomFx = 0;
+			this.randomFx = Math.round((Math.random()*(2-1)+1));
 					
 		}else if(this.scene.key=="NewLevel1" || this.scene.key=="NewLevel1A" || this.scene.key=="NewLevel1B" || this.scene.key=="NewLevel1C" || this.scene.key=="NewLevel1D" || this.scene.key=="NewLevel1E" || this.scene.key=="NewLevel1F" || this.scene.key=="NewLevel1X" || this.scene.key=="NewLevel1Y" || this.scene.key=="NewLevel2" || this.scene.key=="NewLevel2A" || this.scene.key=="NewLevel2B" || this.scene.key=="NewLevel2C" || this.scene.key=="NewLevel2D" || this.scene.key=="NewLevel2E" || this.scene.key=="NewLevel2F" || this.scene.key=="NewLevel2G"){
 			this.randomFx = Math.round((Math.random()*(2-1)+1));
@@ -1047,6 +959,7 @@ class BaseScene extends Phaser.Scene {
 			
 
 		},this);
+		console.log("coins in level " + this.coins.length)
 		
 	}
 
@@ -1349,11 +1262,15 @@ class BaseScene extends Phaser.Scene {
 		
 	}
 
-
+	controlBG(){
+	
+		var yplayerVariation = 30/this.player.y;
+		this.tilespriteBG.y=this.originalPlayerY+yplayerVariation;
+	}
 	update(){
 	
 		this.checkElevator();
-	
+	this.controlBG();
 
 		if(this.launchMusic){
 			this.iniciarMusica();

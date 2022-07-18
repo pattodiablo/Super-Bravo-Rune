@@ -73,10 +73,25 @@ window.addEventListener('load', function () {
 				const result = objectStoreDataRequest.result;
 				tempdata = result.data;
 				crearjuego(tempdata);
+				
 			}
 		}
 		else{
-			crearjuegoPrimeraVez();
+			tempdata = {
+				levelsPassed: [],
+				gotCard: false,
+				coins: coins,
+				level: "NewLevel0", 
+				life: 5,
+				maxLife:5,
+				isMusicMuted: false,
+				gotCannon: hasCannonPower,
+				doubleJump: isDoubleJump,
+				isFxMuted: false,
+				timesDead: timesDead
+			};
+
+			crearjuego(tempdata);
 		}
 	};
 
@@ -104,58 +119,7 @@ window.addEventListener('load', function () {
 	};
 
 
-   function crearjuegoPrimeraVez(){
-	var game = new Phaser.Game({
-
-		width: window.innerWidth,
-		height: window.innerHeight,
-		type: renderer,
-		backgroundColor: "#000000",
-		scale: {
-			mode: Phaser.Scale.FIT,
-			autoCenter: Phaser.Scale.CENTER_BOTH,
-			orientation: "portrait",
-		},
-		physics: {
-			default: "arcade",
-			arcade: {
-				debug: isDebug				
-			}			
-		},
-		fps: {
-			target: 60,
-			min: 30,
-			forceSetTimeOut: false
-		},
-		render: {
-			pixelArt: false
-		},
-		input: {
-			activePointers: 1
-		}
-	});
-
-
-
-	game.playerData = {
-		levelsPassed: [],
-		gotCard: false,
-		coins: coins,
-		level: "NewLevel0", 
-		life: 5,
-		maxLife:5,
-		isMusicMuted: false,
-		gotCannon: hasCannonPower,
-		doubleJump: isDoubleJump,
-		isFxMuted: false,
-		timesDead: timesDead
-	};
-
-	
-
-
-	game.scene.add("Boot", Boot, true);
-   }
+   
 
 
    function crearjuego(tempdata){
@@ -206,12 +170,60 @@ window.addEventListener('load', function () {
 	});
 
 
+	
+	game.pauseGame=function(){
+		game.sound.mute=false;
+		for (const key in game.scene.keys) {
+			if (Object.hasOwnProperty.call(game.scene.keys, key)) {
+			  const element = game.scene.keys[key];
+				element.scene.pause();
+			}
+		}
+		
+	}
+
+	game.resumeGame=function(){
+		game.sound.mute=false;
+					for (const key in game.scene.keys) {
+					  if (Object.hasOwnProperty.call(game.scene.keys, key)) {
+						const element = game.scene.keys[key];
+						  element.scene.resume();
+					  }
+					}
+
+	}
+
+	game.restartGame=function(){
+
+	    
+	location.reload();
+
+
+	}
+	
+	game.getScore=function(){
+	
+		return 0;
+	}
 
 	game.playerData = tempdata;
 	
 
 
 	game.scene.add("Boot", Boot, true);
+
+
+
+	Rune.init({
+			
+		restartGame:game.restartGame,
+		pauseGame:game.pauseGame,
+		resumeGame:game.resumeGame,
+		getScore:game.getScore,
+	  })
+
+	  
+
    }
 
   
@@ -370,3 +382,5 @@ var getBBcodeText = function (scene, wrapWidth, fixedWidth, fixedHeight) {
     })
 }
 
+
+	  

@@ -175,6 +175,8 @@ class Player extends Phaser.GameObjects.Sprite {
 
 		downKey.on('down', this.wannaGoDown, this)
 
+	
+
 	}
 
 	wannaGoDown(){
@@ -1224,7 +1226,6 @@ class Player extends Phaser.GameObjects.Sprite {
 
 		if (this.wannaBite) {
 
-
 		
 			this.scene.player.currentArrow = 0;
 			this.visible=false;
@@ -1270,13 +1271,15 @@ class Player extends Phaser.GameObjects.Sprite {
 
 			if (this.firstTimeShot) {
 
+			
+
 				const handPull = new HandPull(this.scene, this.x, this.y);
 				this.scene.add.existing(handPull);
 				
 
 				this.scene.input.on('drag', function (pointer, gameObject, dragX, dragY) {
 
-
+					
 					if(gameObject.texture.key == "knob"){
 						gameObject.x = dragX;
 						gameObject.y = dragY;

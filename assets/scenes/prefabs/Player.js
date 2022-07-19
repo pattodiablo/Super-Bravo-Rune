@@ -52,6 +52,8 @@ class Player extends Phaser.GameObjects.Sprite {
 		this.minJumpIntentionOnPlatform = 120;
 		this.jumping = false;
 		this.isRunning = false;
+		this.hasWon=false;
+		this.hasWonOnce=false;
 		this.maxPowerX = 60;
 		this.PowerX = 0;
 		this.PowerY = 0;
@@ -891,172 +893,201 @@ class Player extends Phaser.GameObjects.Sprite {
 
 	checkAnimStatus() {
 
-		if (this.isJetPackActive) {
-			if (!this.body.onFloor()) {
-
-				this.play("supa/jetPack", true);
-			} else {
-				if (this.body.velocity.x >= 10 || this.body.velocity.x <= -10) {
-					this.play("jetPackWalk", true);
+		if(!this.hasWon){
+			if (this.isJetPackActive) {
+				if (!this.body.onFloor()) {
+	
+					this.play("supa/jetPack", true);
+				} else {
+					if (this.body.velocity.x >= 10 || this.body.velocity.x <= -10) {
+						this.play("jetPackWalk", true);
+					}
+	
+	
 				}
-
-
 			}
-		}
-		else {
-
-			if (this.willEnterdoor) {
-				this.play("supa/entering", true);
+			else {
+	
+				if (this.willEnterdoor) {
+					this.play("supa/entering", true);
+				}
+				else if (this.isBiting) {
+					this.play("supa/roll", true);
+				}
+				else if (this.enteringPod) {
+	
+					this.play("supa/fly", true);
+	
+				} else {
+					if (this.isDead) {
+	
+						if (this.playDeadSound) {
+	
+							this.scene.supa_death_01.play();
+							this.play("supa_hurt", true);
+							this.playDeadSound = false;
+	
+						}
+	
+	
+					} else {
+						if (this.body.onFloor()) { //para cuando esta sobre una plataforma o el piso
+	
+							this.isDropping = false;
+							this.jumping = false;
+	
+							if (this.isSupaRolling) {
+	
+								this.play("supa/roll", true);
+	
+	
+	
+							} else {
+								if (this.body.velocity.x >= this.limitWalk) {
+									this.flipX = false;
+									if (this.supaDJumps > 0) {
+	
+										this.play("runDoubleJump", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 200;
+	
+									} else {
+										this.play("supa/run", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 200;
+									}
+	
+								}
+	
+								if (this.body.velocity.x <= -this.limitWalk) {
+									this.flipX = true;
+									if (this.supaDJumps > 0) {
+	
+										this.play("runDoubleJump", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 200;
+									} else {
+										this.play("supa/run", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 200;
+	
+									}
+								}
+	
+								if (this.body.velocity.x > 0 && this.body.velocity.x < this.limitWalk) {
+									this.flipX = false;
+									if (this.supaDJumps > 0) {
+	
+										this.play("walkDoubleJump", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 0;
+	
+									} else {
+	
+										this.play("supa/walk", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 0;
+									}
+	
+								}
+	
+								if (this.body.velocity.x < 0 && this.body.velocity.x > -this.limitWalk) {
+									this.flipX = true;
+									if (this.supaDJumps > 0) {
+	
+										this.play("walkDoubleJump", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 0;
+	
+									} else {
+	
+										this.play("supa/walk", true);
+										this.particles.emitters.list[0].lifespan.propertyValue = 0;
+									}
+								}
+	
+								if (this.body.velocity.x == 0) {
+	
+									if (this.supaDJumps > 0) {
+										this.play("idleDoubleJump", true);
+	
+									} else {
+	
+	
+	
+										this.play("supa/idle", true);
+	
+										this.particles.emitters.list[0].lifespan.propertyValue = 0
+									}
+	
+								}
+	
+							}
+	
+	
+						} else { //para cuando esta en el aire
+	
+	
+							if (this.body.velocity.y > this.minJumpIntentionOnPlatform) {
+	
+								if (this.supaDJumps > 0) {
+	
+									this.play("fallDoubleJump", true);
+								} else {
+									this.play("supa/fall", true);
+									this.particles.emitters.list[0].lifespan.propertyValue = 500;
+								}
+	
+	
+								if (this.isDropping) {
+	
+									this.play("supa/drop", true);
+									this.particles.emitters.list[0].lifespan.propertyValue = 2000;
+	
+								}
+	
+							}
+	
+							if (this.body.velocity.y < 0) {
+	
+								this.play("supa/roll", true);
+								this.particles.emitters.list[0].lifespan.propertyValue = 300;
+	
+							}
+	
+							if (this.isTouched) {
+								//console.log('istouched on the air');
+								this.play("supa_hurt", true);
+								this.scene.player.wannaEnterMainDoor = false;
+								
+							}
+	
+						}
+					}
+	
+				}
 			}
-			else if (this.isBiting) {
-				this.play("supa/roll", true);
-			}
-			else if (this.enteringPod) {
+		}else if(this.hasWon && this.hasWonOnce){
 
+			this.body.enable=false;
+
+			this.winAnim=this.play("supaWin", true);
+			this.winAnim.once('animationcomplete', () => {
+				
 				this.play("supa/fly", true);
 
-			} else {
-				if (this.isDead) {
+				var flyAway = this.scene.tweens.createTimeline();
+				flyAway.add({
+					targets: this,
+					y: -100,
+					duration: 300,
+					onComplete: function(){
+						Rune.gameOver();
+					},
+					ease: 'Linear',
+					repeat: 0
+		
+				});
 
-					if (this.playDeadSound) {
+				flyAway.play();
 
-						this.scene.supa_death_01.play();
-						this.play("supa_hurt", true);
-						this.playDeadSound = false;
-
-					}
-
-
-				} else {
-					if (this.body.onFloor()) { //para cuando esta sobre una plataforma o el piso
-
-						this.isDropping = false;
-						this.jumping = false;
-
-						if (this.isSupaRolling) {
-
-							this.play("supa/roll", true);
-
-
-
-						} else {
-							if (this.body.velocity.x >= this.limitWalk) {
-								this.flipX = false;
-								if (this.supaDJumps > 0) {
-
-									this.play("runDoubleJump", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 200;
-
-								} else {
-									this.play("supa/run", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 200;
-								}
-
-							}
-
-							if (this.body.velocity.x <= -this.limitWalk) {
-								this.flipX = true;
-								if (this.supaDJumps > 0) {
-
-									this.play("runDoubleJump", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 200;
-								} else {
-									this.play("supa/run", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 200;
-
-								}
-							}
-
-							if (this.body.velocity.x > 0 && this.body.velocity.x < this.limitWalk) {
-								this.flipX = false;
-								if (this.supaDJumps > 0) {
-
-									this.play("walkDoubleJump", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 0;
-
-								} else {
-
-									this.play("supa/walk", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 0;
-								}
-
-							}
-
-							if (this.body.velocity.x < 0 && this.body.velocity.x > -this.limitWalk) {
-								this.flipX = true;
-								if (this.supaDJumps > 0) {
-
-									this.play("walkDoubleJump", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 0;
-
-								} else {
-
-									this.play("supa/walk", true);
-									this.particles.emitters.list[0].lifespan.propertyValue = 0;
-								}
-							}
-
-							if (this.body.velocity.x == 0) {
-
-								if (this.supaDJumps > 0) {
-									this.play("idleDoubleJump", true);
-
-								} else {
-
-
-
-									this.play("supa/idle", true);
-
-									this.particles.emitters.list[0].lifespan.propertyValue = 0
-								}
-
-							}
-
-						}
-
-
-					} else { //para cuando esta en el aire
-
-
-						if (this.body.velocity.y > this.minJumpIntentionOnPlatform) {
-
-							if (this.supaDJumps > 0) {
-
-								this.play("fallDoubleJump", true);
-							} else {
-								this.play("supa/fall", true);
-								this.particles.emitters.list[0].lifespan.propertyValue = 500;
-							}
-
-
-							if (this.isDropping) {
-
-								this.play("supa/drop", true);
-								this.particles.emitters.list[0].lifespan.propertyValue = 2000;
-
-							}
-
-						}
-
-						if (this.body.velocity.y < 0) {
-
-							this.play("supa/roll", true);
-							this.particles.emitters.list[0].lifespan.propertyValue = 300;
-
-						}
-
-						if (this.isTouched) {
-							//console.log('istouched on the air');
-							this.play("supa_hurt", true);
-							this.scene.player.wannaEnterMainDoor = false;
-							
-						}
-
-					}
-				}
-
-			}
+			});
+			this.hasWonOnce=false;
 		}
+		
 
 
 
@@ -1879,6 +1910,10 @@ this.scene.game.playerData.life = this.playerLife;
 
 	}
 
+	isWin(){
+		this.hasWon=true;
+		this.hasWonOnce=true;
+	}
 
 	dieAnimation() {
 

@@ -125,7 +125,7 @@ class Coin extends Phaser.GameObjects.Sprite {
 		console.log(this.scene.coins.length);
 	
 		if(this.scene.coins.length<=0){
-			console.log("you win")
+			this.scene.player.isWin();
 		}
 		
 		if(this.scene.game.playerData.coins < 9999){

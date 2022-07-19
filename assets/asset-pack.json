@@ -1188,6 +1188,12 @@
                 "key": "newSupaAnimations"
             },
             {
+                "atlasURL": "assets/atlas/newSupaAnimationsRune.json",
+                "textureURL": "assets/atlas/newSupaAnimationsRune.png",
+                "type": "atlas",
+                "key": "newSupaAnimationsRune"
+            },
+            {
                 "url": "assets/images/arrow-down-left.png",
                 "type": "image",
                 "key": "nextPage"

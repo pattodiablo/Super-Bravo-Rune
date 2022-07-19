@@ -83,10 +83,14 @@ class NewLevel0 extends BaseScene {
 		const poste = new Poste(this, 88, 386);
 		this.add.existing(poste);
 
+		// sampoShooter
+		const sampoShooter = new SampoShooter(this, 199, 416);
+		this.add.existing(sampoShooter);
+
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [];
+		const enemies = [sampoShooter];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
@@ -125,7 +129,7 @@ class NewLevel0 extends BaseScene {
 	doors;
 	/** @type {Array<any>} */
 	switches;
-	/** @type {Array<any>} */
+	/** @type {SampoShooter[]} */
 	enemies;
 	/** @type {Array<any>} */
 	platforms;

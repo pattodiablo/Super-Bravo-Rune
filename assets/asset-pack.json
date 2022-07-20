@@ -341,6 +341,11 @@
                 "key": "DeditoButton"
             },
             {
+                "url": "assets/scenes/DemoScene.js",
+                "type": "sceneFile",
+                "key": "DemoScene"
+            },
+            {
                 "url": "assets/scenes/prefabs/Door.js",
                 "type": "script",
                 "key": "Door"
@@ -873,6 +878,11 @@
                 "key": "gameOver"
             },
             {
+                "url": "assets/scenes/gameOverScene.js",
+                "type": "sceneFile",
+                "key": "gameOverScene"
+            },
+            {
                 "url": "assets/images/gotoLevelWall.png",
                 "type": "image",
                 "key": "gotoLevelWall"
@@ -960,6 +970,11 @@
                 "url": "assets/images/inkDot.png",
                 "type": "image",
                 "key": "inkDot"
+            },
+            {
+                "url": "assets/scenes/InterludeMap.js",
+                "type": "sceneFile",
+                "key": "InterludeMap"
             },
             {
                 "url": "assets/images/jetPackShot.png",
@@ -1170,6 +1185,11 @@
                 "url": "assets/scenes/NewLevel0.js",
                 "type": "sceneFile",
                 "key": "NewLevel0"
+            },
+            {
+                "url": "assets/scenes/NewLevel1.js",
+                "type": "sceneFile",
+                "key": "NewLevel1"
             },
             {
                 "url": "assets/newPropsAnimations.json",

@@ -262,17 +262,18 @@ class Player extends Phaser.GameObjects.Sprite {
 			this.body.enable=false;
 
 		
-			this.scene.createTextBox(this.x-80,this.y-150,"You can now double jump");
+		this.textBox=this.scene.createTextBox(this.x,this.y-50,"You can now double jump");
 
 			var reloadTimer = this.scene.time.addEvent({
 				delay: 3000,                // ms
 				callback: function(){
 					this.body.enable=true;
-
+					this.textBox.destroy();
+					console.log(this.textBox)
 				},
 				//args: [],
 				callbackScope: this,
-				loop: true
+				loop: false
 			});
 
 		}
@@ -2020,7 +2021,8 @@ this.scene.game.playerData.life = this.playerLife;
 			onComplete: function () {
 				this.PowerX = 0;
 				this.PowerY = 0;
-				this.restartGame();
+				Rune.gameOver();
+			//	this.restartGame();
 			}
 
 		});
@@ -2103,7 +2105,7 @@ this.scene.game.playerData.life = this.playerLife;
 				this.body.enable = true;
 				this.scene.cameras.main.startFollow(this, true, 0.4, 0.1);
 				this.canmove = true;
-			
+				this.scene.startTimer();
 			}
 
 		});

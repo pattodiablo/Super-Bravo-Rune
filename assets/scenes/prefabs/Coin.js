@@ -117,15 +117,17 @@ class Coin extends Phaser.GameObjects.Sprite {
 		//this.scene.envi_pickupcoin_04.play();
 		const randomFx = Math.abs(Math.round(Math.random() * this.fxcoinlist.length - 1));
 
-				this.fxcoinlist[randomFx].play();
+		this.fxcoinlist[randomFx].play();
 
 		this.scene.coinsCollected++;
+		this.scene.doScore();
 		this.scene.animateCoinCollectText();
 		this.scene.coins.pop();
 		console.log(this.scene.coins.length);
 	
 		if(this.scene.coins.length<=0){
 			this.scene.player.isWin();
+			this.scene.timerWorking.paused=true;
 		}
 		
 		if(this.scene.game.playerData.coins < 9999){

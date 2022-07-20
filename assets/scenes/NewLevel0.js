@@ -20,6 +20,10 @@ class NewLevel0 extends BaseScene {
 		const mapa = this.add.tilemap("new_level0");
 		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
+		// new_level0
+		const new_level0 = this.add.tilemap("new_level0");
+		new_level0.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
+
 		// bg1Tile
 		const bg1Tile = this.add.image(0, 0, "bg1Tile");
 		bg1Tile.setOrigin(0, 0);
@@ -34,6 +38,9 @@ class NewLevel0 extends BaseScene {
 
 		// nocollide2_1
 		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
+
+		// powerPodium
+		this.add.image(176, 716, "PowerPodium");
 
 		// nocollide
 		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
@@ -59,11 +66,6 @@ class NewLevel0 extends BaseScene {
 		const lightBean_1 = new LightBeam(this, 453, 330);
 		this.add.existing(lightBean_1);
 
-		// tuto1
-		const tuto1 = this.add.image(255, 402, "tuto1");
-		tuto1.scaleX = 0.7;
-		tuto1.scaleY = 0.7;
-
 		// posters
 		const posters = this.add.image(524, 395, "posters");
 		posters.scaleX = 0.6994818652849741;
@@ -76,35 +78,71 @@ class NewLevel0 extends BaseScene {
 		const lightBean_1_1 = new LightBeam(this, 697, 331);
 		this.add.existing(lightBean_1_1);
 
-		// rocoPop
-		this.add.image(1365, 428, "rocoPop");
-
-		// poste
-		const poste = new Poste(this, 88, 386);
-		this.add.existing(poste);
-
 		// sampoShooter
-		const sampoShooter = new SampoShooter(this, 199, 416);
+		const sampoShooter = new SampoShooter(this, 405, 440);
 		this.add.existing(sampoShooter);
+
+		// sampoShooter_1
+		const sampoShooter_1 = new SampoShooter(this, 564, 119);
+		this.add.existing(sampoShooter_1);
+
+		// stomperShadow
+		const stomperShadow = this.add.image(398, 165, "stomperShadow");
+		stomperShadow.scaleX = 1.986758185657027;
+		stomperShadow.scaleY = 0.4255454215441236;
+
+		// stomper
+		const stomper = new Stomper(this, 396, -40);
+		this.add.existing(stomper);
+
+		// upperTile
+		const upperTile = new_level0.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
+
+		// heart
+		const heart = new Heart(this, 181, 108);
+		this.add.existing(heart);
+
+		// catapulta
+		const catapulta = new Catapulta(this, 1295, 775);
+		this.add.existing(catapulta);
+
+		// box
+		const box = new Box(this, 643, 164);
+		this.add.existing(box);
+
+		// upgradeHalo
+		const upgradeHalo = new UpgradeHalo(this, 176, 731);
+		this.add.existing(upgradeHalo);
+
+		// sideDoor
+		const sideDoor = new SideDoor(this, 329, 739);
+		this.add.existing(sideDoor);
+		sideDoor.scaleX = 0.8354946468322224;
+		sideDoor.scaleY = 0.8354946468322224;
 
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [sampoShooter];
+		const enemies = [sampoShooter, sampoShooter_1];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
 		const revivingPods = [];
-		const tutorials = [tuto1];
+		const tutorials = [];
 
 		// tilespriteBG (components)
 		new FixedToCamera(tilespriteBG);
+
+		// upgradeHalo (prefab fields)
+		upgradeHalo.isDoubleJump = true;
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
 		this.layer = layer;
 		this.player = player;
+		this.upperTile = upperTile;
 		this.mapa = mapa;
+		this.new_level0 = new_level0;
 		this.doors = doors;
 		this.switches = switches;
 		this.enemies = enemies;
@@ -125,6 +163,8 @@ class NewLevel0 extends BaseScene {
 	layer;
 	/** @type {Player} */
 	player;
+	/** @type {Phaser.Tilemaps.TilemapLayer} */
+	upperTile;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */
@@ -139,7 +179,7 @@ class NewLevel0 extends BaseScene {
 	catapultas;
 	/** @type {Array<any>} */
 	revivingPods;
-	/** @type {Phaser.GameObjects.Image[]} */
+	/** @type {Array<any>} */
 	tutorials;
 
 	/* START-USER-CODE */

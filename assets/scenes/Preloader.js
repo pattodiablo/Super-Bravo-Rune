@@ -58,15 +58,15 @@ class Preloader extends Phaser.Scene {
 		this.editorCreate();
 		this.cameras.main.setBackgroundColor('#f20f4f')
 		this.sBLogo.x=this.cameras.main.centerX;
-		this.sBLogo.y=this.cameras.main.centerY-200;
+		this.sBLogo.y=this.cameras.main.centerY-120;
 
 		this.weveanaLogo.x=this.cameras.main.centerX;
 		this.weveanaLogo.y=this.cameras.main.centerY+200;
 
 		this.loading.x=this.cameras.main.centerX-this.loading.width/2;
-		this.loading.y=this.cameras.main.centerY-60;
+		this.loading.y=this.cameras.main.centerY;
 		this.loadingBorder.x=this.cameras.main.centerX;
-		this.loadingBorder.y=this.cameras.main.centerY-60;
+		this.loadingBorder.y=this.cameras.main.centerY;
 
 		this.loading.setOrigin(0,0.5);
 
@@ -78,9 +78,30 @@ class Preloader extends Phaser.Scene {
 		this.editorPreload();
 	}
 
+	doScore(){
+		return 0;
+	}
+
 	create() {
 
-		this.scene.start("NewLevel0");		
+		switch(challengeNumber){
+			case 1:
+			var wichLevel="NewLevel0";
+			break;
+
+			case 2:
+			var wichLevel="NewLevel0A";
+			break;
+		
+			default:
+			
+			var wichLevel="NewLevel0";
+
+			break;
+		}
+	
+
+		this.scene.start(wichLevel);		
 	}
 
 	/* END-USER-CODE */

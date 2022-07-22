@@ -23,7 +23,7 @@ class BaseScene extends Phaser.Scene {
 			
 	
 
-		//console.log("level key " + this.scene.key);
+	console.log("level key " + this.scene.key);
 		activeLeveles.push(this.scene.key);
 		//console.log("active leveles " + activeLeveles);
 
@@ -726,6 +726,8 @@ class BaseScene extends Phaser.Scene {
 	doScore(){
 		
 		var score=(this.coinsCollected*this.coinsValue)-this.initialTime;
+		
+
 		if(score<=0){
 			score=0;
 		}
@@ -1281,6 +1283,10 @@ class BaseScene extends Phaser.Scene {
 	restartGame() {
 
 		if(!this.isRestartingGame){
+
+			this.game.playerData.gotCannon = false;
+			this.game.playerData.doubleJump = false;
+
 			this.gotoLevel = this.scene.key;
 			this.isRestartingGame=true;
 			this.cameras.main.fadeOut(1000);

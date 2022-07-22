@@ -1182,6 +1182,106 @@
                 "key": "new_level0"
             },
             {
+                "url": "assets/maps/new_level1.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level1"
+            },
+            {
+                "url": "assets/maps/new_level10.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level10"
+            },
+            {
+                "url": "assets/maps/new_level11.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level11"
+            },
+            {
+                "url": "assets/maps/new_level12.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level12"
+            },
+            {
+                "url": "assets/maps/new_level13.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level13"
+            },
+            {
+                "url": "assets/maps/new_level14.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level14"
+            },
+            {
+                "url": "assets/maps/new_level15.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level15"
+            },
+            {
+                "url": "assets/maps/new_level16.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level16"
+            },
+            {
+                "url": "assets/maps/new_level17.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level17"
+            },
+            {
+                "url": "assets/maps/new_level18.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level18"
+            },
+            {
+                "url": "assets/maps/new_level19.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level19"
+            },
+            {
+                "url": "assets/maps/new_level2.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level2"
+            },
+            {
+                "url": "assets/maps/new_level20.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level20"
+            },
+            {
+                "url": "assets/maps/new_level3.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level3"
+            },
+            {
+                "url": "assets/maps/new_level4.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level4"
+            },
+            {
+                "url": "assets/maps/new_level5.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level5"
+            },
+            {
+                "url": "assets/maps/new_level6.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level6"
+            },
+            {
+                "url": "assets/maps/new_level7.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level7"
+            },
+            {
+                "url": "assets/maps/new_level8.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level8"
+            },
+            {
+                "url": "assets/maps/new_level9.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level9"
+            },
+            {
                 "url": "assets/scenes/NewLevel0.js",
                 "type": "sceneFile",
                 "key": "NewLevel0"
@@ -1190,6 +1290,101 @@
                 "url": "assets/scenes/NewLevel1.js",
                 "type": "sceneFile",
                 "key": "NewLevel1"
+            },
+            {
+                "url": "assets/scenes/NewLevel10.js",
+                "type": "sceneFile",
+                "key": "NewLevel10"
+            },
+            {
+                "url": "assets/scenes/NewLevel11.js",
+                "type": "sceneFile",
+                "key": "NewLevel11"
+            },
+            {
+                "url": "assets/scenes/NewLevel12.js",
+                "type": "sceneFile",
+                "key": "NewLevel12"
+            },
+            {
+                "url": "assets/scenes/NewLevel13.js",
+                "type": "sceneFile",
+                "key": "NewLevel13"
+            },
+            {
+                "url": "assets/scenes/NewLevel14.js",
+                "type": "sceneFile",
+                "key": "NewLevel14"
+            },
+            {
+                "url": "assets/scenes/NewLevel15.js",
+                "type": "sceneFile",
+                "key": "NewLevel15"
+            },
+            {
+                "url": "assets/scenes/NewLevel16.js",
+                "type": "sceneFile",
+                "key": "NewLevel16"
+            },
+            {
+                "url": "assets/scenes/NewLevel17.js",
+                "type": "sceneFile",
+                "key": "NewLevel17"
+            },
+            {
+                "url": "assets/scenes/NewLevel18.js",
+                "type": "sceneFile",
+                "key": "NewLevel18"
+            },
+            {
+                "url": "assets/scenes/NewLevel19.js",
+                "type": "sceneFile",
+                "key": "NewLevel19"
+            },
+            {
+                "url": "assets/scenes/NewLevel2.js",
+                "type": "sceneFile",
+                "key": "NewLevel2"
+            },
+            {
+                "url": "assets/scenes/NewLevel20.js",
+                "type": "sceneFile",
+                "key": "NewLevel20"
+            },
+            {
+                "url": "assets/scenes/NewLevel3.js",
+                "type": "sceneFile",
+                "key": "NewLevel3"
+            },
+            {
+                "url": "assets/scenes/NewLevel4.js",
+                "type": "sceneFile",
+                "key": "NewLevel4"
+            },
+            {
+                "url": "assets/scenes/NewLevel5.js",
+                "type": "sceneFile",
+                "key": "NewLevel5"
+            },
+            {
+                "url": "assets/scenes/NewLevel6.js",
+                "type": "sceneFile",
+                "key": "NewLevel6"
+            },
+            {
+                "url": "assets/scenes/NewLevel7.js",
+                "type": "sceneFile",
+                "key": "NewLevel7"
+            },
+            {
+                "url": "assets/scenes/NewLevel8.js",
+                "type": "sceneFile",
+                "key": "NewLevel8"
+            },
+            {
+                "url": "assets/scenes/NewLevel9.js",
+                "type": "sceneFile",
+                "key": "NewLevel9"
             },
             {
                 "url": "assets/newPropsAnimations.json",

@@ -1076,7 +1076,9 @@ class Player extends Phaser.GameObjects.Sprite {
 					y: -100,
 					duration: 300,
 					onComplete: function(){
+					
 						Rune.gameOver();
+						
 					},
 					ease: 'Linear',
 					repeat: 0
@@ -1109,7 +1111,7 @@ class Player extends Phaser.GameObjects.Sprite {
 
 			if (this.body.onFloor() && this.wannaJump || this.wannaJump && this.wasOnPlatform) {
 
-				console.log("saltando")
+		
 				
 				const randomFx = Math.abs(Math.round(Math.random() * this.fxjumplist.length - 1));
 

@@ -17,12 +17,12 @@ class NewLevel1 extends BaseScene {
 	editorCreate() {
 
 		// mapa
-		const mapa = this.add.tilemap("new_level0");
+		const mapa = this.add.tilemap("new_level1");
 		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
-		// new_level0
-		const new_level0 = this.add.tilemap("new_level0");
-		new_level0.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
+		// new_level1
+		const new_level1 = this.add.tilemap("new_level1");
+		new_level1.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
 		// bg1Tile
 		const bg1Tile = this.add.image(0, 0, "bg1Tile");
@@ -32,98 +32,68 @@ class NewLevel1 extends BaseScene {
 		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
-		// handPointer
-		const handPointer = new HandPointer(this, 688, 426);
-		this.add.existing(handPointer);
-
 		// nocollide2_1
 		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
 
-		// powerPodium
-		this.add.image(176, 716, "PowerPodium");
-
 		// nocollide
-		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
+		mapa.createLayer("nocollide", [], 0, 0);
 
 		// layer
-		const layer = mapa.createLayer("collide", ["new_ciudad_tiles"], 0, 0);
+		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
-		const player = new Player(this, 87, 459);
+		const player = new Player(this, 113, 723);
 		this.add.existing(player);
 
-		// wallLight
-		this.add.image(157, 331, "wallLight");
+		// upperTile
+		const upperTile = new_level1.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
-		// lightBean
-		const lightBean = new LightBeam(this, 156, 331);
-		this.add.existing(lightBean);
+		// powerPodium
+		this.add.image(1524, 674, "PowerPodium");
 
-		// wallLight_1
-		this.add.image(454, 330, "wallLight");
+		// upgradeHalo
+		const upgradeHalo = new UpgradeHalo(this, 1525, 688);
+		this.add.existing(upgradeHalo);
 
-		// lightBean_1
-		const lightBean_1 = new LightBeam(this, 453, 330);
-		this.add.existing(lightBean_1);
+		// blobber
+		const blobber = new Blobber(this, 553, 687);
+		this.add.existing(blobber);
+		blobber.scaleX = 0.8472708286847896;
+		blobber.scaleY = 0.8472708286847896;
 
-		// posters
-		const posters = this.add.image(524, 395, "posters");
-		posters.scaleX = 0.6994818652849741;
-		posters.scaleY = 0.6994818652849741;
-
-		// wallLight_1_1
-		this.add.image(698, 331, "wallLight");
-
-		// lightBean_1_1
-		const lightBean_1_1 = new LightBeam(this, 697, 331);
-		this.add.existing(lightBean_1_1);
+		// heart
+		const heart = new Heart(this, 961, 593);
+		this.add.existing(heart);
 
 		// sampoShooter
-		const sampoShooter = new SampoShooter(this, 405, 440);
+		const sampoShooter = new SampoShooter(this, 891, 264);
 		this.add.existing(sampoShooter);
 
 		// sampoShooter_1
-		const sampoShooter_1 = new SampoShooter(this, 564, 119);
+		const sampoShooter_1 = new SampoShooter(this, 1289, 374);
 		this.add.existing(sampoShooter_1);
 
-		// stomperShadow
-		const stomperShadow = this.add.image(398, 165, "stomperShadow");
-		stomperShadow.scaleX = 1.986758185657027;
-		stomperShadow.scaleY = 0.4255454215441236;
+		// spikeHorizontal
+		const spikeHorizontal = new SpikeHorizontal(this, 46, 237);
+		this.add.existing(spikeHorizontal);
+		spikeHorizontal.angle = 0;
 
-		// stomper
-		const stomper = new Stomper(this, 396, -40);
-		this.add.existing(stomper);
+		// blobber_1
+		const blobber_1 = new Blobber(this, 1169, 687);
+		this.add.existing(blobber_1);
+		blobber_1.scaleX = 0.8472708286847896;
+		blobber_1.scaleY = 0.8472708286847896;
 
-		// upperTile
-		const upperTile = new_level0.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
+		// wallLight
+		this.add.image(962, 716, "wallLight");
 
-		// heart
-		const heart = new Heart(this, 181, 108);
-		this.add.existing(heart);
-
-		// catapulta
-		const catapulta = new Catapulta(this, 1295, 775);
-		this.add.existing(catapulta);
-
-		// box
-		const box = new Box(this, 643, 164);
-		this.add.existing(box);
-
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 176, 731);
-		this.add.existing(upgradeHalo);
-
-		// sideDoor
-		const sideDoor = new SideDoor(this, 329, 739);
-		this.add.existing(sideDoor);
-		sideDoor.scaleX = 0.8354946468322224;
-		sideDoor.scaleY = 0.8354946468322224;
+		// lightBean
+		this.add.image(962, 715, "lightBean");
 
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [sampoShooter, sampoShooter_1];
+		const enemies = [blobber, sampoShooter_1, sampoShooter, spikeHorizontal, blobber_1];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
@@ -142,7 +112,7 @@ class NewLevel1 extends BaseScene {
 		this.player = player;
 		this.upperTile = upperTile;
 		this.mapa = mapa;
-		this.new_level0 = new_level0;
+		this.new_level1 = new_level1;
 		this.doors = doors;
 		this.switches = switches;
 		this.enemies = enemies;
@@ -169,7 +139,7 @@ class NewLevel1 extends BaseScene {
 	doors;
 	/** @type {Array<any>} */
 	switches;
-	/** @type {SampoShooter[]} */
+	/** @type {Array<Blobber|SampoShooter|SpikeHorizontal>} */
 	enemies;
 	/** @type {Array<any>} */
 	platforms;

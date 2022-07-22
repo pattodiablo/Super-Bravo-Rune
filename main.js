@@ -253,22 +253,11 @@ window.addEventListener('load', function () {
 	}
 	
 	game.getScore=function(){
-	
-			for (const key in game.scene.keys) {
-			if (Object.hasOwnProperty.call(game.scene.keys, key)) {
-			  const element = game.scene.keys[key];
-			 
-			  if(game.scene.keys[key].scene.manager.isActive(key)){
-				var currentScene = game.scene.keys[key];
-			
-				console.log(currentScene)
-			  }
-				//var score = element.scene.doScore();
-			}
-		  
-		}
 
-	
+		
+			currentScene=game.scene.keys[activeLeveles];
+
+
 		if(typeof currentScene=="undefined"){
 			score = 0
 		}else{
@@ -289,8 +278,7 @@ window.addEventListener('load', function () {
 					score = 0
 				break;
 				default:
-					console.log("getting score")
-					console.log(currentScene)
+					
 					score = currentScene.doScore();
 				break
 			}

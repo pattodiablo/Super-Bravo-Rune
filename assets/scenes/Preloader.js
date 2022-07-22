@@ -16,7 +16,8 @@ class Preloader extends Phaser.Scene {
 	/** @returns {void} */
 	editorPreload() {
 
-		this.load.pack("asset-pack", "assets/asset-pack.json");
+	let	thispack = this.load.pack("asset-pack", "assets/asset-pack.json");
+	console.log(thispack);
 	}
 
 	/** @returns {void} */
@@ -83,16 +84,95 @@ class Preloader extends Phaser.Scene {
 	}
 
 	create() {
-
+		console.log(challengeNumber)
 		switch(challengeNumber){
 			case 1:
 			var wichLevel="NewLevel0";
 			break;
 
 			case 2:
-			var wichLevel="NewLevel0A";
+			var wichLevel="NewLevel1";
+			break;
+
+			case 3:
+			var wichLevel="NewLevel2";
+			break;
+
+			case 4:
+			var wichLevel="NewLevel3";
 			break;
 		
+			case 5:
+			var wichLevel="NewLevel4";
+			break;
+
+
+			case 6:
+			var wichLevel="NewLevel5";
+			break;
+
+
+			case 7:
+			var wichLevel="NewLevel6";
+			break;
+
+			case 8:
+			var wichLevel="NewLevel7";
+			break;
+
+			case 9:
+			var wichLevel="NewLevel8";
+			break;
+
+			case 10:
+			var wichLevel="NewLevel9";
+			break;
+
+			case 11:
+			var wichLevel="NewLevel110";
+			break;
+
+			case 12:
+			var wichLevel="NewLevel11";
+			break;
+
+			case 13:
+			var wichLevel="NewLevel12";
+			break;
+
+			case 14:
+			var wichLevel="NewLevel13";
+			break;
+
+			case 15:
+			var wichLevel="NewLevel14";
+			break;
+
+			case 16:
+			var wichLevel="NewLevel15";
+			break;
+
+			case 17:
+			var wichLevel="NewLevel16";
+			break;
+
+			case 18:
+			var wichLevel="NewLevel17";
+			break;
+
+			case 19:
+			var wichLevel="NewLevel18";
+			break;
+
+			case 20:
+			var wichLevel="NewLevel19";
+			break;
+
+
+			case 21:
+			var wichLevel="NewLevel20";
+			break;
+
 			default:
 			
 			var wichLevel="NewLevel0";
@@ -101,7 +181,8 @@ class Preloader extends Phaser.Scene {
 		}
 	
 
-		this.scene.start(wichLevel);		
+	let quePasa =	this.scene.start(wichLevel);		
+	console.log(quePasa);
 	}
 
 	/* END-USER-CODE */

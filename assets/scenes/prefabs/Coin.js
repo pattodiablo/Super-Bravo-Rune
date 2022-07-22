@@ -123,7 +123,7 @@ class Coin extends Phaser.GameObjects.Sprite {
 		this.scene.doScore();
 		this.scene.animateCoinCollectText();
 		this.scene.coins.pop();
-		console.log(this.scene.coins.length);
+
 	
 		if(this.scene.coins.length<=0){
 			this.scene.player.isWin();

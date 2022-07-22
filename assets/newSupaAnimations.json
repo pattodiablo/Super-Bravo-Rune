@@ -367,8 +367,7 @@
                 }
             ],
             "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1
+            "skipMissedFrames": true
         },
         {
             "key": "supa/Bite",
@@ -695,6 +694,188 @@
             "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "supaWin",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune",
+                    "frame": "winAnimation0028",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
         }
     ],
     "globalTimeScale": 1,

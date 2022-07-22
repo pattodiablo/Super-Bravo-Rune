@@ -20,7 +20,8 @@ class BaseScene extends Phaser.Scene {
 
 	create(){
 		
-		
+			
+	
 
 		//console.log("level key " + this.scene.key);
 		activeLeveles.push(this.scene.key);
@@ -36,14 +37,15 @@ class BaseScene extends Phaser.Scene {
 		this.emptyWallsRack = [];
 		this.acidWallsRack = [];
 		this.wasMusicLaunched = false;
-		
+		this.coinsCollected=0;
+		this.coinsValue=30;
 	
 		this.wallsID = 49; //si en el mapa dice 21 entonces aca es 22
 		this.coinsID = 93; //si en el mapa dice 21 entonces aca es 22
 		this.emptyWallsId = 47 
 
 		
-
+		this.initialTime=0;
 		this.isRestartingGame = false;
 		this.isPowerPanelEnabled=true;
 	
@@ -57,6 +59,7 @@ class BaseScene extends Phaser.Scene {
 		this.createAcidWalls();
 		this.createPlayerBullets();
 		this.initTutorials();
+	
 
 		this.mainDoorActive = true;
 		this.isfirstMainScene = true;
@@ -496,7 +499,7 @@ class BaseScene extends Phaser.Scene {
 		this.shootBtn = shootBtn;
 
 		//const biteBtn = new SupaBiteBtn(this, 50, 430); //es el icono del canon
-		const biteBtn = new SupaBiteBtn(this, 50, this.layer.height);
+		const biteBtn = new SupaBiteBtn(this,  this.cameras.main.width-60, this.layer.height);
 		this.add.existing(biteBtn);
 		this.biteBtn = biteBtn;
 		this.biteBtn.depth = 11;
@@ -531,7 +534,18 @@ class BaseScene extends Phaser.Scene {
 
 		// coinDisplay
 		const coinDisplay = this.add.sprite(40, 32, "coinDisplay");
-		
+		this.coinDisplay=coinDisplay;
+
+			// score
+			const timerText = this.add.text(this.cameras.main.width-80, 26, "", {});
+			timerText.text = "0:00";
+			timerText.setOrigin(0,0.5);
+			timerText.setStyle({"fontFamily":"Arial","fontSize":"23px","fontStyle":"bold","align":"center", });
+			new FixedToCamera(timerText);
+			timerText.emit("components-awake");
+			this.timerText=timerText;	
+			
+
 		// text
 		const coinText = this.add.text(40, 46, "", {});
 		coinText.text = "0000";
@@ -557,10 +571,11 @@ class BaseScene extends Phaser.Scene {
 
 
 		// lifepanel
-		const lifepanel = new LifePanel(this, this.cameras.main.centerX, 30);
+		const lifepanel = new LifePanel(this, 90, this.cameras.main.height-50);
 		this.add.existing(lifepanel);
 		new FixedToCamera(lifepanel);
 		this.lifepanel = lifepanel;
+		this.lifepanel.setScale(1.1)
 		lifepanel.emit("components-awake");
 		
 
@@ -617,14 +632,53 @@ class BaseScene extends Phaser.Scene {
 		this.handlePowerPanel()
 		
 	
-	
+		
 
 	}, this);
 
 	this.originalPlayerY= this.player.y;
 
+	if(this.upperTile!==undefined){
+		this.upperTile.depth=this.player.depth+1;
+		this.timerText.depth=this.upperTile.depth+1;
+		this.coinDisplay.depth=this.upperTile.depth+1;
+		this.coinText.depth=this.upperTile.depth+1;
 	}
 
+
+	}
+
+	formatTime(seconds){
+		// Minutes
+		var minutes = Math.floor(seconds/60);
+		// Seconds
+		var partInSeconds = seconds%60;
+		// Adds left zeros to seconds
+		partInSeconds = partInSeconds.toString().padStart(2,'0');
+		// Returns formated time
+		return `${minutes}:${partInSeconds}`;
+	}
+	
+
+	startTimer() {
+		//  Create our Timer
+
+		this.timerWorking = this.time.addEvent({
+			delay: 1000,                // ms
+			callback: function(){
+				this.initialTime++;
+				this.elapsedTimer = this.formatTime(this.initialTime);
+				   this.timerText.text=this.elapsedTimer;
+			},
+			//args: [],
+			callbackScope: this,
+			loop: true
+		});
+
+	
+   
+   }
+   
 
 	animateCoinCollectText(){
 
@@ -668,6 +722,15 @@ class BaseScene extends Phaser.Scene {
 		}
 		
 	}
+
+	doScore(){
+		
+		var score=(this.coinsCollected*this.coinsValue)-this.initialTime;
+		if(score<=0){
+			score=0;
+		}
+		return score;
+	}
 	createTextBox(x,y,textToDisplay){
 
 		this.textBox=createTextBox(this, x , y, {
@@ -676,7 +739,7 @@ class BaseScene extends Phaser.Scene {
 		})
 		.start(textToDisplay, 50);
 
-
+		return this.textBox;
 	}
 
 	initTutorials(){
@@ -1237,11 +1300,12 @@ class BaseScene extends Phaser.Scene {
 		
 			this.cameras.main.once('camerafadeoutcomplete', function (camera) {	
 			
-				
+					var nombreDeEstaEscena=this.scene.key;
+		
 					this.scene.remove(this.scene.keys);
-					var sceneToGo = this.scene.get("gameOverScene");
-				
-					sceneToGo.setLevel(this.gotoLevel ,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
+					var sceneToGo = this.scene.get("InterludeMap");
+					console.log(sceneToGo)
+					sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
 					sceneToGo.isMainScene = false;
 
 					
@@ -1252,7 +1316,7 @@ class BaseScene extends Phaser.Scene {
 					});
 
 					activeLeveles=[];
-					this.scene.start("gameOverScene");
+					this.scene.start("InterludeMap");
 
 
 			},this);

@@ -1,10 +1,14 @@
 var coins = 0;
 var isDebug =  false;
-var isDoubleJump = true;
+var isDoubleJump = false;
 var hasCannonPower = false;
 var renderer;
 var activeLeveles=[];
 var timesDead = 0;
+const mapIds = [1,2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19,20] // Define your fixed list of maps
+
+var challengeNumber = Rune.getChallengeNumber(); // Get today's challenge number
+
 
 function getOS() {
 
@@ -71,7 +75,20 @@ window.addEventListener('load', function () {
 			objectStoreDataRequest.onsuccess = () => {
 
 				const result = objectStoreDataRequest.result;
-				tempdata = result.data;
+				//tempdata = result.data;
+				tempdata = {
+					levelsPassed: [],
+					gotCard: false,
+					coins: coins,
+					level: "NewLevel0", 
+					life: 5,
+					maxLife:5,
+					isMusicMuted: false,
+					gotCannon: hasCannonPower,
+					doubleJump: isDoubleJump,
+					isFxMuted: false,
+					timesDead: timesDead
+				};
 				crearjuego(tempdata);
 				
 			}
@@ -196,14 +213,95 @@ window.addEventListener('load', function () {
 	game.restartGame=function(){
 
 	    
-	location.reload();
+	
+		for (const key in game.scene.keys) {
+			if (Object.hasOwnProperty.call(game.scene.keys, key)) {
+			  const element = game.scene.keys[key];
+			 
+			  if(game.scene.keys[key].scene.manager.isActive(key)){
+				var currentScene = game.scene.keys[key];
+			
+				
+			  }
+				//var score = element.scene.doScore();
+				console.log(currentScene.scene.key)
+			}
+		  
+		}
+
+		switch(currentScene.scene.key){
+			case "Boot":
+				location.reload();
+			break;
+			case "Preloader":
+				location.reload();
+			break;
+			case "DemoScene":
+				location.reload();
+			break;
+			case "undefined":
+				location.reload();
+			break;
+			default:
+				currentScene.restartGame();
+			break
+		}
+
+	
 
 
 	}
 	
 	game.getScore=function(){
 	
-		return 0;
+			for (const key in game.scene.keys) {
+			if (Object.hasOwnProperty.call(game.scene.keys, key)) {
+			  const element = game.scene.keys[key];
+			 
+			  if(game.scene.keys[key].scene.manager.isActive(key)){
+				var currentScene = game.scene.keys[key];
+			
+				console.log(currentScene)
+			  }
+				//var score = element.scene.doScore();
+			}
+		  
+		}
+
+	
+		if(typeof currentScene=="undefined"){
+			score = 0
+		}else{
+			switch(currentScene.scene.key){
+				case "Boot":
+					score = 0
+				break;
+				case "Preloader":
+					score = 0
+				break;
+				case "DemoScene":
+					score = 0
+				break;
+				case "undefined":
+					score = 0
+				break;
+				case "gameOverScene":
+					score = 0
+				break;
+				default:
+					console.log("getting score")
+					console.log(currentScene)
+					score = currentScene.doScore();
+				break
+			}
+		}
+	
+			
+		
+		
+			
+		
+		return score;
 	}
 
 	game.playerData = tempdata;
@@ -248,6 +346,10 @@ class Boot extends Phaser.Scene {
 
 				
 			
+	}
+
+	doScore(){
+		return 0;
 	}
 
 	create() {

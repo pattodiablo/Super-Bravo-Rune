@@ -55,7 +55,7 @@ class SampoShooter extends Phaser.GameObjects.Sprite {
 
 
 		this.initMovement();
-		this.createCoins();
+	//	this.createCoins();
 
 
 	}

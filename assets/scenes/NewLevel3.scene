@@ -41,40 +41,6 @@
             "height": 64
         },
         {
-            "type": "TilemapLayer",
-            "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
-            "label": "nocollide2_1",
-            "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
-            "layerName": "nocollide2",
-            "tilesets": [
-                "new_ciudad_tiles"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
-            "label": "nocollide",
-            "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
-            "layerName": "nocollide",
-            "tilesets": [
-                "new_ciudad_tiles"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
-            "label": "layer",
-            "scope": "CLASS",
-            "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
-            "layerName": "layer",
-            "tilesets": [
-                "new_ciudad_tiles"
-            ]
-        },
-        {
             "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
             "id": "d2800736-9db9-492e-85d2-5b568e6c820d",
             "unlock": [
@@ -84,16 +50,28 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 91,
+            "y": 599
         },
         {
             "type": "TilemapLayer",
-            "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
-            "label": "upperTile",
+            "id": "b9b5d5fb-a2a3-4191-bb00-2aae756c13f4",
+            "label": "nocollide",
             "components": [],
-            "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
-            "layerName": "upperTile",
+            "tilemapId": "79b2c55a-8226-461e-ac8e-ecebabdfb62c",
+            "layerName": "nocollide2",
+            "tilesets": [
+                "new_ciudad_tiles"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "32955962-0200-4250-879c-b1001bd08ff8",
+            "label": "layer",
+            "scope": "CLASS",
+            "components": [],
+            "tilemapId": "79b2c55a-8226-461e-ac8e-ecebabdfb62c",
+            "layerName": "layer",
             "tilesets": [
                 "new_ciudad_tiles"
             ]
@@ -101,21 +79,9 @@
     ],
     "plainObjects": [
         {
-            "id": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "id": "79b2c55a-8226-461e-ac8e-ecebabdfb62c",
             "type": "Tilemap",
             "label": "mapa",
-            "key": "new_level3",
-            "tilesets": [
-                {
-                    "name": "new_ciudad_tiles",
-                    "imageKey": "new_ciudad_tiles"
-                }
-            ]
-        },
-        {
-            "id": "67ecd760-fbda-4f59-bf35-c424dad395f6",
-            "type": "Tilemap",
-            "label": "new_level3",
             "key": "new_level3",
             "tilesets": [
                 {

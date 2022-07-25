@@ -20,10 +20,6 @@ class NewLevel3 extends BaseScene {
 		const mapa = this.add.tilemap("new_level3");
 		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
-		// new_level3
-		const new_level3 = this.add.tilemap("new_level3");
-		new_level3.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
-
 		// bg1Tile
 		const bg1Tile = this.add.image(0, 0, "bg1Tile");
 		bg1Tile.setOrigin(0, 0);
@@ -32,21 +28,15 @@ class NewLevel3 extends BaseScene {
 		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
-		// nocollide2_1
-		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
+		// player
+		const player = new Player(this, 91, 599);
+		this.add.existing(player);
 
 		// nocollide
-		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
+		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
 
 		// layer
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
-
-		// player
-		const player = new Player(this, 133, 448);
-		this.add.existing(player);
-
-		// upperTile
-		new_level3.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
 		// lists
 		const doors = [];
@@ -63,10 +53,9 @@ class NewLevel3 extends BaseScene {
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
-		this.layer = layer;
 		this.player = player;
+		this.layer = layer;
 		this.mapa = mapa;
-		this.new_level3 = new_level3;
 		this.doors = doors;
 		this.switches = switches;
 		this.enemies = enemies;
@@ -83,10 +72,10 @@ class NewLevel3 extends BaseScene {
 	bg1Tile;
 	/** @type {Phaser.GameObjects.TileSprite} */
 	tilespriteBG;
-	/** @type {Phaser.Tilemaps.TilemapLayer} */
-	layer;
 	/** @type {Player} */
 	player;
+	/** @type {Phaser.Tilemaps.TilemapLayer} */
+	layer;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

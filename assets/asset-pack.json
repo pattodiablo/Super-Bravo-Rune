@@ -1419,6 +1419,12 @@
                 "key": "newSupaAnimationsRune"
             },
             {
+                "atlasURL": "assets/atlas/newSupaAnimationsRune2.json",
+                "textureURL": "assets/atlas/newSupaAnimationsRune2.png",
+                "type": "atlas",
+                "key": "newSupaAnimationsRune2"
+            },
+            {
                 "url": "assets/images/arrow-down-left.png",
                 "type": "image",
                 "key": "nextPage"
@@ -1930,6 +1936,13 @@
                 ],
                 "type": "scripts",
                 "key": "SupaBiteBtn"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/SupaBomb.js"
+                ],
+                "type": "scripts",
+                "key": "SupaBomb"
             },
             {
                 "url": "assets/images/supaEntrance.png",

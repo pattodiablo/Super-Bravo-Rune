@@ -56,9 +56,12 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 		this.isBoss=true;
 		this.stopSound=false;
 
+		if(this.ThingToDrop=="Coin"){
+			this.scene.coinText.text++;
+		}
 
 
-		this.createCoins();
+		//this.createCoins();
 		//this.entryAnimation();
 
 		this.body.enable=false;
@@ -66,6 +69,16 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 
 		//this.entryAnimation();
 
+
+		this.getDirectiontimer = this.scene.time.addEvent({
+			delay: 1500,                // ms
+			callback: function(){
+				this.getDirectionToPlayer();
+			},
+			//args: [],
+			callbackScope: this,
+			loop: true
+		});
 	}
 
 	entryAnimation(){
@@ -182,7 +195,12 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 			}else{
 						this.body.enable=false;
 						// explotion
+						this.getDirectiontimer.remove();
 
+						if(typeof this.shootsDelay!==undefined){
+							this.shootsDelay.remove();
+						}
+					
 						var explotefull = this.scene.time.addEvent({
 							delay: 500,                // ms
 							callback: function(){
@@ -227,6 +245,12 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 									case "Heart":
 										const heart = new Heart(this.scene, this.x, this.y);
 										this.scene.add.existing(heart);
+									break;
+
+
+									case "Coin":
+										const coin = new Coin(this.scene, this.x, this.y);
+										this.scene.add.existing(coin);
 									break;
 
 									case "Platform1":
@@ -304,7 +328,7 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 						this.isWalking =  true;
 						this.isdamaged = false;
 
-						this.boosVelo=30;
+						this.boosVelo=40;
 								
 						this.scene.time.addEvent({
 							delay: 2000,                // ms
@@ -392,10 +416,7 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 			loop: false
 		});
 
-	if(this.timesCrushed <2){
-
-
-	}
+	
 
 
 	}
@@ -411,7 +432,7 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 	shoot(){
 
 		if(!this.isDead){
-				var shootsDelay = this.scene.time.addEvent({
+				this.shootsDelay = this.scene.time.addEvent({
 						delay: 1500,                // ms
 						callback: function(){
 					// guardianShot_instancia_10000
@@ -430,9 +451,10 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 									this.scene.add.existing(guardianShot);
 								}
 						
-								this.bossguard_shot011Available = this.scene.sound.get("bossguard_shot011Available"); 
-								if(this.bossguard_shot011Available){
-									this.scene.bossguard_shot011Available.play();
+								this.bossguard_shot01 = this.scene.sound.get("bossguard_shot01"); 
+								
+								if(this.bossguard_shot01){
+									this.scene.bossguard_shot01.play();
 								}
 
 
@@ -480,7 +502,7 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 
 
 	getDirectionToPlayer(){
-		if(this.x>this.scene.player.x){
+		if(this.x>=this.scene.player.x){
 
 			this.flipX=false;
 			this.direction=-1;
@@ -493,7 +515,7 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 
 		
 
-		this.getDirectionToPlayer();
+		
 		this.checkAnimStatus();
 
 		if(this.active){

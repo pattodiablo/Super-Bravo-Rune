@@ -175,7 +175,7 @@ window.addEventListener('load', function () {
 		},
 		fps: {
 			target: 60,
-			min: 30,
+			min: 60,
 			forceSetTimeOut: false
 		},
 		render: {

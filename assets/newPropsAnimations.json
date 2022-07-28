@@ -1003,6 +1003,27 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "yoyo": true
+        },
+        {
+            "key": "SupaBombOn",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "SupaBomb instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "SupaBomb instancia 10001",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 3,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

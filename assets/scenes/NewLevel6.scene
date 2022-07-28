@@ -217,34 +217,195 @@
                 "key": "misile",
                 "frame": "alert instance 10000"
             },
-            "x": 2522,
-            "y": 671
+            "x": 2508,
+            "y": 643
         },
         {
             "prefabId": "0b6a9364-c0e7-4115-8dc4-c0a13d50343a",
             "id": "1a97de4b-7ca3-4114-9e5d-2f40274d8848",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "tollCost"
             ],
             "label": "toll",
+            "tollCost": 20,
             "components": [],
             "x": 1217,
             "y": 398
         },
         {
-            "prefabId": "3349c326-9cef-4f4f-80a3-6dce457a3cfe",
-            "id": "6b6c71ef-e695-4b3f-9300-3fac832d1dec",
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "ac9a8b94-d727-4ea0-95aa-5ca80957d6cc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb",
+            "components": [],
+            "x": 765,
+            "y": 678
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "e6d2fc5e-9e36-42c5-a6b0-0b183a7490fc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
+            "components": [],
+            "x": 966,
+            "y": 379
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "47fc647f-7b52-44d6-94c8-ba4a7c15b825",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1_1",
+            "components": [],
+            "x": 1955,
+            "y": 242
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "61b3466a-0ff1-4e50-a10a-687913f7ac4d",
             "unlock": [
                 "x",
                 "y",
+                "bulletEnable",
                 "travelDistance"
             ],
-            "label": "mechaPirana",
-            "travelDistance": 200,
+            "label": "sampoShooter",
+            "bulletEnable": false,
+            "travelDistance": 100,
             "components": [],
-            "x": 740,
-            "y": 692
+            "x": 563,
+            "y": 659
+        },
+        {
+            "prefabId": "7013c41a-a194-4bae-aca0-15e7eb0f552b",
+            "id": "afdb0345-636c-41d9-95a2-2fc066fca5fe",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "proxySpyke",
+            "components": [],
+            "x": 768,
+            "y": 204
+        },
+        {
+            "prefabId": "7013c41a-a194-4bae-aca0-15e7eb0f552b",
+            "id": "c376afd8-ac17-4558-b424-2206197a2346",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "proxySpyke_1_1",
+            "components": [],
+            "x": 399,
+            "y": 621
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "e7fa5950-835e-48ef-b99c-b14b0bd187e8",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1_1_1",
+            "components": [],
+            "x": 1788,
+            "y": 726
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "b6c1a0c0-4845-46ff-9284-c717fb06c38a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1",
+            "components": [],
+            "x": 1041,
+            "y": 695
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "376c3af0-634e-4545-a0da-f68b9c85fc1a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1_1",
+            "components": [],
+            "x": 1938,
+            "y": 652
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "ba03d851-34ea-45ca-8103-2c7d71a0200c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone",
+            "components": [],
+            "x": 584,
+            "y": 217
+        },
+        {
+            "prefabId": "4e7d1116-2b35-48d0-9c9b-266277a60e96",
+            "id": "d2af547c-aa2a-462d-9195-30b14c527e16",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "activateBoss",
+                "isActive",
+                "alpha"
+            ],
+            "label": "activeZoneBoss",
+            "isActive": true,
+            "activateBoss": true,
+            "components": [],
+            "x": 2858,
+            "y": 541,
+            "scaleX": 9.656250296739685,
+            "scaleY": 6.064623131946276,
+            "alpha": 0
+        },
+        {
+            "prefabId": "c812057b-6b17-4fd2-9f6d-b8c03b50c9dc",
+            "id": "b7b09dc9-d3ac-43d3-8015-14a1f6c94ed0",
+            "unlock": [
+                "x",
+                "y",
+                "ThingToDrop"
+            ],
+            "label": "guardBoss",
+            "scope": "CLASS",
+            "ThingToDrop": "Coin",
+            "components": [],
+            "x": 3059,
+            "y": 657
+        },
+        {
+            "type": "Image",
+            "id": "ed91eceb-f8e1-4918-b6c2-4f286823f62d",
+            "label": "alert_instance_10000_1_1_1_1_1_1",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 3048,
+            "y": 552
         }
     ],
     "plainObjects": [
@@ -295,7 +456,13 @@
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
             "label": "enemies",
             "objectIds": [
-                "6b6c71ef-e695-4b3f-9300-3fac832d1dec"
+                "47fc647f-7b52-44d6-94c8-ba4a7c15b825",
+                "e6d2fc5e-9e36-42c5-a6b0-0b183a7490fc",
+                "ac9a8b94-d727-4ea0-95aa-5ca80957d6cc",
+                "61b3466a-0ff1-4e50-a10a-687913f7ac4d",
+                "376c3af0-634e-4545-a0da-f68b9c85fc1a",
+                "b6c1a0c0-4845-46ff-9284-c717fb06c38a",
+                "b7b09dc9-d3ac-43d3-8015-14a1f6c94ed0"
             ]
         },
         {

@@ -262,7 +262,7 @@ class Player extends Phaser.GameObjects.Sprite {
 			this.body.enable=false;
 
 		
-		this.textBox=this.scene.createTextBox(this.x,this.y-50,"You can now double jump");
+		this.textBox=this.scene.createTextBox(this.x,this.y-50,"Double jump");
 
 			var reloadTimer = this.scene.time.addEvent({
 				delay: 3000,                // ms
@@ -281,7 +281,7 @@ class Player extends Phaser.GameObjects.Sprite {
 		if(powerName=="cannonStrike"){
 			this.body.enable=false;
 			
-			this.textBox=this.scene.createTextBox(this.x-80,this.y-150,"Cannon Strike activated");
+			this.textBox=this.scene.createTextBox(this.x-80,this.y-150,"Cannon Strike");
 
 			var reloadTimer = this.scene.time.addEvent({
 				delay: 3000,                // ms

@@ -30,6 +30,7 @@ class GuardianShot extends Phaser.GameObjects.Sprite {
 		this.visible = true;
 		this.direction=0;
 		this.isBossShot = true;
+		this.depth=this.scene.player.depth+1;
 
 		this.initColliders();
 
@@ -81,7 +82,7 @@ class GuardianShot extends Phaser.GameObjects.Sprite {
 				this.destroy();
 				
 			}
-			if(this.x>2000){
+			if(this.x>5000){
 
 				this.destroy();
 				

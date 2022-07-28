@@ -3,7 +3,7 @@
 
 /* START OF COMPILED CODE */
 
-class ActiveZoneBoss extends Phaser.GameObjects.Sprite {
+	class ActiveZoneBoss extends Phaser.GameObjects.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 0, y ?? 0, texture || "emptyWall", frame);

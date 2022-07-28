@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg2TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -66,6 +66,17 @@
         },
         {
             "type": "TilemapLayer",
+            "id": "a157ede7-e9d1-4e7b-bf77-e68a7372bb7b",
+            "label": "nocollide_1",
+            "components": [],
+            "tilemapId": "79b2c55a-8226-461e-ac8e-ecebabdfb62c",
+            "layerName": "nocollide",
+            "tilesets": [
+                "new_ciudad_tiles"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
             "id": "32955962-0200-4250-879c-b1001bd08ff8",
             "label": "layer",
             "scope": "CLASS",
@@ -75,6 +86,89 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "b772f3cd-be85-4685-b964-8294fd3e3ab5",
+            "id": "fdaf111c-12ca-45cb-8aaf-795bfd25e42a",
+            "unlock": [
+                "x",
+                "y",
+                "power"
+            ],
+            "label": "catapulta",
+            "power": 700,
+            "components": [],
+            "x": 287,
+            "y": 436
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "129c36fc-c61c-442e-bc21-d1983de92ddc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 293,
+            "y": 606
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "458ec213-da32-4b79-8bf8-b1cab047de5d",
+            "label": "upperTile",
+            "scope": "CLASS",
+            "components": [],
+            "tilemapId": "b8564cdd-58f0-460f-8bf5-51cf64b9eaca",
+            "layerName": "upperTile",
+            "tilesets": [
+                "new_ciudad_tiles"
+            ]
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "b93c9461-6c46-4bce-bf35-0645a81b83bb",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter",
+            "components": [],
+            "x": 430,
+            "y": 87
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "cc09df9d-77b2-4c5a-9570-59ec1fb50d59",
+            "unlock": [
+                "x",
+                "y",
+                "RevivingPodID",
+                "EnemyID"
+            ],
+            "label": "sampoShooter_1",
+            "RevivingPodID": "pod1",
+            "EnemyID": 1,
+            "components": [],
+            "x": 1037,
+            "y": 648
+        },
+        {
+            "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
+            "id": "9f0ed3bb-78ef-4567-b965-6afc3bb8c473",
+            "unlock": [
+                "x",
+                "y",
+                "creationTime",
+                "enemyID"
+            ],
+            "label": "enemyCreator",
+            "creationTime": 3000,
+            "enemyID": "1",
+            "components": [],
+            "x": 1167,
+            "y": 538,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [
@@ -82,6 +176,18 @@
             "id": "79b2c55a-8226-461e-ac8e-ecebabdfb62c",
             "type": "Tilemap",
             "label": "mapa",
+            "key": "new_level3",
+            "tilesets": [
+                {
+                    "name": "new_ciudad_tiles",
+                    "imageKey": "new_ciudad_tiles"
+                }
+            ]
+        },
+        {
+            "id": "b8564cdd-58f0-460f-8bf5-51cf64b9eaca",
+            "type": "Tilemap",
+            "label": "new_level3",
             "key": "new_level3",
             "tilesets": [
                 {
@@ -111,7 +217,11 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "b93c9461-6c46-4bce-bf35-0645a81b83bb",
+                "cc09df9d-77b2-4c5a-9570-59ec1fb50d59"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",
@@ -127,7 +237,10 @@
         },
         {
             "id": "c178e26c-494b-4400-b756-424719a97c29",
-            "label": "revivingPods"
+            "label": "revivingPods",
+            "objectIds": [
+                "9f0ed3bb-78ef-4567-b965-6afc3bb8c473"
+            ]
         },
         {
             "id": "31eff47d-130c-4018-bf6a-df9ab7135d98",

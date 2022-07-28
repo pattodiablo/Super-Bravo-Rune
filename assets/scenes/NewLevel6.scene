@@ -84,19 +84,167 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 144,
+            "y": 707
         },
         {
             "type": "TilemapLayer",
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
-            "label": "upperTile_1",
+            "label": "upperTile",
+            "scope": "CLASS",
             "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "b772f3cd-be85-4685-b964-8294fd3e3ab5",
+            "id": "b6100c12-b34e-4495-bc4c-600491a4df15",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "catapulta",
+            "components": [],
+            "x": 79,
+            "y": 495
+        },
+        {
+            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
+            "id": "83f77d69-a21a-4477-a7a7-08455d73802e",
+            "unlock": [
+                "x",
+                "y",
+                "isDoubleJump"
+            ],
+            "label": "upgradeHalo",
+            "isDoubleJump": true,
+            "components": [],
+            "x": 672,
+            "y": 241
+        },
+        {
+            "type": "Image",
+            "id": "e2e180e1-fab8-4d90-9cb0-8ca24c83261b",
+            "label": "powerPodium",
+            "components": [],
+            "texture": {
+                "key": "PowerPodium"
+            },
+            "x": 672,
+            "y": 225
+        },
+        {
+            "prefabId": "132851fc-10a4-452c-a832-422ff1f6d7b1",
+            "id": "f2b8fbd9-e680-4088-80a1-a9371cde11c6",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sideDoorLocked",
+            "components": [],
+            "x": 1473,
+            "y": 109
+        },
+        {
+            "type": "Image",
+            "id": "0d7b55fa-1a32-41cc-a2a4-1c3289249b70",
+            "label": "alert_instance_10000",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 1114,
+            "y": 676
+        },
+        {
+            "type": "Image",
+            "id": "c94f3e41-96a2-48b6-8dc2-e2aece05b8c1",
+            "label": "alert_instance_10000_1",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 1898,
+            "y": 672
+        },
+        {
+            "type": "Image",
+            "id": "3a048368-0119-46de-a01a-dea9a1b360d3",
+            "label": "alert_instance_10000_1_1",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 1716,
+            "y": 672
+        },
+        {
+            "type": "Image",
+            "id": "dc0f697b-89ac-4f51-9b83-87d8412fd56a",
+            "label": "alert_instance_10000_1_1_1",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 1295,
+            "y": 667
+        },
+        {
+            "type": "Image",
+            "id": "1f58089f-0166-40bf-8c12-1ca2c7d1c0b6",
+            "label": "alert_instance_10000_1_1_1_1",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 2283,
+            "y": 671
+        },
+        {
+            "type": "Image",
+            "id": "4f33542f-09d2-4d4e-ab67-ec4f430e89e0",
+            "label": "alert_instance_10000_1_1_1_1_1",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 2522,
+            "y": 671
+        },
+        {
+            "prefabId": "0b6a9364-c0e7-4115-8dc4-c0a13d50343a",
+            "id": "1a97de4b-7ca3-4114-9e5d-2f40274d8848",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "toll",
+            "components": [],
+            "x": 1217,
+            "y": 398
+        },
+        {
+            "prefabId": "3349c326-9cef-4f4f-80a3-6dce457a3cfe",
+            "id": "6b6c71ef-e695-4b3f-9300-3fac832d1dec",
+            "unlock": [
+                "x",
+                "y",
+                "travelDistance"
+            ],
+            "label": "mechaPirana",
+            "travelDistance": 200,
+            "components": [],
+            "x": 740,
+            "y": 692
         }
     ],
     "plainObjects": [
@@ -145,7 +293,10 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "6b6c71ef-e695-4b3f-9300-3fac832d1dec"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",

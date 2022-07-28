@@ -61,7 +61,7 @@ class EnemyCreator extends Phaser.GameObjects.Container {
 
 							enemy.visible=true;
 							enemy.body.enable = true;
-							enemy.createCoins();
+							//enemy.createCoins();
 							enemy.initMovement();
 							this.enemyCreator.playReverse("enemyBorn",true);
 

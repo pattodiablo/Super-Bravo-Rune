@@ -4,30 +4,30 @@
 /* START OF COMPILED CODE */
 
 class Toll extends Phaser.GameObjects.Sprite {
-	
+
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x, y, texture || "propsNew2", frame !== undefined && frame !== null ? frame : "Symbol 33 instance 10006");
-		
+		super(scene, x ?? 0, y ?? 0, texture || "propsNew2", frame ?? "Symbol 33 instance 10006");
+
 		// this (components)
 		new Physics(this);
 		const thisPhysicsBody = new PhysicsBody(this);
 		thisPhysicsBody.bodyY = 10;
 		thisPhysicsBody.bodyHeight = 20;
 		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "TollIdle";
-		
+		thisStartAnimation.animationKey = "tollIdle2";
+
 		/* START-USER-CTR-CODE */
 		this.createEvent =	this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.create, this);
 		this.scene.events.on("update", () => this.update());
-	
+
 		/* END-USER-CTR-CODE */
 	}
-	
+
 	/** @type {number} */
 	tollCost = 200;
 	/** @type {string} */
 	LockId = "1";
-	
+
 	/* START-USER-CODE */
 
 	create(){
@@ -42,14 +42,14 @@ class Toll extends Phaser.GameObjects.Sprite {
 		this.isLevel3 =  false;
 		this.isLevel4 =  false;
 		this.isLevel5 =  false;
-		
-		//FX
-		
 
-		
+		//FX
+
+
+
 	}
 
-	
+
 	createCoins(){
 		this.enemyCoins = [];
 
@@ -75,7 +75,7 @@ class Toll extends Phaser.GameObjects.Sprite {
 				coin.visible = true;
 				coin.body.velocity.y=-500;
 				coin.body.velocity.x=Math.random()*300;
-			
+
 			});
 
 			this.hasCoins = false;
@@ -90,7 +90,7 @@ class Toll extends Phaser.GameObjects.Sprite {
 	}
 
 	checkAndOpen(player,toll){
-		
+
 		if(player.isDropping && !toll.islocked){
 			this.scene.cameras.main.flash();
 			var currentMoney =  player.scene.game.playerData.coins;
@@ -98,24 +98,24 @@ class Toll extends Phaser.GameObjects.Sprite {
 
 				toll.isLevel5 = true;
 				this.scene.envi_sideswitch_01.play();
-			
+
 				toll.dropcoins();
 
-				toll.scene.game.playerData.coins -= toll.tollCost;
-				
-			
+				//toll.scene.game.playerData.coins -= toll.tollCost;
+
+				toll.body.enable=false;
 				toll.islocked= true;
-				toll.scene.coinText.text = toll.scene.game.playerData.coins;
-				
+				//toll.scene.coinText.text = toll.scene.game.playerData.coins;
+
 				toll.scene.sideDoors.forEach(door => {
-				
+
 					if(door.LockedBy == toll.LockId){
-					
+
 						door.isLocked = false;
 						door.setTint("0xffffff");
 
 					}
-				
+
 				});
 
 			}else{
@@ -126,41 +126,53 @@ class Toll extends Phaser.GameObjects.Sprite {
 
 					//console.log("no tengo plata solo tengo " + currentMoney + "y eso cuesta " + toll.tollCost )
 					var diffToll = toll.tollCost - currentMoney;
-					this.scene.createTextBox(this.x-40,this.y-100, "still "+diffToll+" rings more to go");
+					this.textBox=this.scene.createTextBox(this.x-40,this.y-100, diffToll+" rings to go");
+
+					var reloadTimer = this.scene.time.addEvent({
+						delay: 3000,                // ms
+						callback: function(){
+
+							this.textBox.destroy();
+
+						},
+						//args: [],
+						callbackScope: this,
+						loop: false
+					});
 
 				if(currentMoney<=valorCadaBarra){
-				
+
 					toll.isLevel1 = true;
-					
-		
+
+
 				}else if(currentMoney<=valorCadaBarra*2){
-				
+
 					toll.isLevel2 = true;
-					
+
 
 				}else if(currentMoney<=valorCadaBarra*3){
-				
+
 					toll.isLevel3 = true;
-					
 
-				
+
+
 				}else if(currentMoney>=valorCadaBarra*4){
-			
-					toll.isLevel4 = true;
-					
-			
-				}
-			
 
-			
-				
-				
+					toll.isLevel4 = true;
+
+
+				}
+
+
+
+
+
 
 			}
 
-		
-			
-		
+
+
+
 		}
 	}
 
@@ -172,22 +184,22 @@ class Toll extends Phaser.GameObjects.Sprite {
 
 			this.isLevel1 = false;
 			this.scene.envi_sideswitch_tier01.play();
-	
+
 		}
 
 		if(this.isLevel2){
 
 			this.play("TollLevel2", true);
-		
+
 			this.isLevel2 = false;
 			this.scene.envi_sideswitch_tier02.play();
-	
+
 		}
 
 		if(this.isLevel3){
 
 			this.play("TollLevel3", true);
-		
+
 			this.isLevel3 = false;
 			this.scene.envi_sideswitch_tier03.play();
 
@@ -196,7 +208,7 @@ class Toll extends Phaser.GameObjects.Sprite {
 		if(this.isLevel4){
 
 			this.play("TollLevel4", true);
-	
+
 			this.isLevel4 = false;
 			this.scene.envi_sideswitch_tier04.play();
 
@@ -204,7 +216,7 @@ class Toll extends Phaser.GameObjects.Sprite {
 		}
 
 		if(this.isLevel5){
-	
+
 			this.play("TollLevel5", true);
 			this.isLevel5=false;
 		}

@@ -1335,7 +1335,8 @@ class BaseScene extends Phaser.Scene {
 	controlBG(){
 	
 		var yplayerVariation = 30/this.player.y;
-		this.tilespriteBG.y=this.originalPlayerY+yplayerVariation;
+		this.tilespriteBG.height=960;
+		this.tilespriteBG.y=this.cameras.main.height+this.player.y/12;
 	}
 	update(){
 	

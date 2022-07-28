@@ -269,7 +269,7 @@ class Player extends Phaser.GameObjects.Sprite {
 				callback: function(){
 					this.body.enable=true;
 					this.textBox.destroy();
-					console.log(this.textBox)
+				
 				},
 				//args: [],
 				callbackScope: this,
@@ -281,13 +281,13 @@ class Player extends Phaser.GameObjects.Sprite {
 		if(powerName=="cannonStrike"){
 			this.body.enable=false;
 			
-			this.scene.createTextBox(this.x-80,this.y-150,"Cannon Strike activated");
+			this.textBox=this.scene.createTextBox(this.x-80,this.y-150,"Cannon Strike activated");
 
 			var reloadTimer = this.scene.time.addEvent({
 				delay: 3000,                // ms
 				callback: function(){
 					this.body.enable=true;
-
+					this.textBox.destroy();
 				},
 				//args: [],
 				callbackScope: this,

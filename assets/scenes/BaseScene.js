@@ -1291,7 +1291,7 @@ class BaseScene extends Phaser.Scene {
 			this.isRestartingGame=true;
 			this.cameras.main.fadeOut(1000);
 
-			this.player.body.enable = false;
+		//	this.player.body.enable = false;
 
 			this.game.sound.stopAll();
 			this.fxcontainer.forEach(fx => {

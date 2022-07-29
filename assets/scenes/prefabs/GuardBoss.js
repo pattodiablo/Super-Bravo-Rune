@@ -57,6 +57,7 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 		this.stopSound=false;
 
 		if(this.ThingToDrop=="Coin"){
+			this.scene.coins.push("boosCoin");
 			this.scene.coinText.text++;
 		}
 

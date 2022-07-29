@@ -224,7 +224,7 @@ window.addEventListener('load', function () {
 				
 			  }
 				//var score = element.scene.doScore();
-				console.log(currentScene.scene.key)
+				//console.log(currentScene.scene.key)
 			}
 		  
 		}

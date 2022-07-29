@@ -82,6 +82,11 @@
                 "key": "bg2TileBG"
             },
             {
+                "url": "assets/images/bg3TileBG.png",
+                "type": "image",
+                "key": "bg3TileBG"
+            },
+            {
                 "url": [
                     "assets/scenes/prefabs/BiteBtn.js"
                 ],

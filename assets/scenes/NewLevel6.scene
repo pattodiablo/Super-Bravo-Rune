@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg3TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -339,12 +339,14 @@
             "id": "376c3af0-634e-4545-a0da-f68b9c85fc1a",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "travelDistance"
             ],
             "label": "sampoShooter_1_1",
+            "travelDistance": 120,
             "components": [],
-            "x": 1938,
-            "y": 652
+            "x": 1982,
+            "y": 705
         },
         {
             "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
@@ -406,6 +408,18 @@
             },
             "x": 3048,
             "y": 552
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "73b3c7b3-44da-48d5-a7ce-ba69991beb52",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone_1",
+            "components": [],
+            "x": 3063,
+            "y": 55
         }
     ],
     "plainObjects": [

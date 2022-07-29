@@ -25,11 +25,11 @@ class NewLevel6 extends BaseScene {
 		new_level6.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
 		// bg1Tile
-		const bg1Tile = this.add.image(0, 0, "bg1Tile");
+		const bg1Tile = this.add.image(0, 0, "bg2Tile");
 		bg1Tile.setOrigin(0, 0);
 
 		// tilespriteBG
-		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
+		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg3TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
 		// nocollide2_1
@@ -46,7 +46,7 @@ class NewLevel6 extends BaseScene {
 		this.add.existing(player);
 
 		// upperTile
-		const upperTile = new_level6.createLayer("upperTile", [], 0, 0);
+		const upperTile = new_level6.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
 		// catapulta
 		const catapulta = new Catapulta(this, 79, 495);
@@ -118,7 +118,7 @@ class NewLevel6 extends BaseScene {
 		this.add.existing(sampoShooter_1);
 
 		// sampoShooter_1_1
-		const sampoShooter_1_1 = new SampoShooter(this, 1938, 652);
+		const sampoShooter_1_1 = new SampoShooter(this, 1982, 705);
 		this.add.existing(sampoShooter_1_1);
 
 		// drone
@@ -138,6 +138,10 @@ class NewLevel6 extends BaseScene {
 
 		// alert_instance_10000_1_1_1_1_1_1
 		this.add.image(3048, 552, "misile", "alert instance 10000");
+
+		// drone_1
+		const drone_1 = new Drone(this, 3063, 55);
+		this.add.existing(drone_1);
 
 		// lists
 		const doors = [];
@@ -161,6 +165,9 @@ class NewLevel6 extends BaseScene {
 		// sampoShooter (prefab fields)
 		sampoShooter.bulletEnable = false;
 		sampoShooter.travelDistance = 100;
+
+		// sampoShooter_1_1 (prefab fields)
+		sampoShooter_1_1.travelDistance = 120;
 
 		// activeZoneBoss (prefab fields)
 		activeZoneBoss.isActive = true;

@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 102,
+            "y": 613
         },
         {
             "type": "TilemapLayer",
@@ -97,6 +97,227 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "b772f3cd-be85-4685-b964-8294fd3e3ab5",
+            "id": "fc20d673-b1d1-4432-a2dd-eaae176a1d35",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "catapulta",
+            "components": [],
+            "x": 101,
+            "y": 645
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "9d075830-daad-493b-bbc3-0ab279752266",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone",
+            "components": [],
+            "x": 572,
+            "y": 153
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "36c595ed-8f8e-4e78-acc3-abfbdd4b30b4",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone_1",
+            "components": [],
+            "x": 323,
+            "y": 150
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "7c0d5fad-6856-45c0-a678-66b55f247845",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter",
+            "components": [],
+            "x": 652,
+            "y": 297
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "8934df3b-1e9a-448b-b39c-e7114ba0b351",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1",
+            "components": [],
+            "x": 1305,
+            "y": 216
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "fe0e5a90-1b84-43f7-b995-4587d2afac7f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb",
+            "components": [],
+            "x": 871,
+            "y": 630
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "0832cb16-f1f2-452e-b308-87cd23b8c203",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
+            "components": [],
+            "x": 1333,
+            "y": 626
+        },
+        {
+            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
+            "id": "309f4fa7-b5a3-446a-a205-2fd49b407458",
+            "unlock": [
+                "x",
+                "y",
+                "isDoubleJump"
+            ],
+            "label": "upgradeHalo",
+            "isDoubleJump": true,
+            "components": [],
+            "x": 444,
+            "y": 241
+        },
+        {
+            "type": "Image",
+            "id": "f66894e8-fd02-4fba-bc8a-afed7fdddab9",
+            "label": "powerPodium",
+            "components": [],
+            "texture": {
+                "key": "PowerPodium"
+            },
+            "x": 444,
+            "y": 225
+        },
+        {
+            "prefabId": "8da9c9d9-f1a7-4a14-8de4-671c7938637c",
+            "id": "97b3fbf1-db78-4de8-aaaa-9e4947bbb8b8",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "isLocked"
+            ],
+            "label": "sideDoor",
+            "isLocked": true,
+            "components": [],
+            "x": 788,
+            "y": 208,
+            "scaleX": 0.5910282977920605,
+            "scaleY": 0.5910282977920605
+        },
+        {
+            "prefabId": "8da9c9d9-f1a7-4a14-8de4-671c7938637c",
+            "id": "5d0d322b-8f7f-46d1-a762-790ddb16aead",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "sideDoor_1",
+            "components": [],
+            "x": 1004,
+            "y": 210,
+            "scaleX": 0.5910282977920605,
+            "scaleY": 0.5910282977920605
+        },
+        {
+            "prefabId": "7013c41a-a194-4bae-aca0-15e7eb0f552b",
+            "id": "cb3c7b0a-cd20-4a0d-aaf3-a8edadd5ac75",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "proxySpyke",
+            "components": [],
+            "x": 1179,
+            "y": 310
+        },
+        {
+            "prefabId": "7013c41a-a194-4bae-aca0-15e7eb0f552b",
+            "id": "2bbed085-89a4-4f3a-97f2-c61c91c6b8be",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "proxySpyke_1",
+            "components": [],
+            "x": 1308,
+            "y": 310
+        },
+        {
+            "prefabId": "7013c41a-a194-4bae-aca0-15e7eb0f552b",
+            "id": "8528e67a-d299-4e24-8a10-8f550dab8a07",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "proxySpyke_2",
+            "components": [],
+            "x": 1418,
+            "y": 310
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "c6b4bfc0-2f57-4260-8685-283ad3d086eb",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile",
+            "components": [],
+            "x": 1673,
+            "y": 60
+        },
+        {
+            "prefabId": "132851fc-10a4-452c-a832-422ff1f6d7b1",
+            "id": "49bb2df0-e751-4672-852d-b18e142956e1",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "sideDoorLocked",
+            "components": [],
+            "x": 700,
+            "y": 590,
+            "scaleX": 0.9292104734495517,
+            "scaleY": 0.9292104734495517
+        },
+        {
+            "prefabId": "0b6a9364-c0e7-4115-8dc4-c0a13d50343a",
+            "id": "6706c721-c7fb-4502-908c-ba83ba880f94",
+            "unlock": [
+                "x",
+                "y",
+                "tollCost"
+            ],
+            "label": "toll",
+            "tollCost": 90,
+            "components": [],
+            "x": 751,
+            "y": 463
         }
     ],
     "plainObjects": [
@@ -145,7 +366,15 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "7c0d5fad-6856-45c0-a678-66b55f247845",
+                "8934df3b-1e9a-448b-b39c-e7114ba0b351",
+                "8528e67a-d299-4e24-8a10-8f550dab8a07",
+                "2bbed085-89a4-4f3a-97f2-c61c91c6b8be",
+                "cb3c7b0a-cd20-4a0d-aaf3-a8edadd5ac75",
+                "c6b4bfc0-2f57-4260-8685-283ad3d086eb"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",

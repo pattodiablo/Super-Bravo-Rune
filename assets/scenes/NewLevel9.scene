@@ -115,6 +115,18 @@
             "scaleX": 0.3910270182834082,
             "scaleY": 0.3910270182834082,
             "angle": -90
+        },
+        {
+            "type": "Image",
+            "id": "c21da079-f0c7-40aa-ba4d-f842f3261dd9",
+            "label": "squareDoor_instancia_10000",
+            "components": [],
+            "texture": {
+                "key": "newSupaAnimationsRune2",
+                "frame": "squareDoor instancia 10000"
+            },
+            "x": 71,
+            "y": 121
         }
     ],
     "plainObjects": [

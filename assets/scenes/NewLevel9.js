@@ -55,6 +55,9 @@ class NewLevel9 extends BaseScene {
 		sideDoorLocked.scaleY = 0.3910270182834082;
 		sideDoorLocked.angle = -90;
 
+		// squareDoor_instancia_10000
+		this.add.image(71, 121, "newSupaAnimationsRune2", "squareDoor instancia 10000");
+
 		// lists
 		const doors = [];
 		const switches = [];

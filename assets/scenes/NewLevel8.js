@@ -42,7 +42,7 @@ class NewLevel8 extends BaseScene {
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
-		const player = new Player(this, 102, 613);
+		const player = new Player(this, 103, 596);
 		this.add.existing(player);
 
 		// upperTile_1
@@ -121,10 +121,33 @@ class NewLevel8 extends BaseScene {
 		const toll = new Toll(this, 751, 463);
 		this.add.existing(toll);
 
+		// guardBoss
+		const guardBoss = new GuardBoss(this, 447, 613);
+		this.add.existing(guardBoss);
+
+		// activeZoneBoss
+		const activeZoneBoss = new ActiveZoneBoss(this, 572, 358);
+		this.add.existing(activeZoneBoss);
+		activeZoneBoss.scaleX = 2.8993109753035498;
+		activeZoneBoss.scaleY = 9.616341163293704;
+		activeZoneBoss.alpha = 0;
+
+		// heart
+		const heart = new Heart(this, 1175, 207);
+		this.add.existing(heart);
+
+		// heart_1
+		const heart_1 = new Heart(this, 1457, 68);
+		this.add.existing(heart_1);
+
+		// heart_2
+		const heart_2 = new Heart(this, 839, 804);
+		this.add.existing(heart_2);
+
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [sampoShooter, sampoShooter_1, proxySpyke_2, proxySpyke_1, proxySpyke, misile];
+		const enemies = [sampoShooter, sampoShooter_1, proxySpyke_2, proxySpyke_1, proxySpyke, misile, guardBoss];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
@@ -143,10 +166,18 @@ class NewLevel8 extends BaseScene {
 		// toll (prefab fields)
 		toll.tollCost = 90;
 
+		// guardBoss (prefab fields)
+		guardBoss.ThingToDrop = "Coin";
+
+		// activeZoneBoss (prefab fields)
+		activeZoneBoss.isActive = true;
+		activeZoneBoss.activateBoss = true;
+
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
 		this.layer = layer;
 		this.player = player;
+		this.guardBoss = guardBoss;
 		this.mapa = mapa;
 		this.new_level8 = new_level8;
 		this.doors = doors;
@@ -169,11 +200,13 @@ class NewLevel8 extends BaseScene {
 	layer;
 	/** @type {Player} */
 	player;
+	/** @type {GuardBoss} */
+	guardBoss;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */
 	switches;
-	/** @type {Array<SampoShooter|ProxySpyke|Misile>} */
+	/** @type {Array<SampoShooter|ProxySpyke|Misile|GuardBoss>} */
 	enemies;
 	/** @type {Array<any>} */
 	platforms;

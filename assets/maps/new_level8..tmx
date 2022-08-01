@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="50" height="27" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
- <editorsettings>
-  <export target="../new_level8..tmx" format="tmx"/>
- </editorsettings>
  <tileset firstgid="1" name="new_ciudad_tiles" tilewidth="32" tileheight="32" tilecount="435" columns="29">
-  <image source="../../environment/new_ciudad_tiles.png" width="941" height="480"/>
+  <image source="../environment/new_ciudad_tiles.png" width="941" height="480"/>
   <tile id="88">
    <properties>
     <property name="name" value="invisible"/>

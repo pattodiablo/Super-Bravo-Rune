@@ -20,9 +20,9 @@ class NewLevel9 extends BaseScene {
 		const mapa = this.add.tilemap("new_level9");
 		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
-		// new_level1
-		const new_level1 = this.add.tilemap("new_level9");
-		new_level1.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
+		// new_level9
+		const new_level9 = this.add.tilemap("new_level9");
+		new_level9.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
 		// bg1Tile
 		const bg1Tile = this.add.image(0, 0, "bg1Tile");
@@ -42,11 +42,18 @@ class NewLevel9 extends BaseScene {
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
-		const player = new Player(this, 133, 448);
+		const player = new Player(this, 142, 58);
 		this.add.existing(player);
 
 		// upperTile_1
-		new_level1.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
+		new_level9.createLayer("upperTile", [], 0, 0);
+
+		// sideDoorLocked
+		const sideDoorLocked = new SideDoorLocked(this, 64, 108);
+		this.add.existing(sideDoorLocked);
+		sideDoorLocked.scaleX = 0.3910270182834082;
+		sideDoorLocked.scaleY = 0.3910270182834082;
+		sideDoorLocked.angle = -90;
 
 		// lists
 		const doors = [];
@@ -66,7 +73,7 @@ class NewLevel9 extends BaseScene {
 		this.layer = layer;
 		this.player = player;
 		this.mapa = mapa;
-		this.new_level1 = new_level1;
+		this.new_level9 = new_level9;
 		this.doors = doors;
 		this.switches = switches;
 		this.enemies = enemies;

@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 142,
+            "y": 58
         },
         {
             "type": "TilemapLayer",
@@ -97,6 +97,24 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "132851fc-10a4-452c-a832-422ff1f6d7b1",
+            "id": "3bc54a27-72bb-44f2-a7a1-0374e792b752",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "sideDoorLocked",
+            "components": [],
+            "x": 64,
+            "y": 108,
+            "scaleX": 0.3910270182834082,
+            "scaleY": 0.3910270182834082,
+            "angle": -90
         }
     ],
     "plainObjects": [

@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 102,
-            "y": 613
+            "x": 103,
+            "y": 596
         },
         {
             "type": "TilemapLayer",
@@ -318,6 +318,79 @@
             "components": [],
             "x": 751,
             "y": 463
+        },
+        {
+            "prefabId": "c812057b-6b17-4fd2-9f6d-b8c03b50c9dc",
+            "id": "bbc08b0c-f811-4719-a3b3-0fd560f7f65d",
+            "unlock": [
+                "x",
+                "y",
+                "ThingToDrop"
+            ],
+            "label": "guardBoss",
+            "scope": "CLASS",
+            "ThingToDrop": "Coin",
+            "components": [],
+            "x": 447,
+            "y": 613
+        },
+        {
+            "prefabId": "4e7d1116-2b35-48d0-9c9b-266277a60e96",
+            "id": "a451fbc3-79e3-468e-91de-b38152e713ec",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "activateBoss",
+                "isActive",
+                "alpha"
+            ],
+            "label": "activeZoneBoss",
+            "isActive": true,
+            "activateBoss": true,
+            "components": [],
+            "x": 572,
+            "y": 358,
+            "scaleX": 2.8993109753035498,
+            "scaleY": 9.616341163293704,
+            "alpha": 0
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "1dc06a06-b10c-40f3-97d7-e9f229b7072b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 1175,
+            "y": 207
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "bdaa30fa-8f3b-4ea8-bba8-2c461665ec63",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_1",
+            "components": [],
+            "x": 1457,
+            "y": 68
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "186b5a20-374c-4288-b279-c228a723cbc7",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_2",
+            "components": [],
+            "x": 839,
+            "y": 804
         }
     ],
     "plainObjects": [
@@ -373,7 +446,8 @@
                 "8528e67a-d299-4e24-8a10-8f550dab8a07",
                 "2bbed085-89a4-4f3a-97f2-c61c91c6b8be",
                 "cb3c7b0a-cd20-4a0d-aaf3-a8edadd5ac75",
-                "c6b4bfc0-2f57-4260-8685-283ad3d086eb"
+                "c6b4bfc0-2f57-4260-8685-283ad3d086eb",
+                "bbc08b0c-f811-4719-a3b3-0fd560f7f65d"
             ]
         },
         {

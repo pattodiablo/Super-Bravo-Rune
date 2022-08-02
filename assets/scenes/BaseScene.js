@@ -8,6 +8,7 @@ class BaseScene extends Phaser.Scene {
 		this.coinsPositions = [];
 		this.emptyWalls = [];
 		this.acidTiles = [];
+		this.squaredDoors = [];
 		this.sideDoors = [];
 		this.tolls = [];
 		this.finalBossActiveParts = [];
@@ -57,6 +58,7 @@ class BaseScene extends Phaser.Scene {
 		this.createCoins();
 		this.createEmptyWalls();
 		this.createAcidWalls();
+		this.createSquareDoors();
 		this.createPlayerBullets();
 		this.initTutorials();
 	
@@ -1028,10 +1030,26 @@ class BaseScene extends Phaser.Scene {
 		
 	}
 
-	createEmptyWalls(){
+	createSquareDoors(){
 	
 		
 
+		this.squaredDoors.forEach(function(door) {
+		
+			
+			const squareDoor = new SquareDoor(this, door[0], door[1]);
+			
+			this.add.existing(squareDoor);
+	
+			
+
+		},this);
+		
+	}
+
+	createEmptyWalls(){
+	
+		
 		this.emptyWalls.forEach(function(wall) {
 		
 			
@@ -1042,6 +1060,7 @@ class BaseScene extends Phaser.Scene {
 			
 
 		},this);
+		
 		
 	}
 
@@ -1100,6 +1119,16 @@ class BaseScene extends Phaser.Scene {
 					
 					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
 					this.acidTiles.push(tilePos);					
+					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
+
+					
+				}
+
+				if(tileOnly.properties.name=="door"){
+								
+					
+					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
+					this.squaredDoors.push(tilePos);					
 					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
 
 					

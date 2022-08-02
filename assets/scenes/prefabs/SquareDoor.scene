@@ -1,0 +1,46 @@
+{
+    "id": "922a77e7-4ede-4279-b6e9-ed90f7f814c4",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 320,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "e1bab578-94dd-47f2-9546-9c4f5ace39c8",
+            "label": "squareDoor_instancia_10000",
+            "components": [
+                "Physics"
+            ],
+            "texture": {
+                "key": "newSupaAnimationsRune2",
+                "frame": "squareDoor instancia 10000"
+            },
+            "originX": 0,
+            "originY": 0
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "prefabProperties": [
+        {
+            "name": "willClose",
+            "label": "willClose",
+            "tooltip": "if the door must close",
+            "defValue": true,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        }
+    ]
+}

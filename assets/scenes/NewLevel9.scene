@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg3TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -99,34 +99,64 @@
             ]
         },
         {
-            "prefabId": "132851fc-10a4-452c-a832-422ff1f6d7b1",
-            "id": "3bc54a27-72bb-44f2-a7a1-0374e792b752",
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "0a3c2ff9-c6e6-4380-80f2-6caa79e7cf5a",
             "unlock": [
                 "x",
-                "y",
-                "angle",
-                "scaleX",
-                "scaleY"
+                "y"
             ],
-            "label": "sideDoorLocked",
+            "label": "supaBomb",
             "components": [],
-            "x": 64,
-            "y": 108,
-            "scaleX": 0.3910270182834082,
-            "scaleY": 0.3910270182834082,
-            "angle": -90
+            "x": 897,
+            "y": 485
         },
         {
-            "type": "Image",
-            "id": "c21da079-f0c7-40aa-ba4d-f842f3261dd9",
-            "label": "squareDoor_instancia_10000",
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "d20217fb-ad39-4ea6-9132-9aac6aa4089c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
             "components": [],
-            "texture": {
-                "key": "newSupaAnimationsRune2",
-                "frame": "squareDoor instancia 10000"
-            },
-            "x": 71,
-            "y": 121
+            "x": 1152,
+            "y": 486
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "d27547a4-461a-4c43-a017-eeb968ac6fda",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter",
+            "components": [],
+            "x": 703,
+            "y": 484
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "7259a3fa-d8d8-4a82-b783-430563cb5c2f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_2",
+            "components": [],
+            "x": 681,
+            "y": 65
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "4395c56b-a791-42f4-a5d9-6aad6fd6ee5d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1",
+            "components": [],
+            "x": 506,
+            "y": 239
         }
     ],
     "plainObjects": [

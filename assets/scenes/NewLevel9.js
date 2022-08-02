@@ -25,11 +25,11 @@ class NewLevel9 extends BaseScene {
 		new_level9.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
 
 		// bg1Tile
-		const bg1Tile = this.add.image(0, 0, "bg1Tile");
+		const bg1Tile = this.add.image(0, 0, "bg2Tile");
 		bg1Tile.setOrigin(0, 0);
 
 		// tilespriteBG
-		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
+		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg3TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
 		// nocollide2_1
@@ -48,15 +48,25 @@ class NewLevel9 extends BaseScene {
 		// upperTile_1
 		new_level9.createLayer("upperTile", [], 0, 0);
 
-		// sideDoorLocked
-		const sideDoorLocked = new SideDoorLocked(this, 64, 108);
-		this.add.existing(sideDoorLocked);
-		sideDoorLocked.scaleX = 0.3910270182834082;
-		sideDoorLocked.scaleY = 0.3910270182834082;
-		sideDoorLocked.angle = -90;
+		// supaBomb
+		const supaBomb = new SupaBomb(this, 897, 485);
+		this.add.existing(supaBomb);
 
-		// squareDoor_instancia_10000
-		this.add.image(71, 121, "newSupaAnimationsRune2", "squareDoor instancia 10000");
+		// supaBomb_1
+		const supaBomb_1 = new SupaBomb(this, 1152, 486);
+		this.add.existing(supaBomb_1);
+
+		// sampoShooter
+		const sampoShooter = new SampoShooter(this, 703, 484);
+		this.add.existing(sampoShooter);
+
+		// supaBomb_2
+		const supaBomb_2 = new SupaBomb(this, 681, 65);
+		this.add.existing(supaBomb_2);
+
+		// sampoShooter_1
+		const sampoShooter_1 = new SampoShooter(this, 506, 239);
+		this.add.existing(sampoShooter_1);
 
 		// lists
 		const doors = [];

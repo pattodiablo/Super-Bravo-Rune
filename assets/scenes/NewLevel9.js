@@ -100,10 +100,14 @@ class NewLevel9 extends BaseScene {
 		const angrySpin_1 = new AngrySpin(this, 1381, 767);
 		this.add.existing(angrySpin_1);
 
+		// heart_2
+		const heart_2 = new Heart(this, 865, 217);
+		this.add.existing(heart_2);
+
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [sampoShooter_1, sampoShooter, sampoShooter_2, angrySpin];
+		const enemies = [sampoShooter_1, sampoShooter, sampoShooter_2, angrySpin, angrySpin_1];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];

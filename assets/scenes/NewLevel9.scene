@@ -253,6 +253,18 @@
             "components": [],
             "x": 1381,
             "y": 767
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "76416649-5fcc-4e93-b870-dcc1515a6694",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_2",
+            "components": [],
+            "x": 865,
+            "y": 217
         }
     ],
     "plainObjects": [
@@ -306,7 +318,8 @@
                 "4395c56b-a791-42f4-a5d9-6aad6fd6ee5d",
                 "d27547a4-461a-4c43-a017-eeb968ac6fda",
                 "3502f876-66b5-4f05-9a8f-53de80ab6cd6",
-                "566f0c95-52fc-4f6d-ab35-6fa8b91e84f9"
+                "566f0c95-52fc-4f6d-ab35-6fa8b91e84f9",
+                "d1fab9ec-a7c6-414d-a325-2f62658180ce"
             ]
         },
         {

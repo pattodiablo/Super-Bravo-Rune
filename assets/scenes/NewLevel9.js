@@ -68,6 +68,10 @@ class NewLevel9 extends BaseScene {
 		const sampoShooter_1 = new SampoShooter(this, 506, 239);
 		this.add.existing(sampoShooter_1);
 
+		// catapulta
+		const catapulta = new Catapulta(this, 736, 750);
+		this.add.existing(catapulta);
+
 		// lists
 		const doors = [];
 		const switches = [];

@@ -157,6 +157,18 @@
             "components": [],
             "x": 506,
             "y": 239
+        },
+        {
+            "prefabId": "b772f3cd-be85-4685-b964-8294fd3e3ab5",
+            "id": "c4627ec7-329a-47be-8644-6d9db031ff04",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "catapulta",
+            "components": [],
+            "x": 736,
+            "y": 750
         }
     ],
     "plainObjects": [

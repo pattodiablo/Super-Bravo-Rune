@@ -373,6 +373,13 @@
                 "key": "DoubleJumpBtnBuy"
             },
             {
+                "url": [
+                    "assets/scenes/prefabs/DownFloor.js"
+                ],
+                "type": "scripts",
+                "key": "DownFloor"
+            },
+            {
                 "url": "assets/dronAnimations.json",
                 "type": "animation",
                 "key": "dronAnimations"

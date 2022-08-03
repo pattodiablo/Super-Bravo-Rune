@@ -84,7 +84,7 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 142,
+            "x": 102,
             "y": 58
         },
         {
@@ -131,7 +131,7 @@
             ],
             "label": "sampoShooter",
             "components": [],
-            "x": 703,
+            "x": 486,
             "y": 484
         },
         {
@@ -169,6 +169,90 @@
             "components": [],
             "x": 736,
             "y": 750
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "2bdd4bd1-af48-47ad-85f9-9fcc5df01088",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile",
+            "components": [],
+            "x": 1671,
+            "y": 213
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "3502f876-66b5-4f05-9a8f-53de80ab6cd6",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_2",
+            "components": [],
+            "x": 917,
+            "y": 77
+        },
+        {
+            "prefabId": "0f8a81a2-5a4b-4383-b9f0-cf2ce6a24410",
+            "id": "566f0c95-52fc-4f6d-ab35-6fa8b91e84f9",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "angrySpin",
+            "components": [],
+            "x": 586,
+            "y": 737
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "1f045691-ecdd-43a5-b879-550f4b3d234b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 66,
+            "y": 216
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "21142fdb-643a-4380-88f4-b574e74621b5",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_1",
+            "components": [],
+            "x": 82,
+            "y": 753
+        },
+        {
+            "prefabId": "3e17aa60-1d48-4e4a-a567-76fe9e35ba92",
+            "id": "987d529b-cc2e-4da9-9dbb-f646e59d273e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile_Vertical",
+            "components": [],
+            "x": 1442,
+            "y": 924
+        },
+        {
+            "prefabId": "0f8a81a2-5a4b-4383-b9f0-cf2ce6a24410",
+            "id": "d1fab9ec-a7c6-414d-a325-2f62658180ce",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "angrySpin_1",
+            "components": [],
+            "x": 1381,
+            "y": 767
         }
     ],
     "plainObjects": [
@@ -217,7 +301,13 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "4395c56b-a791-42f4-a5d9-6aad6fd6ee5d",
+                "d27547a4-461a-4c43-a017-eeb968ac6fda",
+                "3502f876-66b5-4f05-9a8f-53de80ab6cd6",
+                "566f0c95-52fc-4f6d-ab35-6fa8b91e84f9"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",

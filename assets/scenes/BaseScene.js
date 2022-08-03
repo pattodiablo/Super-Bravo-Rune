@@ -8,6 +8,7 @@ class BaseScene extends Phaser.Scene {
 		this.coinsPositions = [];
 		this.emptyWalls = [];
 		this.acidTiles = [];
+		this.downFloortiles = [];
 		this.squaredDoors = [];
 		this.sideDoors = [];
 		this.tolls = [];
@@ -58,6 +59,7 @@ class BaseScene extends Phaser.Scene {
 		this.createCoins();
 		this.createEmptyWalls();
 		this.createAcidWalls();
+		this.createDownFloors();
 		this.createSquareDoors();
 		this.createPlayerBullets();
 		this.initTutorials();
@@ -1083,6 +1085,25 @@ class BaseScene extends Phaser.Scene {
 	}
 
 
+	createDownFloors(){
+	
+		
+
+		this.downFloortiles.forEach(function(wall) {
+	
+			
+			const downFloor = new DownFloor(this, wall[0], wall[1]);
+
+			this.add.existing(downFloor);
+		
+			
+
+		},this);
+		
+	}
+
+
+
 	
 	replaceTilesWithCoins(){
 
@@ -1123,6 +1144,20 @@ class BaseScene extends Phaser.Scene {
 
 					
 				}
+
+				
+				if(tileOnly.properties.name=="downFloor"){
+								
+					
+					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
+					this.downFloortiles.push(tilePos);					
+					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
+
+					
+				}
+
+
+				
 
 				if(tileOnly.properties.name=="door"){
 								

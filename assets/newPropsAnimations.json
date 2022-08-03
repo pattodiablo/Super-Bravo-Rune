@@ -1220,6 +1220,27 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true
+        },
+        {
+            "key": "downDoorAnim",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloor0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloor0001",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 2,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

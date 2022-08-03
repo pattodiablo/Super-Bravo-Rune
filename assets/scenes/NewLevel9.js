@@ -42,7 +42,7 @@ class NewLevel9 extends BaseScene {
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
-		const player = new Player(this, 142, 58);
+		const player = new Player(this, 102, 58);
 		this.add.existing(player);
 
 		// upperTile_1
@@ -57,7 +57,7 @@ class NewLevel9 extends BaseScene {
 		this.add.existing(supaBomb_1);
 
 		// sampoShooter
-		const sampoShooter = new SampoShooter(this, 703, 484);
+		const sampoShooter = new SampoShooter(this, 486, 484);
 		this.add.existing(sampoShooter);
 
 		// supaBomb_2
@@ -72,10 +72,38 @@ class NewLevel9 extends BaseScene {
 		const catapulta = new Catapulta(this, 736, 750);
 		this.add.existing(catapulta);
 
+		// misile
+		const misile = new Misile(this, 1671, 213);
+		this.add.existing(misile);
+
+		// sampoShooter_2
+		const sampoShooter_2 = new SampoShooter(this, 917, 77);
+		this.add.existing(sampoShooter_2);
+
+		// angrySpin
+		const angrySpin = new AngrySpin(this, 586, 737);
+		this.add.existing(angrySpin);
+
+		// heart
+		const heart = new Heart(this, 66, 216);
+		this.add.existing(heart);
+
+		// heart_1
+		const heart_1 = new Heart(this, 82, 753);
+		this.add.existing(heart_1);
+
+		// misile_Vertical
+		const misile_Vertical = new Misile_Vertical(this, 1442, 924);
+		this.add.existing(misile_Vertical);
+
+		// angrySpin_1
+		const angrySpin_1 = new AngrySpin(this, 1381, 767);
+		this.add.existing(angrySpin_1);
+
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [];
+		const enemies = [sampoShooter_1, sampoShooter, sampoShooter_2, angrySpin];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
@@ -115,7 +143,7 @@ class NewLevel9 extends BaseScene {
 	doors;
 	/** @type {Array<any>} */
 	switches;
-	/** @type {Array<any>} */
+	/** @type {Array<SampoShooter|AngrySpin>} */
 	enemies;
 	/** @type {Array<any>} */
 	platforms;

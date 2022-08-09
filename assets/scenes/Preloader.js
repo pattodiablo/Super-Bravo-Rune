@@ -129,7 +129,7 @@ class Preloader extends Phaser.Scene {
 			break;
 
 			case 11:
-			var wichLevel="NewLevel110";
+			var wichLevel="NewLevel10";
 			break;
 
 			case 12:

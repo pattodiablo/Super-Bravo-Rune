@@ -1,5 +1,5 @@
 {
-    "id": "e3123caa-31be-4c56-8e95-4cf917a9dff7",
+    "id": "990c1d28-45db-4edc-a374-8720ae900806",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -11,15 +11,16 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "52724fa2-fdbf-406c-9532-ee1ee0544e1e",
-            "label": "explotion",
+            "id": "acbdf5fb-afb9-4b03-be4b-6b6ab1931ce9",
+            "label": "card_instancia_10000",
             "components": [
+                "Physics",
                 "StartAnimation"
             ],
-            "StartAnimation.animationKey": "explode2",
+            "StartAnimation.animationKey": "smallcard",
             "texture": {
-                "key": "propsNew",
-                "frame": "Symbol 16 instance 10007"
+                "key": "newSupaAnimationsRune2",
+                "frame": "card instancia 10000"
             }
         }
     ],

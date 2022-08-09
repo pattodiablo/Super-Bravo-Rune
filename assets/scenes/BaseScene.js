@@ -10,6 +10,9 @@ class BaseScene extends Phaser.Scene {
 		this.acidTiles = [];
 		this.downFloortiles = [];
 		this.squaredDoors = [];
+		this.lockedTiles = [];
+		this.lockedTilesList  = [];
+		this.destroyableTiles = [];
 		this.sideDoors = [];
 		this.tolls = [];
 		this.finalBossActiveParts = [];
@@ -60,6 +63,9 @@ class BaseScene extends Phaser.Scene {
 		this.createEmptyWalls();
 		this.createAcidWalls();
 		this.createDownFloors();
+		this.createLockedTiles();
+	
+		this.createDestroyableTiles();
 		this.createSquareDoors();
 		this.createPlayerBullets();
 		this.initTutorials();
@@ -1102,6 +1108,57 @@ class BaseScene extends Phaser.Scene {
 		
 	}
 
+	createLockedTiles(){
+	
+		
+
+		this.lockedTiles.forEach(function(wall) {
+	
+			console.log("creating locked")
+			const lockedTile = new LockedTile(this, wall[0], wall[1]);
+			this.lockedTilesList.push(lockedTile);
+			this.add.existing(lockedTile);
+		
+			
+
+		},this);
+		
+	}
+
+	enableAllBlocked(){
+		
+		this.lockedTilesList.forEach(function(wall) {
+	
+			let erasedAmin = wall.play("LockedErased",true);
+			erasedAmin.once('animationcomplete', () => {
+			
+				wall.destroy();
+				
+
+			});
+
+			
+
+		},this);
+	}
+
+	createDestroyableTiles(){
+	
+		
+
+		this.destroyableTiles.forEach(function(wall) {
+	
+			
+			const destroyableTile = new Destroyable(this, wall[0], wall[1]);
+
+			this.add.existing(destroyableTile);
+		
+			
+
+		},this);
+		
+	}
+
 
 
 	
@@ -1164,6 +1221,26 @@ class BaseScene extends Phaser.Scene {
 					
 					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
 					this.squaredDoors.push(tilePos);					
+					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
+
+					
+				}
+
+				if(tileOnly.properties.name=="locked"){
+								
+					
+					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
+					this.lockedTiles.push(tilePos);					
+					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
+
+					
+				}
+
+				if(tileOnly.properties.name=="destroyable"){
+								
+					
+					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
+					this.destroyableTiles.push(tilePos);					
 					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
 
 					

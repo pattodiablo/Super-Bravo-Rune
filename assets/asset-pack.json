@@ -274,6 +274,13 @@
                 "key": "CannonRoll"
             },
             {
+                "url": [
+                    "assets/scenes/prefabs/Card.js"
+                ],
+                "type": "scripts",
+                "key": "Card"
+            },
+            {
                 "atlasURL": "assets/atlas/cart.json",
                 "textureURL": "assets/atlas/cart.png",
                 "type": "atlas",
@@ -359,6 +366,13 @@
                 "url": "assets/scenes/DemoScene.js",
                 "type": "sceneFile",
                 "key": "DemoScene"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/Destroyable.js"
+                ],
+                "type": "scripts",
+                "key": "Destroyable"
             },
             {
                 "url": "assets/scenes/prefabs/Door.js",
@@ -999,6 +1013,13 @@
                 "key": "InterludeMap"
             },
             {
+                "url": [
+                    "assets/scenes/prefabs/InvisibleTile.js"
+                ],
+                "type": "scripts",
+                "key": "InvisibleTile"
+            },
+            {
                 "url": "assets/images/jetPackShot.png",
                 "type": "image",
                 "key": "jetPackShot"
@@ -1073,6 +1094,13 @@
                 "url": "assets/images/lightBean.png",
                 "type": "image",
                 "key": "lightBean"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/LockedTile.js"
+                ],
+                "type": "scripts",
+                "key": "LockedTile"
             },
             {
                 "url": [

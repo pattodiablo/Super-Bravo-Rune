@@ -2,6 +2,75 @@
 <TextureAtlas imagePath="newSupaAnimationsRune2.png">
 	<!-- Created with Adobe Animate version 19.2.1.408 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="SupaBomb instancia 10000" x="1" y="1" width="32" height="42" pivotX="15.55" pivotY="20.7"/>
-	<SubTexture name="SupaBomb instancia 10001" x="1" y="44" width="32" height="42"/>
+	<SubTexture name="SupaBomb instancia 10000" x="1" y="1" width="32" height="43" pivotX="15.55" pivotY="20.7"/>
+	<SubTexture name="SupaBomb instancia 10001" x="34" y="1" width="32" height="43"/>
+	<SubTexture name="card instancia 10000" x="67" y="1" width="33" height="28" pivotX="15.95" pivotY="13.3"/>
+	<SubTexture name="card instancia 10001" x="101" y="1" width="33" height="28"/>
+	<SubTexture name="card instancia 10002" x="135" y="1" width="33" height="28"/>
+	<SubTexture name="card instancia 10003" x="169" y="1" width="33" height="28"/>
+	<SubTexture name="card instancia 10004" x="203" y="1" width="33" height="28"/>
+	<SubTexture name="destroyable0000" x="1" y="45" width="36" height="36" pivotX="17.7" pivotY="17.6"/>
+	<SubTexture name="destroyable0001" x="38" y="45" width="36" height="36"/>
+	<SubTexture name="destroyable0002" x="75" y="45" width="36" height="36"/>
+	<SubTexture name="destroyable0003" x="112" y="45" width="36" height="36"/>
+	<SubTexture name="destroyable0004" x="149" y="45" width="36" height="36"/>
+	<SubTexture name="destroyable0005" x="186" y="45" width="36" height="36"/>
+	<SubTexture name="destroyable0006" x="1" y="82" width="36" height="36"/>
+	<SubTexture name="destroyable0007" x="38" y="82" width="36" height="36"/>
+	<SubTexture name="destroyable0008" x="75" y="82" width="36" height="36"/>
+	<SubTexture name="destroyable0009" x="112" y="82" width="36" height="36"/>
+	<SubTexture name="destroyable0010" x="149" y="82" width="36" height="36"/>
+	<SubTexture name="destroyable0011" x="186" y="82" width="36" height="36"/>
+	<SubTexture name="downFloor0000" x="1" y="119" width="33" height="33" pivotX="15.95" pivotY="16"/>
+	<SubTexture name="downFloor0001" x="35" y="119" width="33" height="33"/>
+	<SubTexture name="downFloorBlocked0000" x="69" y="119" width="35" height="35" pivotX="16.9" pivotY="17"/>
+	<SubTexture name="downFloorBlocked0001" x="105" y="119" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0002" x="141" y="119" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0003" x="177" y="119" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0004" x="213" y="119" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0005" x="1" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0006" x="37" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0007" x="73" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0008" x="109" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0009" x="145" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0010" x="181" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0011" x="217" y="155" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0012" x="1" y="191" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0013" x="37" y="191" width="35" height="35"/>
+	<SubTexture name="downFloorBlocked0014" x="73" y="191" width="35" height="35"/>
+	<SubTexture name="invisible0000" x="109" y="191" width="33" height="33" pivotX="15.85" pivotY="15.7"/>
+	<SubTexture name="invisible0001" x="143" y="191" width="33" height="33"/>
+	<SubTexture name="invisible0002" x="177" y="191" width="33" height="33"/>
+	<SubTexture name="invisible0003" x="211" y="191" width="33" height="33"/>
+	<SubTexture name="invisible0004" x="1" y="227" width="33" height="33"/>
+	<SubTexture name="squareDoor instancia 10000" x="35" y="227" width="35" height="35" pivotX="16.7" pivotY="17.1"/>
+	<SubTexture name="squareDoor instancia 10001" x="71" y="227" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10002" x="107" y="227" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10003" x="143" y="227" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10004" x="179" y="227" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10005" x="215" y="227" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10006" x="1" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10007" x="37" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10008" x="73" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10009" x="109" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10010" x="145" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10011" x="181" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10012" x="217" y="263" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10013" x="1" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10014" x="37" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10015" x="73" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10016" x="109" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10017" x="145" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10018" x="181" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10019" x="217" y="299" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10020" x="1" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10021" x="37" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10022" x="73" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10023" x="109" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10024" x="145" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10025" x="181" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10026" x="217" y="335" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10027" x="1" y="371" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10028" x="37" y="371" width="35" height="35"/>
+	<SubTexture name="squareDoor instancia 10029" x="73" y="371" width="35" height="35"/>
 </TextureAtlas>

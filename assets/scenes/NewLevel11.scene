@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg2TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 118,
+            "y": 747
         },
         {
             "type": "TilemapLayer",
@@ -97,6 +97,258 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "d8cc54d2-f027-456f-abca-fef243977dbe",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "card",
+            "components": [],
+            "x": 1441,
+            "y": 88
+        },
+        {
+            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
+            "id": "5438ab3e-ae7d-401f-a831-d1acd0044e0c",
+            "unlock": [
+                "x",
+                "y",
+                "isDoubleJump"
+            ],
+            "label": "upgradeHalo",
+            "isDoubleJump": true,
+            "components": [],
+            "x": 430,
+            "y": 448
+        },
+        {
+            "type": "Image",
+            "id": "5405585d-66e3-4247-899b-c98ba36da8cd",
+            "label": "powerPodium",
+            "components": [],
+            "texture": {
+                "key": "PowerPodium"
+            },
+            "x": 430,
+            "y": 434,
+            "scaleX": 0.8230650637827029,
+            "scaleY": 0.8230650637827029
+        },
+        {
+            "prefabId": "b772f3cd-be85-4685-b964-8294fd3e3ab5",
+            "id": "5ceb53aa-f4c6-425d-a74d-d4eeab38b1f5",
+            "unlock": [
+                "x",
+                "y",
+                "power"
+            ],
+            "label": "catapulta",
+            "power": 600,
+            "components": [],
+            "x": 617,
+            "y": 496
+        },
+        {
+            "prefabId": "132851fc-10a4-452c-a832-422ff1f6d7b1",
+            "id": "ff600932-7398-430c-99b4-8552ddafa7cb",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "sideDoorLocked",
+            "components": [],
+            "x": 544,
+            "y": 465,
+            "scaleX": 0.5674976596138621,
+            "scaleY": 0.5674976596138621
+        },
+        {
+            "prefabId": "0b6a9364-c0e7-4115-8dc4-c0a13d50343a",
+            "id": "11a8f118-7d16-4bb2-96aa-3fa76b52e53a",
+            "unlock": [
+                "x",
+                "y",
+                "tollCost"
+            ],
+            "label": "toll",
+            "tollCost": 20,
+            "components": [],
+            "x": 159,
+            "y": 496
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "b047beec-4dab-425c-9843-895a40635f63",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 66,
+            "y": 229
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "57dbae7a-6b86-43c5-8ecc-4668b09ff211",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_1",
+            "components": [],
+            "x": 1040,
+            "y": 596
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "e89b0267-5466-4dba-9fe1-f5782b97535f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter",
+            "components": [],
+            "x": 783,
+            "y": 488
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "96861f37-951b-429f-8fd2-d0d28683db89",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1",
+            "components": [],
+            "x": 1274,
+            "y": 480
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "a862d45c-ff73-4f50-b3fe-0fa4e7952f33",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_2",
+            "components": [],
+            "x": 804,
+            "y": 96
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "f383736a-096b-4f71-86f7-565080bd0869",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb",
+            "components": [],
+            "x": 1067,
+            "y": 452
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "ab668ed6-5a10-479b-85fd-e02c05926850",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
+            "components": [],
+            "x": 839,
+            "y": 322
+        },
+        {
+            "prefabId": "0f8a81a2-5a4b-4383-b9f0-cf2ce6a24410",
+            "id": "50f79384-440f-4f28-b39f-9a16c1907afe",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "angrySpin",
+            "components": [],
+            "x": 1167,
+            "y": 726
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "3905b147-03eb-43a4-8203-b63a8b17611f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone",
+            "components": [],
+            "x": 1331,
+            "y": 564
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "6d3d3fb2-006f-425b-8eef-189accd73c7e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone_1",
+            "components": [],
+            "x": 1307,
+            "y": 184
+        },
+        {
+            "prefabId": "dae0c595-f7aa-48e4-92ff-be93ff062d2a",
+            "id": "1004ce4e-eefc-4e4a-80a3-50a1425c5e8d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "blobber",
+            "components": [],
+            "x": 541,
+            "y": 561
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "eb847bb3-1fa1-49b9-942d-93ea8064cfd0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_2",
+            "components": [],
+            "x": 375,
+            "y": 118
+        },
+        {
+            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
+            "id": "7a72d2c8-6a9f-4212-a10e-a95b74c9a8cc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "platform2",
+            "components": [],
+            "x": 1194,
+            "y": 222
+        },
+        {
+            "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
+            "id": "70d0fc30-80d3-4215-8813-3800e94c3bb6",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "enemyCreator",
+            "components": [],
+            "x": 888,
+            "y": 58,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [
@@ -145,11 +397,21 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "e89b0267-5466-4dba-9fe1-f5782b97535f",
+                "96861f37-951b-429f-8fd2-d0d28683db89",
+                "a862d45c-ff73-4f50-b3fe-0fa4e7952f33",
+                "50f79384-440f-4f28-b39f-9a16c1907afe",
+                "1004ce4e-eefc-4e4a-80a3-50a1425c5e8d"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",
-            "label": "platforms"
+            "label": "platforms",
+            "objectIds": [
+                "7a72d2c8-6a9f-4212-a10e-a95b74c9a8cc"
+            ]
         },
         {
             "id": "9ebda1ea-a3d2-410b-b328-4358561cbdf7",
@@ -161,7 +423,10 @@
         },
         {
             "id": "c178e26c-494b-4400-b756-424719a97c29",
-            "label": "revivingPods"
+            "label": "revivingPods",
+            "objectIds": [
+                "70d0fc30-80d3-4215-8813-3800e94c3bb6"
+            ]
         },
         {
             "id": "31eff47d-130c-4018-bf6a-df9ab7135d98",

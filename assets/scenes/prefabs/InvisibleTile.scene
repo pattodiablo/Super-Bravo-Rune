@@ -1,5 +1,5 @@
 {
-    "id": "e3123caa-31be-4c56-8e95-4cf917a9dff7",
+    "id": "a2840e07-d276-475e-91ba-30bfa012361a",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -11,15 +11,12 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "52724fa2-fdbf-406c-9532-ee1ee0544e1e",
-            "label": "explotion",
-            "components": [
-                "StartAnimation"
-            ],
-            "StartAnimation.animationKey": "explode2",
+            "id": "ab76bcbf-9285-42ae-95c3-adc9c6ba8ae6",
+            "label": "squareDoor_instancia_10000",
+            "components": [],
             "texture": {
-                "key": "propsNew",
-                "frame": "Symbol 16 instance 10007"
+                "key": "newSupaAnimationsRune2",
+                "frame": "squareDoor instancia 10000"
             }
         }
     ],

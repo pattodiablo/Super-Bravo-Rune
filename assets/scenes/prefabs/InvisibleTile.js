@@ -3,14 +3,10 @@
 
 /* START OF COMPILED CODE */
 
-class Explotion extends Phaser.GameObjects.Sprite {
+class InvisibleTile extends Phaser.GameObjects.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 0, y ?? 0, texture || "propsNew", frame ?? "Symbol 16 instance 10007");
-
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "explode2";
+		super(scene, x ?? 0, y ?? 0, texture || "newSupaAnimationsRune2", frame ?? "squareDoor instancia 10000");
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

@@ -1,5 +1,5 @@
 {
-    "id": "e3123caa-31be-4c56-8e95-4cf917a9dff7",
+    "id": "30db3e1f-5a80-4787-ad3d-5708f4e4877d",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -11,16 +11,19 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "52724fa2-fdbf-406c-9532-ee1ee0544e1e",
-            "label": "explotion",
+            "id": "d40aea54-de7d-499d-8048-156cbaaa9310",
+            "label": "downFloorBlocked0000",
             "components": [
-                "StartAnimation"
+                "Physics"
             ],
-            "StartAnimation.animationKey": "explode2",
             "texture": {
-                "key": "propsNew",
-                "frame": "Symbol 16 instance 10007"
-            }
+                "key": "newSupaAnimationsRune2",
+                "frame": "downFloorBlocked0000"
+            },
+            "x": -1,
+            "y": -2,
+            "originX": 0,
+            "originY": 0
         }
     ],
     "plainObjects": [],

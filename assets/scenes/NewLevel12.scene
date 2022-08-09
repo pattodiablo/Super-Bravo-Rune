@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg3TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 132,
+            "y": 734
         },
         {
             "type": "TilemapLayer",
@@ -97,6 +97,181 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "type": "Image",
+            "id": "83400736-fd13-40f7-ad36-70a1606c10c4",
+            "label": "alert_instance_10000",
+            "components": [],
+            "texture": {
+                "key": "misile",
+                "frame": "alert instance 10000"
+            },
+            "x": 907,
+            "y": 736
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "bc8798e3-65ad-4e38-b243-938e53b2a567",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb",
+            "components": [],
+            "x": 497,
+            "y": 757
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "2229a121-d4e5-4ff4-9187-00d0adfd7f34",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
+            "components": [],
+            "x": 846,
+            "y": 699
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "48278a8b-ab58-4a36-92c9-9146dfaf6177",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter",
+            "components": [],
+            "x": 1139,
+            "y": 761
+        },
+        {
+            "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
+            "id": "25a99248-74b4-49ab-b833-421e809c9a32",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "enemyCreator",
+            "components": [],
+            "x": 1280,
+            "y": 658,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
+            "id": "5dccb906-00f5-49b1-bfbd-13130823dfac",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "enemyCreator_1",
+            "components": [],
+            "x": 1324,
+            "y": 410,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "4f53d502-f920-44ab-8360-d74ff28befc7",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1",
+            "components": [],
+            "x": 1102,
+            "y": 540
+        },
+        {
+            "prefabId": "0f8a81a2-5a4b-4383-b9f0-cf2ce6a24410",
+            "id": "51e32c67-79d2-45eb-b1e8-6c5a432730b5",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "angrySpin",
+            "components": [],
+            "x": 377,
+            "y": 533
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "7e22e905-d2a5-4ea6-a2c4-e82608f4a432",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone",
+            "components": [],
+            "x": 278,
+            "y": 218
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "1719bec5-7277-4abc-98fd-8bff042ef41c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile",
+            "components": [],
+            "x": 1688,
+            "y": 92
+        },
+        {
+            "prefabId": "7013c41a-a194-4bae-aca0-15e7eb0f552b",
+            "id": "aa5ecee5-8f91-42c0-ae91-558012ae6041",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "proxySpyke",
+            "components": [],
+            "x": 849,
+            "y": 206
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "82ac9bb4-c22f-4ad1-b87b-da53bd44325b",
+            "unlock": [
+                "x",
+                "y",
+                "RevivingPodID"
+            ],
+            "label": "sampoShooter_2",
+            "RevivingPodID": "pod2",
+            "components": [],
+            "x": 671,
+            "y": 93
+        },
+        {
+            "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
+            "id": "8fbb5eb9-9f89-4e0c-b798-d0816c56e072",
+            "unlock": [
+                "x",
+                "y",
+                "PodID"
+            ],
+            "label": "enemyCreator_2",
+            "PodID": "pod2",
+            "components": [],
+            "x": 1243,
+            "y": 38,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "a2840e07-d276-475e-91ba-30bfa012361a",
+            "id": "9266b842-ae21-475f-973a-698a66f932a9",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "squareDoor_instancia_10000",
+            "components": [],
+            "x": 181,
+            "y": 728
         }
     ],
     "plainObjects": [
@@ -145,7 +320,14 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "48278a8b-ab58-4a36-92c9-9146dfaf6177",
+                "4f53d502-f920-44ab-8360-d74ff28befc7",
+                "51e32c67-79d2-45eb-b1e8-6c5a432730b5",
+                "1719bec5-7277-4abc-98fd-8bff042ef41c",
+                "82ac9bb4-c22f-4ad1-b87b-da53bd44325b"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",
@@ -161,7 +343,11 @@
         },
         {
             "id": "c178e26c-494b-4400-b756-424719a97c29",
-            "label": "revivingPods"
+            "label": "revivingPods",
+            "objectIds": [
+                "25a99248-74b4-49ab-b833-421e809c9a32",
+                "8fbb5eb9-9f89-4e0c-b798-d0816c56e072"
+            ]
         },
         {
             "id": "31eff47d-130c-4018-bf6a-df9ab7135d98",

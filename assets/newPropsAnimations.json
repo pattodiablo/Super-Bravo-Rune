@@ -1241,6 +1241,272 @@
             "frameRate": 2,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "destroyableIdle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0001",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 2,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "destroyable2",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0002",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "destroyable1",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0010",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "hideOnComplete": true
+        },
+        {
+            "key": "LockedErased",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0013",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "smallcard",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "card instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "card instancia 10001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "card instancia 10002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "card instancia 10003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "card instancia 10004",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showOnStart": true
+        },
+        {
+            "key": "invisible1",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 1,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "invisible2",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "destroyable0002",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

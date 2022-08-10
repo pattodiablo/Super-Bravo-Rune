@@ -18,6 +18,9 @@ class Card extends Phaser.GameObjects.Sprite {
 		/* END-USER-CTR-CODE */
 	}
 
+	/** @type {number} */
+	timeExpires = 4000;
+
 	/* START-USER-CODE */
 
 	create(){
@@ -52,8 +55,9 @@ class Card extends Phaser.GameObjects.Sprite {
 	getCard(player,card){
 
 		this.scene.envi_grabcard01.play();
-		this.scene.enableAllBlocked();
-		this.destroy();
+		this.scene.enableAllBlocked(this);
+		this.visible=false;
+		this.body.enable=false;
 
 	}
 

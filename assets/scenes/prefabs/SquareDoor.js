@@ -12,6 +12,8 @@ class SquareDoor extends Phaser.GameObjects.Sprite {
 
 		// this (components)
 		new Physics(this);
+		const thisStartAnimation = new StartAnimation(this);
+		thisStartAnimation.animationKey = "squareDoorClose";
 
 		/* START-USER-CTR-CODE */
 		this.createEvent =	this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.create, this);
@@ -56,20 +58,20 @@ class SquareDoor extends Phaser.GameObjects.Sprite {
 							this.closingDoor = this.scene.time.addEvent({
 								delay: this.openningDelay,                // ms
 								callback: function(){
-				
+
 									this.closingAnim = this.play("squareDoorClose",true);
 									this.closingAnim.once('animationcomplete', () => {
 										this.body.enable=true;
 										this.wannaOpen=false;
-				
+
 									});
-				
+
 								},
 								//args: [],
 								callbackScope: door,
 								loop: false
 							});
-							
+
 						}
 
 					});

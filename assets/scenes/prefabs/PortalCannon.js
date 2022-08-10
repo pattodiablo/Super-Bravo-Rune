@@ -114,7 +114,8 @@ class PortalCannon extends Phaser.GameObjects.Sprite {
 			if(this.distanceToPlayer <=150){
 
 				this.scene.player.isCannonNearby = true;
-	
+
+				this.scene.player.cannonPosition=[this.x,this.y];
 	
 			}
 		}

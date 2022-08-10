@@ -54,7 +54,7 @@ class CannonRoll extends Phaser.GameObjects.Sprite {
 	catapultePlayer(rolledPlayer, cannon){
 	if(this.scene.player.isFiredfromCannon){
 		if(this.Killtimer !==null){
-			this.Killtimer.destroy();
+		//	this.Killtimer.destroy();
 	}
 
 	if(this.isBeingfired){
@@ -70,7 +70,7 @@ class CannonRoll extends Phaser.GameObjects.Sprite {
 		this.body.enable=false;
 	
 	var catapulttime = this.scene.time.addEvent({
-		delay: 400,                // ms
+		delay: 200,                // ms
 		callback: function(){
 			rolledPlayer.isBeingfired=true;
 			rolledPlayer.body.enable=true;

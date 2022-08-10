@@ -14,8 +14,10 @@
             "id": "e1bab578-94dd-47f2-9546-9c4f5ace39c8",
             "label": "squareDoor_instancia_10000",
             "components": [
-                "Physics"
+                "Physics",
+                "StartAnimation"
             ],
+            "StartAnimation.animationKey": "squareDoorClose",
             "texture": {
                 "key": "newSupaAnimationsRune2",
                 "frame": "squareDoor instancia 10000"

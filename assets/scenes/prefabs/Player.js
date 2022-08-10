@@ -121,7 +121,7 @@ class Player extends Phaser.GameObjects.Sprite {
 		this.isClickingEndInside = false;
 		this.isFiredfromCannon = false;
 		this.isCannonNearby=false;
-
+		this.cannonPosition= [];
 	
 
 		//this.body.setCircle(13,7,5);
@@ -1278,182 +1278,27 @@ class Player extends Phaser.GameObjects.Sprite {
 			this.scene.cannonRollPack.push(this.cannonRoll);
 			this.scene.cameras.main.stopFollow(this);
 			this.scene.cameras.main.startFollow(this.cannonRoll,true, 0.4, 0.04);
-			
-
-			this.spriteCircle = this.scene.add.sprite(this.x, this.y, "targetRing"); //el cañon
-			let spriteCircle = this.spriteCircle;
-			spriteCircle.setOrigin(0.5, 0.5);
-			this.spriteKnob = this.scene.add.sprite(this.x, this.y, "knob"); //para jalar 
-
-			var spriteKnob = this.spriteKnob;
-			spriteKnob.name = "cheesckake" + Math.random() * 1000;
-			spriteKnob.setOrigin(0.5, 0.5);
-			spriteKnob.setInteractive();
-			this.scene.input.setDraggable(spriteKnob);
-
-			for (let i = 0; i < this.maxarrows; i++) {
-
-				const arrow = new Arrow(this.scene, this.x, this.y);
-				this.arrowPack.push(arrow);
-				this.scene.add.existing(arrow);
-
-			}
-
-			var rad = 0;
-			var deg = 0;
 
 
-			if (this.firstTimeShot) {
-
-			
-
-				const handPull = new HandPull(this.scene, this.x, this.y);
-				this.scene.add.existing(handPull);
 				
+			var animateRoll = this.scene.tweens.createTimeline();
+			animateRoll.add({
+				targets: this.cannonRoll,
+				x:  this.cannonPosition[0],
+				y:  this.cannonPosition[1],
+				duration: 200,
+				ease: 'Linear',
+				repeat: 0
 
-				this.scene.input.on('drag', function (pointer, gameObject, dragX, dragY) {
+			});
 
-					
-					if(gameObject.texture.key == "knob"){
-						gameObject.x = dragX;
-						gameObject.y = dragY;
-	
-						rad = Phaser.Math.Angle.Between(gameObject.x, gameObject.y, gameObject.scene.player.spriteCircle.x, gameObject.scene.player.spriteCircle.y);
-						deg = Phaser.Math.RadToDeg(rad);
-	
-	
-						//gameObject.scene.player.pwrup_arrowbite_charge_01.play();
-	
-						gameObject.scene.player.arrowPack.forEach(arrow => {
-	
-							arrow.angle = deg + 90;
-						});
-	
-	
-						this.knobDistance = Phaser.Math.Distance.Between(gameObject.x, gameObject.y, gameObject.scene.player.spriteCircle.x, gameObject.scene.player.spriteCircle.y);
-						gameObject.scene.player.spriteCircle.scaleX = this.knobDistance / 50;
-						gameObject.scene.player.spriteCircle.scaleY = this.knobDistance / 50+50;
-	
-	
-				
-							gameObject.scene.player.spriteCircle.scaleX = 1;
-							gameObject.scene.player.spriteCircle.scaleY = 1;
-	
-					
-	
-						gameObject.scene.player.spriteCircle.angle =  deg+90;
+			animateRoll.play();
 
-					}
-
-				});
-
-				this.scene.input.on('dragend', function (pointer, gameObject, dragX, dragY) {
-
-					if(gameObject.texture.key == "knob"){
-
-						rad = Phaser.Math.Angle.Between(gameObject.x, gameObject.y, gameObject.scene.player.spriteCircle.x, gameObject.scene.player.spriteCircle.y);
-						deg = Phaser.Math.RadToDeg(rad);
-	
-					
-						gameObject.scene.supa_cannon_01.play();
-	
-						var knobreturn = this.scene.tweens.createTimeline();
-						knobreturn.add({
-							targets: gameObject,
-							y: gameObject.scene.player.spriteCircle.y + 10,
-							x: gameObject.scene.player.spriteCircle.x + 10,
-							duration: 50,
-							ease: 'Linear',
-							repeat: 0,
-							callbackScope: this,
-							onComplete: function () {
-								if (typeof gameObject != undefined) {
-									//console.log(gameObject.scene.cannonRollPack);
-									gameObject.scene.physics.velocityFromAngle(deg, 700, gameObject.scene.cannonRollPack[0].body.velocity);//chequear
-							
-									gameObject.scene.cannonRollPack[0].killFirstRollcanon(gameObject.scene);
-									gameObject.scene.cannonRollPack[0].visible=false;
-									gameObject.scene.cameras.main.flash();
-									gameObject.scene.player.currentArrow++;
-									gameObject.scene.player.isFiredfromCannon=true;
-								
-									if (gameObject.scene.player.currentArrow >= gameObject.scene.player.maxarrows) {
-										gameObject.removeInteractive();
-										gameObject.scene.player.visible = false;
-										gameObject.scene.player.body.enable = false;
-										var killTimer = gameObject.scene.time.addEvent({
-											delay: 600,                // ms
-											callback: function () {
-												
-	
-												gameObject.scene.player.spriteCircle.destroy();
-	
-	
-												gameObject.scene.player.arrowPack.forEach(arrow => {
-													arrow.destroy();
-												});
-												gameObject.scene.player.isBiting = false;
-												gameObject.scene.player.body.setAcceleration(0);
-												gameObject.scene.player.waitingfortarget = false;
-												//gameObject.scene.player.supaBiteChances--;
-												gameObject.scene.player.arrowPack = [];
-												gameObject.destroy();
-											},
-											//args: [],
-											callbackScope: this,
-	
-										});
-	
-	
-	
-									}
-	
-	
-								}
-							}
-	
-						});
-	
-	
-						knobreturn.add({
-	
-							targets: gameObject,
-							y: gameObject.scene.player.spriteCircle.y - 10,
-							x: gameObject.scene.player.spriteCircle.x - 10,
-							duration: 50,
-							ease: 'Linear',
-							repeat: 0
-	
-						});
-	
-						knobreturn.add({
-	
-							targets: gameObject,
-							y: gameObject.scene.player.spriteCircle.y,
-							x: gameObject.scene.player.spriteCircle.x,
-							duration: 50,
-							ease: 'Linear',
-							repeat: 0,
-	
-	
-						});
-	
-						knobreturn.play();
-					}
-				
-
-				});
-				this.firstTimeShot = false;
-			}
-
-
-
-
+			this.scene.cameras.main.flash();						
+			this.isFiredfromCannon=true;
+			this.isBiting = false;
 			this.wannaBite = false;
-		}
-
-
-	}
+	}	}
 
 	checkIfSuperRoll() { //Supa Roll
 		if (this.wannaRoll) {

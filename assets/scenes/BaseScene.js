@@ -13,6 +13,8 @@ class BaseScene extends Phaser.Scene {
 		this.lockedTiles = [];
 		this.lockedTilesList  = [];
 		this.destroyableTiles = [];
+		this.invisiblebleTiles = [];
+		this.invisiblebleTilesList  = [];
 		this.sideDoors = [];
 		this.tolls = [];
 		this.finalBossActiveParts = [];
@@ -66,6 +68,7 @@ class BaseScene extends Phaser.Scene {
 		this.createLockedTiles();
 	
 		this.createDestroyableTiles();
+		this.createInvisibleTiles();
 		this.createSquareDoors();
 		this.createPlayerBullets();
 		this.initTutorials();
@@ -1114,7 +1117,7 @@ class BaseScene extends Phaser.Scene {
 
 		this.lockedTiles.forEach(function(wall) {
 	
-			console.log("creating locked")
+		
 			const lockedTile = new LockedTile(this, wall[0], wall[1]);
 			this.lockedTilesList.push(lockedTile);
 			this.add.existing(lockedTile);
@@ -1125,14 +1128,16 @@ class BaseScene extends Phaser.Scene {
 		
 	}
 
-	enableAllBlocked(){
+	enableAllBlocked(card){
 		
 		this.lockedTilesList.forEach(function(wall) {
 	
 			let erasedAmin = wall.play("LockedErased",true);
+			wall.body.enable=false;
+			wall.alpha=0.2;
 			erasedAmin.once('animationcomplete', () => {
 			
-				wall.destroy();
+			
 				
 
 			});
@@ -1140,6 +1145,53 @@ class BaseScene extends Phaser.Scene {
 			
 
 		},this);
+
+		this.invisiblebleTilesList.forEach(function(wall) {
+
+			 wall.play("invisible2",true);
+			
+			wall.body.enable=true;
+			
+
+		},this);
+
+
+		this.reenableTimer = this.time.addEvent({
+			delay: card.timeExpires,                // ms
+			callback: function(){
+				this.disableAllBlocked(card);
+			},
+			//args: [],
+			callbackScope: this,
+			loop: false
+		});
+
+
+	}
+
+	disableAllBlocked(card){
+
+		card.body.enable=true;
+		card.visible=true;
+
+		this.lockedTilesList.forEach(function(wall) {
+	
+			wall.play("lockedWall",true);
+			wall.body.enable=true;
+			wall.alpha=1;
+			
+
+		},this);
+
+		this.invisiblebleTilesList.forEach(function(wall) {
+
+			 wall.play("invisible1",true);
+			
+			wall.body.enable=false;
+			
+
+		},this);
+
 	}
 
 	createDestroyableTiles(){
@@ -1158,6 +1210,24 @@ class BaseScene extends Phaser.Scene {
 		},this);
 		
 	}
+
+	createInvisibleTiles(){
+
+
+		this.invisiblebleTiles.forEach(function(wall) {
+	
+				
+	
+			const invisiblebleTile = new InvisibleTile(this, wall[0], wall[1]);
+			this.invisiblebleTilesList.push(invisiblebleTile);
+			this.add.existing(invisiblebleTile);
+		
+			
+
+		},this);
+		
+	}
+
 
 
 
@@ -1241,6 +1311,17 @@ class BaseScene extends Phaser.Scene {
 					
 					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
 					this.destroyableTiles.push(tilePos);					
+					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
+
+					
+				}
+
+				
+				if(tileOnly.properties.name=="transparente"){
+								
+					
+					var tilePos = [ tileOnly.x*tileOnly.width,tileOnly.y*tileOnly.height];
+					this.invisiblebleTiles.push(tilePos);					
 					tileOnly.tilemapLayer.removeTileAt(tileOnly.x,tileOnly.y);
 
 					
@@ -1422,27 +1503,21 @@ class BaseScene extends Phaser.Scene {
 
 
 	restartGame() {
-
+		console.log("trying restart")
 		if(!this.isRestartingGame){
 
 			this.game.playerData.gotCannon = false;
 			this.game.playerData.doubleJump = false;
+			this.game.playerData.life = 5;
 
 			this.gotoLevel = this.scene.key;
 			this.isRestartingGame=true;
-			this.cameras.main.fadeOut(1000);
+			this.cameras.main.fadeOut(300);
 
 		//	this.player.body.enable = false;
 
 			this.game.sound.stopAll();
-			this.fxcontainer.forEach(fx => {
-				fx.destroy();
-			});
-
-			this.supajukebox.forEach(song => {
-				song.destroy();
-			});
-
+		
 
 		
 			this.cameras.main.once('camerafadeoutcomplete', function (camera) {	

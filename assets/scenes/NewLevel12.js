@@ -46,7 +46,7 @@ class NewLevel12 extends BaseScene {
 		this.add.existing(player);
 
 		// upperTile_1
-		new_level12.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
+		new_level12.createLayer("upperTile", [], 0, 0);
 
 		// alert_instance_10000
 		this.add.image(907, 736, "misile", "alert instance 10000");
@@ -75,10 +75,6 @@ class NewLevel12 extends BaseScene {
 		const sampoShooter_1 = new SampoShooter(this, 1102, 540);
 		this.add.existing(sampoShooter_1);
 
-		// angrySpin
-		const angrySpin = new AngrySpin(this, 377, 533);
-		this.add.existing(angrySpin);
-
 		// drone
 		const drone = new Drone(this, 278, 218);
 		this.add.existing(drone);
@@ -99,18 +95,42 @@ class NewLevel12 extends BaseScene {
 		const enemyCreator_2 = new EnemyCreator(this, 1243, 38);
 		this.add.existing(enemyCreator_2);
 
-		// squareDoor_instancia_10000
-		const squareDoor_instancia_10000 = new InvisibleTile(this, 181, 728);
-		this.add.existing(squareDoor_instancia_10000);
+		// card
+		const card = new Card(this, 621, 254);
+		this.add.existing(card);
+
+		// sampoShooter_3
+		const sampoShooter_3 = new SampoShooter(this, 215, 499);
+		this.add.existing(sampoShooter_3);
+
+		// enemyCreator_3
+		const enemyCreator_3 = new EnemyCreator(this, 143, 210);
+		this.add.existing(enemyCreator_3);
+
+		// heart
+		const heart = new Heart(this, 745, 435);
+		this.add.existing(heart);
+
+		// card_1
+		const card_1 = new Card(this, 1569, 285);
+		this.add.existing(card_1);
+
+		// heart_1
+		const heart_1 = new Heart(this, 1057, 80);
+		this.add.existing(heart_1);
+
+		// heart_2
+		const heart_2 = new Heart(this, 453, 258);
+		this.add.existing(heart_2);
 
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [sampoShooter, sampoShooter_1, angrySpin, misile, sampoShooter_2];
+		const enemies = [sampoShooter, sampoShooter_1, sampoShooter_2, sampoShooter_3];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
-		const revivingPods = [enemyCreator, enemyCreator_2];
+		const revivingPods = [enemyCreator, enemyCreator_2, enemyCreator_3];
 		const tutorials = [];
 
 		// tilespriteBG (components)
@@ -121,6 +141,18 @@ class NewLevel12 extends BaseScene {
 
 		// enemyCreator_2 (prefab fields)
 		enemyCreator_2.PodID = "pod2";
+
+		// card (prefab fields)
+		card.timeExpires = 10000;
+
+		// sampoShooter_3 (prefab fields)
+		sampoShooter_3.RevivingPodID = "pod3";
+
+		// enemyCreator_3 (prefab fields)
+		enemyCreator_3.PodID = "pod3\n";
+
+		// card_1 (prefab fields)
+		card_1.timeExpires = 6000;
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
@@ -152,7 +184,7 @@ class NewLevel12 extends BaseScene {
 	doors;
 	/** @type {Array<any>} */
 	switches;
-	/** @type {Array<SampoShooter|AngrySpin|Misile>} */
+	/** @type {SampoShooter[]} */
 	enemies;
 	/** @type {Array<any>} */
 	platforms;

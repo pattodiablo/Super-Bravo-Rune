@@ -17,7 +17,9 @@ class InterludeMap extends Phaser.Scene {
 	editorCreate() {
 
 		// red
-		const red = this.add.sprite(0, 0, "red");
+		const red = this.add.sprite(0, 0, "energyPanel_doubleJump");
+		red.scaleX = 0.4285714285714286;
+		red.scaleY = 0.4285714285714286;
 		red.setOrigin(0, 0);
 
 		// interludeBg
@@ -149,7 +151,7 @@ class InterludeMap extends Phaser.Scene {
 
 	//this.totalRings.text=this.coinscollected;
 	var totalEstrellasganadasRate = this.coinscollected/this.totalCoins;
-	
+
 	var Ponderacion = Math.abs(totalEstrellasganadasRate*10-this.game.playerData.timesDead)/10;
 /*
 	console.log('Star Rate '+ totalEstrellasganadasRate);
@@ -220,14 +222,14 @@ class InterludeMap extends Phaser.Scene {
 		});
 		var estaLaScena = sceneasCargadas.includes(this.levelTogo);
 		if(!estaLaScena){
-			
+
 			if(this.levelTogo!==""){
 
 				this.load.sceneFile(this.levelTogo, 'assets/scenes/'+this.levelTogo+'.js');	
 			}else{
 				this.load.sceneFile(this.levelTogo, 'assets/scenes/'+"NewLevel0.js");
 			}
-			
+
 		}
 
 	}
@@ -243,7 +245,7 @@ class InterludeMap extends Phaser.Scene {
 
 	//console.log("delayS " + this.delayScreen)
 		if(!this.delayScreen){
-			
+
 			this.interludeBg.visible = false;
 			this.star1.visible=false;
 			this.star2.visible=false;
@@ -267,7 +269,7 @@ class InterludeMap extends Phaser.Scene {
 				});
 		}
 		else{
-			
+
 		this.red.displayWidth=this.cameras.main.width;
 		this.red.displayHeight=this.cameras.main.height;
 			this.game.playerData.timesDead = 0;

@@ -1026,104 +1026,6 @@
             "repeat": -1
         },
         {
-            "key": "squareDoorOpen",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10012",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10013",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "squareDoor instancia 10014",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 12,
-            "skipMissedFrames": true
-        },
-        {
             "key": "squareDoorClose",
             "type": "frame",
             "frames": [
@@ -1348,92 +1250,6 @@
             "hideOnComplete": true
         },
         {
-            "key": "LockedErased",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0012",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "newSupaAnimationsRune2",
-                    "frame": "downFloorBlocked0013",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true
-        },
-        {
             "key": "smallcard",
             "type": "frame",
             "frames": [
@@ -1507,6 +1323,140 @@
             "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "lockedWall",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0000",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "LockedErased",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "downFloorBlocked0000",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "squareDoorOpen",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2",
+                    "frame": "squareDoor instancia 10019",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
         }
     ],
     "globalTimeScale": 1,

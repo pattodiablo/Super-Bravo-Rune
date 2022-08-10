@@ -13,11 +13,17 @@
             "type": "Sprite",
             "id": "ab76bcbf-9285-42ae-95c3-adc9c6ba8ae6",
             "label": "squareDoor_instancia_10000",
-            "components": [],
+            "components": [
+                "Physics",
+                "StartAnimation"
+            ],
+            "StartAnimation.animationKey": "invisible1",
             "texture": {
                 "key": "newSupaAnimationsRune2",
                 "frame": "squareDoor instancia 10000"
-            }
+            },
+            "originX": 0,
+            "originY": 0
         }
     ],
     "plainObjects": [],

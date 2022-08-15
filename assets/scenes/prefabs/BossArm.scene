@@ -19,7 +19,7 @@
             ],
             "PhysicsBody.bodyWidth": 60,
             "texture": {
-                "key": "Sector3"
+                "key": "Sector32"
             },
             "scaleX": -1
         }

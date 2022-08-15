@@ -32,6 +32,13 @@ class Cart extends Phaser.GameObjects.Sprite {
 		this.scene.physics.add.collider(this.scene.enemies, this);
 		this.scene.physics.add.collider(this.scene.player, this, this.onCart);
 		this.scene.physics.add.collider(this, this.scene.layer, null, null, this);
+		this.scene.physics.add.collider(this, this.scene.downFloortilesList, null, null, this);
+		this.scene.physics.add.collider(this, this.scene.invisiblebleTilesList, null, null, this);
+		this.scene.physics.add.collider(this, this.scene.lockedTilesList, null, null, this);
+		this.scene.physics.add.collider(this, this.scene.squaredDoorsList, null, null, this);
+		this.scene.physics.add.collider(this, this.scene.destroyableTileslist, null, null, this);
+		
+		
 	}
 
 	onCart(player,cart){

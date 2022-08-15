@@ -124,7 +124,7 @@ class EnemyHead extends Phaser.GameObjects.Container {
 							this.replaceHead2();
 							this.isHeadDamaged2=true;
 						}
-					
+
 						this.finalLife--;
 						if(this.finalLife<=0){
 
@@ -180,18 +180,20 @@ class EnemyHead extends Phaser.GameObjects.Container {
 
 		this.scene.cameras.main.once('camerafadeoutcomplete', function (camera) {
 			this.scene.game.playerData.gotCard = false;
-		
+
 			this.scene.scene.remove(this.scene.keys);
-			var sceneToGo = this.scene.scene.get("EndingScene");
-		
+			var sceneToGo = this.scene.scene.get("NewLevel20");
+			console.log(sceneToGo);
+
+			sceneToGo.passedTime=this.scene.initialTime;
 			
 			activeLeveles.forEach(level => {
 				this.scene.scene.remove(level)
 			});
-		
+
 			activeLeveles=[];
-			this.scene.scene.start("EndingScene");
-	
+			this.scene.scene.start("NewLevel20",this.scene.initialTime);
+
 		},this);
 
 
@@ -201,7 +203,7 @@ class EnemyHead extends Phaser.GameObjects.Container {
 				this.randomXPos = Math.random()*(this.x+this.scene.cameras.main.worldView.x-this.x+this.scene.cameras.main.worldView.x-100)+this.scene.cameras.main.worldView.x-100;
 
 				this.randomYPos = Math.random()*(this.scene.cameras.main.height-this.scene.cameras.main.height-200)+this.scene.cameras.main.height-200;	
-		
+
 				const explotion = new Explotion(this.scene, this.randomXPos, this.randomYPos );
 				this.scene.add.existing(explotion);		
 				explotion.emit("prefab-awake");
@@ -222,9 +224,9 @@ class EnemyHead extends Phaser.GameObjects.Container {
 
 	}
 	replaceHead2(){
-		
+
 		this.scene.bigBoss.etapa++;
-		
+
 		this.supaHead.visible = true;
 		this.crakedHead.visible = false;
 		this.enemyHeadProtected.visible = false;
@@ -235,7 +237,7 @@ class EnemyHead extends Phaser.GameObjects.Container {
 				this.randomXPos = Math.random()*(this.scene.player.x-this.scene.player.x-50)+this.scene.player.x-50;
 
 				this.randomYPos = Math.random()*(this.scene.cameras.main.height-this.scene.cameras.main.height-200)+this.scene.cameras.main.height-200;	
-		
+
 			//	console.log('Explosion en X: '+this.randomXPos + ' Explosion en Y: '+ this.randomYPos);
 				const explotion = new Explotion(this.scene, this.randomXPos, this.randomYPos );
 				this.scene.add.existing(explotion);		

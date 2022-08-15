@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg3TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 127,
+            "y": 640
         },
         {
             "type": "TilemapLayer",
@@ -97,6 +97,443 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "d159c0f1-c6b1-43c1-b33e-a78502f38a22",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
+            "components": [],
+            "x": 485,
+            "y": 597
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "0ca04dd3-3b43-4f5b-a222-d24823b0489d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter",
+            "components": [],
+            "x": 425,
+            "y": 724
+        },
+        {
+            "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
+            "id": "e1af3873-df68-4a07-854b-e25f9d76936d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "sampoShooter_1",
+            "components": [],
+            "x": 1214,
+            "y": 761
+        },
+        {
+            "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
+            "id": "da545419-d243-47cd-9541-33ea2f63e489",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "enemyCreator",
+            "components": [],
+            "x": 572,
+            "y": 504,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "3c2bc14f-4896-4932-b621-44b888916564",
+            "unlock": [
+                "x",
+                "y",
+                "timeExpires"
+            ],
+            "label": "card",
+            "timeExpires": 12000,
+            "components": [],
+            "x": 753,
+            "y": 156
+        },
+        {
+            "type": "Image",
+            "id": "2d781d87-20a0-4eec-9405-addf65f79f32",
+            "label": "powerPodium",
+            "components": [],
+            "texture": {
+                "key": "PowerPodium"
+            },
+            "x": 2083,
+            "y": 687
+        },
+        {
+            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
+            "id": "77bb583b-0160-4ed2-a1c0-18c6482186cb",
+            "unlock": [
+                "x",
+                "y",
+                "isCannonStrike"
+            ],
+            "label": "upgradeHalo",
+            "isCannonStrike": true,
+            "components": [],
+            "x": 2084,
+            "y": 703
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "6d2282e2-f9b4-41ce-81a7-cc398be2ec41",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone",
+            "components": [],
+            "x": 2007,
+            "y": 538
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "f8bd9dd3-c541-4f83-9928-2951293dbcec",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile",
+            "components": [],
+            "x": 2319,
+            "y": 684
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "1b056846-d370-4fd0-ab00-8894ac19bd06",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "card_1",
+            "components": [],
+            "x": 2165,
+            "y": 546
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "3fa5d2b1-bd4b-4432-a545-ea1d2a58b4c0",
+            "unlock": [
+                "x",
+                "y",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon_1",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 113,
+            "y": 433
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "e8948aee-32b0-4d41-be48-19c410bdc511",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_2",
+            "components": [],
+            "x": 108,
+            "y": 81,
+            "angle": 90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "3b647053-5435-4f59-8667-0a57c9162b0e",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_3",
+            "components": [],
+            "x": 273,
+            "y": 85,
+            "angle": -180
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "c1d6180c-0595-4e9a-b7ce-be20b82c4e00",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_4",
+            "components": [],
+            "x": 269,
+            "y": 301,
+            "angle": 90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "937a81d3-aa6c-4861-889f-9c5fff31b29c",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_5",
+            "components": [],
+            "x": 625,
+            "y": 303,
+            "angle": 0
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "cf7d5fef-9c45-4346-9872-97866a5ccb2f",
+            "unlock": [
+                "x",
+                "y",
+                "angle"
+            ],
+            "label": "portalCannon_6",
+            "components": [],
+            "x": 626,
+            "y": 77,
+            "angle": 90
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "6c8f0464-37b3-487e-8b2f-c3c7892437d9",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 1075,
+            "y": 304,
+            "angle": 0
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "3caedb9e-17f4-44d5-85a1-8f76094e6b5e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "card_2",
+            "components": [],
+            "x": 1043,
+            "y": 70
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "852665e9-0c1e-480c-9d7d-381ce18ad853",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "IsFirstCannon"
+            ],
+            "label": "portalCannon_7",
+            "IsFirstCannon": false,
+            "components": [],
+            "x": 1074,
+            "y": 167,
+            "angle": 90
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "ef13a689-9fd1-4aa9-93a5-159edb2dd571",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone_1",
+            "components": [],
+            "x": 1431,
+            "y": 52
+        },
+        {
+            "prefabId": "4e7d1116-2b35-48d0-9c9b-266277a60e96",
+            "id": "794198c4-772b-478e-a4d0-bafbcd0898c7",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY",
+                "isActive",
+                "alpha",
+                "activateBoss"
+            ],
+            "label": "activeZoneBoss",
+            "isActive": true,
+            "activateBoss": true,
+            "components": [],
+            "x": 870,
+            "y": 406,
+            "scaleX": 5.914072889592503,
+            "scaleY": 5.070510206408815,
+            "alpha": 0
+        },
+        {
+            "prefabId": "c812057b-6b17-4fd2-9f6d-b8c03b50c9dc",
+            "id": "02f1ec94-fb87-4e17-9918-3b71c35c3020",
+            "unlock": [
+                "x",
+                "y",
+                "ThingToDrop"
+            ],
+            "label": "guardBoss",
+            "scope": "CLASS",
+            "ThingToDrop": "Coin",
+            "components": [],
+            "x": 1193,
+            "y": 519
+        },
+        {
+            "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
+            "id": "723dee0d-d9fe-4e68-80cc-9177d42a2680",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "drone_2",
+            "components": [],
+            "x": 1086,
+            "y": 409
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "a7f4a817-cd59-4d98-a539-5673eb92bbf5",
+            "unlock": [
+                "x",
+                "y",
+                "timeExpires"
+            ],
+            "label": "card_3",
+            "timeExpires": 4000,
+            "components": [],
+            "x": 2077,
+            "y": 427
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "6ef38213-eb88-41ee-844e-825173c83318",
+            "unlock": [
+                "x",
+                "y",
+                "IsFirstCannon",
+                "angle"
+            ],
+            "label": "portalCannon_8",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 2123,
+            "y": 350,
+            "angle": -32.00000000000006
+        },
+        {
+            "prefabId": "c5a4c8f6-a934-468d-9cd1-5b3c0d4501f8",
+            "id": "e8b66776-d470-4e3b-bf90-a0dc0f61df8b",
+            "unlock": [
+                "x",
+                "y",
+                "IsFirstCannon",
+                "angle"
+            ],
+            "label": "portalCannon_9",
+            "IsFirstCannon": true,
+            "components": [],
+            "x": 1960,
+            "y": 80,
+            "angle": -122
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "e4469e8b-76d3-4b3c-b882-354cbc143e99",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile_1",
+            "components": [],
+            "x": 2366,
+            "y": 296
+        },
+        {
+            "prefabId": "dae0c595-f7aa-48e4-92ff-be93ff062d2a",
+            "id": "4cd1df1e-b1f9-45ba-b9f2-88bed6e98c50",
+            "unlock": [
+                "x",
+                "y",
+                "veloBlobber"
+            ],
+            "label": "blobber",
+            "veloBlobber": 200,
+            "components": [],
+            "x": 1793,
+            "y": 239
+        },
+        {
+            "prefabId": "8da9c9d9-f1a7-4a14-8de4-671c7938637c",
+            "id": "084b5281-0129-48a6-912e-a9a1561111dc",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "sideDoor",
+            "components": [],
+            "x": 209,
+            "y": 622,
+            "scaleX": 0.5803695227337756,
+            "scaleY": 0.5803695227337756
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "0f36734c-b458-4e41-9b02-740b97529cfd",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 2142,
+            "y": 88
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "d0c0ce7a-76b4-4f15-a61e-70a88daaf9ff",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_1",
+            "components": [],
+            "x": 1279,
+            "y": 635
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "8333ef61-062f-46e1-9c95-aa6e2c143ffd",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_2",
+            "components": [],
+            "x": 1233,
+            "y": 309
         }
     ],
     "plainObjects": [
@@ -145,7 +582,12 @@
         },
         {
             "id": "5b8b5385-7170-4f04-8368-32349b8524e7",
-            "label": "enemies"
+            "label": "enemies",
+            "objectIds": [
+                "0ca04dd3-3b43-4f5b-a222-d24823b0489d",
+                "e1af3873-df68-4a07-854b-e25f9d76936d",
+                "02f1ec94-fb87-4e17-9918-3b71c35c3020"
+            ]
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",
@@ -161,7 +603,10 @@
         },
         {
             "id": "c178e26c-494b-4400-b756-424719a97c29",
-            "label": "revivingPods"
+            "label": "revivingPods",
+            "objectIds": [
+                "da545419-d243-47cd-9541-33ea2f63e489"
+            ]
         },
         {
             "id": "31eff47d-130c-4018-bf6a-df9ab7135d98",

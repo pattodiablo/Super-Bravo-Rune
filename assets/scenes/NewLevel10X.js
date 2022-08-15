@@ -3,10 +3,10 @@
 
 /* START OF COMPILED CODE */
 
-class NewLevel20 extends BaseScene {
+class NewLevel10X extends BaseScene {
 
 	constructor() {
-		super("NewLevel20");
+		super("NewLevel10X");
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
@@ -17,36 +17,26 @@ class NewLevel20 extends BaseScene {
 	editorCreate() {
 
 		// mapa
-		const mapa = this.add.tilemap("new_level20");
-		mapa.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
+		const mapa = this.add.tilemap("new_level10X");
 
-		// new_level20
-		const new_level20 = this.add.tilemap("new_level20");
-		new_level20.addTilesetImage("new_ciudad_tiles", "new_ciudad_tiles");
+		// new_level10X
+		const new_level10X = this.add.tilemap("new_level10X");
 
 		// bg1Tile
-		const bg1Tile = this.add.image(0, 0, "bg1Tile");
+		const bg1Tile = this.add.image(0, 0, "bg2Tile");
 		bg1Tile.setOrigin(0, 0);
 
 		// tilespriteBG
-		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
+		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg3TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
-		// nocollide2_1
-		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
-
-		// nocollide
-		mapa.createLayer("nocollide", [], 0, 0);
-
-		// layer
-		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
+		// BigBoss
+		const bigBoss = new EnemyBody(this, 785, 531);
+		this.add.existing(bigBoss);
 
 		// player
-		const player = new Player(this, 146, 523);
+		const player = new Player(this, 802, 668);
 		this.add.existing(player);
-
-		// upperTile_1
-		new_level20.createLayer("upperTile", [], 0, 0);
 
 		// lists
 		const doors = [];
@@ -63,10 +53,10 @@ class NewLevel20 extends BaseScene {
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
-		this.layer = layer;
+		this.bigBoss = bigBoss;
 		this.player = player;
 		this.mapa = mapa;
-		this.new_level20 = new_level20;
+		this.new_level10X = new_level10X;
 		this.doors = doors;
 		this.switches = switches;
 		this.enemies = enemies;
@@ -83,14 +73,14 @@ class NewLevel20 extends BaseScene {
 	bg1Tile;
 	/** @type {Phaser.GameObjects.TileSprite} */
 	tilespriteBG;
-	/** @type {Phaser.Tilemaps.TilemapLayer} */
-	layer;
+	/** @type {EnemyBody} */
+	bigBoss;
 	/** @type {Player} */
 	player;
 	/** @type {Phaser.Tilemaps.Tilemap} */
 	mapa;
 	/** @type {Phaser.Tilemaps.Tilemap} */
-	new_level20;
+	new_level10X;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

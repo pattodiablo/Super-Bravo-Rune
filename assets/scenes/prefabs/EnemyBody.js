@@ -72,7 +72,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 		if(this.etapa==0){
 			this.secuenciadeEventos = ['respirar','subir','respirar','bajar','respirar','respirar'];
 			this.cualAccion = this.secuenciadeEventos[this.turnoSecuencia];
-			
+
 		}
 
 		if(this.etapa ==1){
@@ -85,13 +85,13 @@ class EnemyBody extends Phaser.GameObjects.Container {
 			}
 			this.secuenciadeEventos = ['respirar','subir','respirar','meteorito','bajar','respirar'];
 			this.cualAccion = this.secuenciadeEventos[this.turnoSecuencia];
-		
+
 		}
 
 		if(this.etapa ==2){
 			this.secuenciadeEventos = ['respirar','subir','meteorito','bajar'];
 			this.cualAccion = this.secuenciadeEventos[this.turnoSecuencia];
-		
+
 		}
 
 		this.turnoSecuencia++;
@@ -134,7 +134,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 					this.swingBrazo.add({
 						targets: this.rightArm,
 						y: this.rightArm.y+10,
-						duration: 600,
+						duration: 300,
 						ease: 'Linear',
 						repeat: 2,
 						yoyo:true,
@@ -142,15 +142,15 @@ class EnemyBody extends Phaser.GameObjects.Container {
 						onComplete: function () {
 
 							this.punchBrazoDerecho();
-							
+
 						}
 
 					});
 
 					this.swingBrazo.play();
 					this.scene.finalboss_armhit_01.play();
-					
-					
+
+
 			}else{
 				this.etapa=1;
 				this.iniciarMovimientos();
@@ -165,7 +165,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 					this.swingBrazo.add({
 						targets: this.leftArm,
 						y: this.leftArm.y-10,
-						duration: 600,
+						duration: 300,
 						ease: 'Linear',
 						repeat: 2,
 						yoyo:true,
@@ -180,8 +180,8 @@ class EnemyBody extends Phaser.GameObjects.Container {
 
 					this.swingBrazo.play();
 					this.scene.finalboss_armhit_01.play();
-					
-					
+
+
 		}else{
 			this.etapa=1;
 			this.prepararBrazoDerecho();
@@ -230,7 +230,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 			targets: this.leftArm,
 			x: this.originalLeftX,
 			y: this.originalLeftY,
-			duration: 500,
+			duration: 300,
 			ease: 'Linear',
 			repeat: 0,
 			callbackScope: this,
@@ -244,7 +244,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 
 		this.punchingBrazoIz.play();
 		this.scene.finalboss_handstomp_01.play();
-		
+
 
 
 	}
@@ -382,7 +382,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 
 	respirar(){
 
-		
+
 			if(typeof this.moverArriba!=="undefined"){
 				this.moverArriba.stop();
 			}
@@ -421,7 +421,7 @@ class EnemyBody extends Phaser.GameObjects.Container {
 		this.scene.finalboss_laugh_01.play();
 		this.MeteorX = [-150,-30,30,70,150];
 		this.MeteorY = [-500,-800,-1200,-1500,-1800,-2100,-2400];
-		
+
 		for(var i=0;i<=this.MeteorX.length-1;i++){
 			const meteorito = new Meteorito(this.scene,this.MeteorX[i],this.MeteorY[i]);
 			meteorito.setOrigin(0.5,0.5)

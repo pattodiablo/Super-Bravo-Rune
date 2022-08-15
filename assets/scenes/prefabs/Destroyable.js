@@ -30,8 +30,8 @@ class Destroyable extends Phaser.GameObjects.Sprite {
 		this.isHitted=false;
 
 	
-			this.scene.coins.push("destroyableCoin");
-			this.scene.coinText.text++;
+		//this.scene.coins.push("destroyableCoin");
+		//	this.scene.coinText.text++;
 		
 	}
 
@@ -64,8 +64,8 @@ class Destroyable extends Phaser.GameObjects.Sprite {
 						const explotion = new Explotion(platform.scene, platform.x+platform.width/2, platform.y+platform.height/2);
 						platform.scene.add.existing(explotion);		
 						explotion.emit("prefab-awake");
-						const coin = new Coin(platform.scene, platform.x, platform.y);
-						platform.scene.add.existing(coin);
+						/*const coin = new Coin(platform.scene, platform.x, platform.y);
+						platform.scene.add.existing(coin);*/
 						platform.destroy();
 						
 		

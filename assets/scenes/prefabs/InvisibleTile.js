@@ -31,7 +31,7 @@ class InvisibleTile extends Phaser.GameObjects.Sprite {
 	}
 
 	initColliders(){
-		console.log("colliding invisible")
+		
 		this.scene.physics.add.collider(this.scene.player, this, this.checkIfenabled);	
 
 		this.scene.physics.add.collider(this.scene.enemies, this);	

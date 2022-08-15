@@ -45,6 +45,7 @@ class CannonRoll extends Phaser.GameObjects.Sprite {
 		this.scene.physics.add.collider(this, this.scene.emptyWallsRack, this.translatePlayer,false,this);
 		this.scene.physics.add.overlap(this, this.scene.portalCannons, this.catapultePlayer,false,this);
 		this.scene.physics.add.overlap(this, this.scene.coins, this.getCoin,false,this);	
+	
 	}
 
 	getCoin(cannonRoll,coin){

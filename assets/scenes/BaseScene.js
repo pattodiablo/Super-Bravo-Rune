@@ -9,10 +9,13 @@ class BaseScene extends Phaser.Scene {
 		this.emptyWalls = [];
 		this.acidTiles = [];
 		this.downFloortiles = [];
+		this.downFloortilesList = [];
 		this.squaredDoors = [];
+		this.squaredDoorsList = [];
 		this.lockedTiles = [];
 		this.lockedTilesList  = [];
 		this.destroyableTiles = [];
+		this.destroyableTileslist = [];
 		this.invisiblebleTiles = [];
 		this.invisiblebleTilesList  = [];
 		this.sideDoors = [];
@@ -50,9 +53,14 @@ class BaseScene extends Phaser.Scene {
 		this.wallsID = 49; //si en el mapa dice 21 entonces aca es 22
 		this.coinsID = 93; //si en el mapa dice 21 entonces aca es 22
 		this.emptyWallsId = 47 
-
+	
+		if(this.passedTime>0){
+			this.initialTime=this.passedTime;
+		}else{
+			this.initialTime=0;
+		}
 		
-		this.initialTime=0;
+		
 		this.isRestartingGame = false;
 		this.isPowerPanelEnabled=true;
 	
@@ -1049,7 +1057,7 @@ class BaseScene extends Phaser.Scene {
 		
 			
 			const squareDoor = new SquareDoor(this, door[0], door[1]);
-			
+			this.squaredDoorsList.push(squareDoor);
 			this.add.existing(squareDoor);
 	
 			
@@ -1102,7 +1110,7 @@ class BaseScene extends Phaser.Scene {
 	
 			
 			const downFloor = new DownFloor(this, wall[0], wall[1]);
-
+			this.downFloortilesList.push(downFloor)
 			this.add.existing(downFloor);
 		
 			
@@ -1202,7 +1210,7 @@ class BaseScene extends Phaser.Scene {
 	
 			
 			const destroyableTile = new Destroyable(this, wall[0], wall[1]);
-
+			this.destroyableTileslist.push()
 			this.add.existing(destroyableTile);
 		
 			
@@ -1504,7 +1512,7 @@ class BaseScene extends Phaser.Scene {
 
 	restartGame() {
 		console.log("trying restart")
-		if(!this.isRestartingGame){
+		if(!this.isRestartingGame && this.scene.key!=="NewLevel20"){
 
 			this.game.playerData.gotCannon = false;
 			this.game.playerData.doubleJump = false;

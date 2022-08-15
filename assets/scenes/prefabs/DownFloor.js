@@ -32,6 +32,7 @@ class DownFloor extends Phaser.GameObjects.Sprite {
 		initColliders(){
 
 			this.scene.physics.add.collider(this.scene.player, this);	
+			
 
 			this.scene.physics.add.collider(this.scene.enemies, this);	
 		}

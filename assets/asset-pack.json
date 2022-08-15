@@ -47,6 +47,11 @@
                 "key": "backJetPackStation"
             },
             {
+                "url": "assets/images/BADEYES.png",
+                "type": "image",
+                "key": "BADEYES"
+            },
+            {
                 "url": "assets/scenes/prefabs/Bangta.js",
                 "type": "script",
                 "key": "Bangta"
@@ -239,6 +244,11 @@
                 ],
                 "type": "audio",
                 "key": "bossguard_shot02"
+            },
+            {
+                "url": "assets/images/BossShot.png",
+                "type": "image",
+                "key": "BossShot"
             },
             {
                 "url": "assets/images/box.png",
@@ -1737,6 +1747,26 @@
                 "key": "Saw"
             },
             {
+                "url": "assets/images/sector1.png",
+                "type": "image",
+                "key": "sector1"
+            },
+            {
+                "url": "assets/images/sector3.png",
+                "type": "image",
+                "key": "sector3"
+            },
+            {
+                "url": "assets/images/Sector32.png",
+                "type": "image",
+                "key": "Sector32"
+            },
+            {
+                "url": "assets/images/Sector4.png",
+                "type": "image",
+                "key": "Sector4"
+            },
+            {
                 "url": "assets/images/shadowGeneral.png",
                 "type": "image",
                 "key": "shadowGeneral"
@@ -1995,6 +2025,11 @@
                 "url": "assets/images/supaEntrance.png",
                 "type": "image",
                 "key": "supaEntrance"
+            },
+            {
+                "url": "assets/images/supaHead.png",
+                "type": "image",
+                "key": "supaHead"
             },
             {
                 "url": "assets/images/supaJet.png",

@@ -97,6 +97,155 @@
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "d7ab1645-ef92-47b2-9741-9b9bd6749e21",
+            "unlock": [
+                "x",
+                "y",
+                "timeExpires"
+            ],
+            "label": "card",
+            "timeExpires": 10000,
+            "components": [],
+            "x": 831,
+            "y": 383
+        },
+        {
+            "type": "Image",
+            "id": "2ba12f24-7c79-4c42-9361-e15f761079b3",
+            "label": "powerPodium",
+            "components": [],
+            "texture": {
+                "key": "PowerPodium"
+            },
+            "x": 1541,
+            "y": 630,
+            "scaleX": 0.8367216303631883,
+            "scaleY": 0.8367216303631883
+        },
+        {
+            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
+            "id": "8fcc438f-9269-49a2-8530-f746db9a0f50",
+            "unlock": [
+                "x",
+                "y",
+                "isDoubleJump"
+            ],
+            "label": "upgradeHalo",
+            "isDoubleJump": true,
+            "components": [],
+            "x": 1542,
+            "y": 640
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "3ae46355-6b0d-46d8-99f3-5be6f6d58c05",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile",
+            "components": [],
+            "x": 1770,
+            "y": 447
+        },
+        {
+            "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
+            "id": "8200c4cb-0d9f-4903-a6c6-dab53d2d951f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "misile_1",
+            "components": [],
+            "x": 1733,
+            "y": 174
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "05dd2b6d-2d3f-4b71-9f11-ae54ae3355a4",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb",
+            "components": [],
+            "x": 388,
+            "y": 323
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "055ac0f9-db45-4fe1-b10d-2a7355bd0c56",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_1",
+            "components": [],
+            "x": 662,
+            "y": 161
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "7f1dac1f-81ef-455d-b342-0f54e2ac33ff",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_2",
+            "components": [],
+            "x": 979,
+            "y": 426
+        },
+        {
+            "prefabId": "95e06b2d-8c76-4f67-93d3-bf8909bc6b10",
+            "id": "64641917-908f-40c2-9a52-727d1a8b70d1",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaBomb_3",
+            "components": [],
+            "x": 1273,
+            "y": 301
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "9797095a-d3b6-4f38-862d-b8bb4fd5f2ce",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 396,
+            "y": 154
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "a22864a9-a12f-458f-bbcd-5ff4c0b9049f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_1",
+            "components": [],
+            "x": 1381,
+            "y": 19
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "650b3942-ae95-40d1-bf0d-11b39309f819",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_2",
+            "components": [],
+            "x": 828,
+            "y": 614
         }
     ],
     "plainObjects": [

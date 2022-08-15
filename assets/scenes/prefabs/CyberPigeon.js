@@ -103,7 +103,7 @@ class CyberPigeon extends Phaser.GameObjects.Sprite {
 				this.scene.add.existing(pigeon_coin);
 			}
 			
-			this.hasCoins = true;
+			this.hasCoins = false;
 
 			// const pigeon_coin = new Coin(this.scene, this.x, this.y);
 			// this.pigeon_coin = pigeon_coin;

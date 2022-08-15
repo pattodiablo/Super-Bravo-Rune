@@ -19,7 +19,7 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "bg1Tile"
+                "key": "bg2Tile"
             },
             "originX": 0,
             "originY": 0
@@ -33,7 +33,7 @@
                 "FixedToCamera"
             ],
             "texture": {
-                "key": "bg1TileBG"
+                "key": "bg3TileBG"
             },
             "originX": 0,
             "originY": 1,
@@ -43,7 +43,7 @@
         {
             "type": "TilemapLayer",
             "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
-            "label": "nocollide2_1",
+            "label": "nocollide2",
             "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide2",
@@ -84,19 +84,109 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 133,
-            "y": 448
+            "x": 49,
+            "y": 648
         },
         {
             "type": "TilemapLayer",
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
-            "label": "upperTile_1",
+            "label": "upperTile",
+            "scope": "CLASS",
             "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "prefabId": "51024170-1d68-485a-b38f-a1e37612b2c3",
+            "id": "abd30fde-0e80-404f-ba28-67aebcc60312",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "BigBoss",
+            "scope": "CLASS",
+            "components": [],
+            "x": 817,
+            "y": 593,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
+            "id": "fd4c4e0c-7826-4b4e-a69e-5f007405afe8",
+            "unlock": [
+                "x",
+                "y",
+                "distance"
+            ],
+            "label": "platform2",
+            "distance": 550,
+            "components": [],
+            "x": 224,
+            "y": 648
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "c0dd6b4f-a15b-4fc4-97ed-ca41b8bbddd2",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "card",
+            "components": [],
+            "x": 66,
+            "y": 47
+        },
+        {
+            "type": "Image",
+            "id": "aff38db8-190d-4f34-afbe-ebea86e6d379",
+            "label": "powerPodium",
+            "components": [],
+            "texture": {
+                "key": "PowerPodium"
+            },
+            "x": 1424,
+            "y": 449
+        },
+        {
+            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
+            "id": "13f20664-1fbe-49d2-85b4-a93368464664",
+            "unlock": [
+                "x",
+                "y",
+                "isDoubleJump"
+            ],
+            "label": "upgradeHalo",
+            "isDoubleJump": true,
+            "components": [],
+            "x": 1424,
+            "y": 464
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "8bab5a32-4088-458b-b669-2cd6f48980f1",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart",
+            "components": [],
+            "x": 1299,
+            "y": 255
+        },
+        {
+            "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
+            "id": "bc60c140-8105-4cec-ac3b-04a97719dde3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "heart_1",
+            "components": [],
+            "x": 1297,
+            "y": 331
         }
     ],
     "plainObjects": [
@@ -149,7 +239,10 @@
         },
         {
             "id": "162e2fe2-38a7-450b-88ec-186b241d78cc",
-            "label": "platforms"
+            "label": "platforms",
+            "objectIds": [
+                "fd4c4e0c-7826-4b4e-a69e-5f007405afe8"
+            ]
         },
         {
             "id": "9ebda1ea-a3d2-410b-b328-4358561cbdf7",

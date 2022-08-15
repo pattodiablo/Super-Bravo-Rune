@@ -30,7 +30,7 @@ class Traverso extends Phaser.GameObjects.Sprite {
 			this.etapa=0;
 			this.entryAnimation();
 			this.initColliders();
-			this.scene.collideFX.setDepth=2;
+		
 			this.setDepth(1);
 		}
 

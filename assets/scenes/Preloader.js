@@ -16,8 +16,7 @@ class Preloader extends Phaser.Scene {
 	/** @returns {void} */
 	editorPreload() {
 
-	let	thispack = this.load.pack("asset-pack", "assets/asset-pack.json");
-	console.log(thispack);
+		this.load.pack("asset-pack", "assets/asset-pack.json");
 	}
 
 	/** @returns {void} */
@@ -86,6 +85,7 @@ class Preloader extends Phaser.Scene {
 	create() {
 		console.log(challengeNumber)
 		switch(challengeNumber){
+
 			case 1:
 			var wichLevel="NewLevel0";
 			break;
@@ -101,11 +101,10 @@ class Preloader extends Phaser.Scene {
 			case 4:
 			var wichLevel="NewLevel3";
 			break;
-		
+
 			case 5:
 			var wichLevel="NewLevel4";
 			break;
-
 
 			case 6:
 			var wichLevel="NewLevel5";
@@ -115,6 +114,7 @@ class Preloader extends Phaser.Scene {
 			case 7:
 			var wichLevel="NewLevel6";
 			break;
+
 
 			case 8:
 			var wichLevel="NewLevel7";
@@ -169,17 +169,15 @@ class Preloader extends Phaser.Scene {
 			break;
 
 
-			case 21:
-			var wichLevel="NewLevel20";
-			break;
+
 
 			default:
-			
+
 			var wichLevel="NewLevel0";
 
 			break;
 		}
-	
+
 
 	let quePasa =	this.scene.start(wichLevel);		
 	console.log(quePasa);

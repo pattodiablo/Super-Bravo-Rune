@@ -6,7 +6,7 @@
 class BossArm extends Phaser.GameObjects.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 0, y ?? 0, texture || "Sector3", frame);
+		super(scene, x ?? 0, y ?? 0, texture || "Sector32", frame);
 
 		this.scaleX = -1;
 
@@ -17,7 +17,7 @@ class BossArm extends Phaser.GameObjects.Sprite {
 
 		/* START-USER-CTR-CODE */
 		this.createEvent =	this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.create, this);
-	
+
 		/* END-USER-CTR-CODE */
 	}
 
@@ -31,11 +31,11 @@ class BossArm extends Phaser.GameObjects.Sprite {
 		this.Health = 3;
 		this.isDestroyed = false;
 		this.initColliders();
-	
+
 		this.body.immovable = true;
 
 		if(!this.brazoOpuesto){
-		
+
 			this.body.setOffset(230,0);
 			this.direction=1;
 
@@ -74,10 +74,10 @@ class BossArm extends Phaser.GameObjects.Sprite {
 		callback: function(){
 			if(!this.brazoOpuesto){
 				this.randomXPos = this.scene.cameras.main.worldView.x+this.x+this.scene.cameras.main.width/2+Math.random()*this.width/2;
-				
+
 			}else{
 				this.randomXPos = this.scene.cameras.main.worldView.x+this.scene.cameras.main.width/2+Math.random()*this.width/2;
-			
+
 			}
 				this.randomYPos = this.y+this.scene.cameras.main.height/2;	
 			const explotion = new Explotion(this.scene, this.randomXPos, this.randomYPos );
@@ -88,7 +88,7 @@ class BossArm extends Phaser.GameObjects.Sprite {
 		//args: [],
 		callbackScope: this,
 		repeat: 12,
-		
+
 	});
 
 
@@ -96,12 +96,12 @@ class BossArm extends Phaser.GameObjects.Sprite {
 	}
 
 	killPlayer(){
-		
+
 		if(!this.body.touching.up){
 			this.scene.player.playerhurt();
-		
+
 		}
-	
+
 	}
 
 

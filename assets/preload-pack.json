@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/images/icon.png",
+                "type": "image",
+                "key": "icon"
+            },
+            {
                 "url": "assets/sprites/loading.png",
                 "type": "image",
                 "key": "loading"
@@ -15,11 +20,6 @@
                 "url": "assets/scenes/Preloader.js",
                 "type": "sceneFile",
                 "key": "Preloader"
-            },
-            {
-                "url": "assets/images/SBLogo.png",
-                "type": "image",
-                "key": "SBLogo"
             },
             {
                 "url": "assets/images/weveanaLogo.png",

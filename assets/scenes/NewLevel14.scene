@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 127,
-            "y": 640
+            "x": 1340,
+            "y": 299
         },
         {
             "type": "TilemapLayer",
@@ -534,6 +534,18 @@
             "components": [],
             "x": 1233,
             "y": 309
+        },
+        {
+            "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",
+            "id": "a62ffb4b-40d1-46c9-99f4-a570c75337fc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "card_4",
+            "components": [],
+            "x": 51,
+            "y": 514
         }
     ],
     "plainObjects": [

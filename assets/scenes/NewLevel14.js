@@ -42,7 +42,7 @@ class NewLevel14 extends BaseScene {
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
-		const player = new Player(this, 127, 640);
+		const player = new Player(this, 1340, 299);
 		this.add.existing(player);
 
 		// upperTile_1
@@ -188,6 +188,10 @@ class NewLevel14 extends BaseScene {
 		// heart_2
 		const heart_2 = new Heart(this, 1233, 309);
 		this.add.existing(heart_2);
+
+		// card_4
+		const card_4 = new Card(this, 51, 514);
+		this.add.existing(card_4);
 
 		// lists
 		const doors = [];

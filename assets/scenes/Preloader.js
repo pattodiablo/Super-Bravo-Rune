@@ -29,7 +29,7 @@ class Preloader extends Phaser.Scene {
 		const weveanaLogo = this.add.sprite(147, 70, "weveanaLogo");
 
 		// sBLogo
-		const sBLogo = this.add.sprite(231, 247, "SBLogo");
+		const sBLogo = this.add.sprite(231, 247, "icon");
 
 		// loadingBorder
 		const loadingBorder = this.add.sprite(15, 248, "loadingBorder");
@@ -58,10 +58,10 @@ class Preloader extends Phaser.Scene {
 		this.editorCreate();
 		this.cameras.main.setBackgroundColor('#f20f4f')
 		this.sBLogo.x=this.cameras.main.centerX;
-		this.sBLogo.y=this.cameras.main.centerY-120;
+		this.sBLogo.y=this.cameras.main.centerY-60;
 
 		this.weveanaLogo.x=this.cameras.main.centerX;
-		this.weveanaLogo.y=this.cameras.main.centerY+200;
+		this.weveanaLogo.y=this.cameras.main.centerY+120;
 
 		this.loading.x=this.cameras.main.centerX-this.loading.width/2;
 		this.loading.y=this.cameras.main.centerY;

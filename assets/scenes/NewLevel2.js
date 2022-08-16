@@ -133,7 +133,7 @@ class NewLevel2 extends BaseScene {
 		// lists
 		const doors = [];
 		const switches = [];
-		const enemies = [sampoShooter_1, sampoShooter, blobber_1, sampoShooter_1_1, stomper, spike];
+		const enemies = [sampoShooter_1, sampoShooter, blobber_1, sampoShooter_1_1, stomper];
 		const platforms = [];
 		const coins = [];
 		const catapultas = [];
@@ -184,11 +184,15 @@ class NewLevel2 extends BaseScene {
 	player;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	upperTile;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level2;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */
 	switches;
-	/** @type {Array<SampoShooter|Blobber|Stomper|Spike>} */
+	/** @type {Array<SampoShooter|Blobber|Stomper>} */
 	enemies;
 	/** @type {Array<any>} */
 	platforms;

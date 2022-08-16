@@ -942,6 +942,7 @@ class BaseScene extends Phaser.Scene {
 	}
 	if(this.isMainScene){
 		this.readyText.visible=true;
+		this.readyText.setDepth(12);
 		var showReadyText = this.tweens.createTimeline();
 		showReadyText.add({
 			targets: this.readyText,
@@ -1512,14 +1513,15 @@ class BaseScene extends Phaser.Scene {
 
 	restartGame() {
 		console.log("trying restart")
-		if(!this.isRestartingGame && this.scene.key!=="NewLevel20"){
-
+		if(!this.isRestartingGame && this.scene.key!="NewLevel20"){
+			
 			this.game.playerData.gotCannon = false;
 			this.game.playerData.doubleJump = false;
 			this.game.playerData.life = 5;
 
 			this.gotoLevel = this.scene.key;
 			this.isRestartingGame=true;
+			console.log(this.cameras)
 			this.cameras.main.fadeOut(300);
 
 		//	this.player.body.enable = false;

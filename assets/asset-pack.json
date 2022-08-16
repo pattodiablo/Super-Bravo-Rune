@@ -1227,11 +1227,6 @@
                 "key": "musicBtn"
             },
             {
-                "url": "assets/environment/new_buildingTiles.png",
-                "type": "image",
-                "key": "new_buildingTiles"
-            },
-            {
                 "url": "assets/environment/new_ciudad_tiles.png",
                 "type": "image",
                 "key": "new_ciudad_tiles"

@@ -84,8 +84,8 @@
             "label": "player",
             "scope": "CLASS",
             "components": [],
-            "x": 1340,
-            "y": 299
+            "x": 125,
+            "y": 627
         },
         {
             "type": "TilemapLayer",

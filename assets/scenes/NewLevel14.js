@@ -42,7 +42,7 @@ class NewLevel14 extends BaseScene {
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
-		const player = new Player(this, 1340, 299);
+		const player = new Player(this, 125, 627);
 		this.add.existing(player);
 
 		// upperTile_1

@@ -5,7 +5,9 @@
         "snapWidth": 32,
         "snapHeight": 32,
         "superClassName": "BaseScene",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "Super-Bravo-Rune/assets/NewLevel2Pack.json"
+        ],
         "createMethodName": "editorCreate",
         "sceneKey": "NewLevel2",
         "borderWidth": 320,
@@ -42,21 +44,10 @@
         },
         {
             "type": "TilemapLayer",
-            "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
-            "label": "nocollide2_1",
+            "id": "49a12fd4-c924-4c52-b7fd-e3ad1d7a6b5f",
+            "label": "nocollide_1",
             "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
-            "layerName": "nocollide2",
-            "tilesets": [
-                "new_ciudad_tiles"
-            ]
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
-            "label": "nocollide",
-            "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "tilemapId": "3446539a-7854-46b1-ab96-f7ba50cbccae",
             "layerName": "nocollide",
             "tilesets": [
                 "new_ciudad_tiles"
@@ -64,11 +55,22 @@
         },
         {
             "type": "TilemapLayer",
-            "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
+            "id": "94918efc-5e99-4357-a4d2-02a67e8f68f7",
+            "label": "nocollide",
+            "components": [],
+            "tilemapId": "3446539a-7854-46b1-ab96-f7ba50cbccae",
+            "layerName": "nocollide2",
+            "tilesets": [
+                "new_ciudad_tiles"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "be845662-c5ca-42f3-8ea7-b7d77d0daec3",
             "label": "layer",
             "scope": "CLASS",
             "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "tilemapId": "3446539a-7854-46b1-ab96-f7ba50cbccae",
             "layerName": "layer",
             "tilesets": [
                 "new_ciudad_tiles"
@@ -328,18 +330,6 @@
             "nestedPrefabs": []
         },
         {
-            "type": "TilemapLayer",
-            "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
-            "label": "upperTile",
-            "scope": "CLASS",
-            "components": [],
-            "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
-            "layerName": "upperTile",
-            "tilesets": [
-                "new_ciudad_tiles"
-            ]
-        },
-        {
             "prefabId": "aa13d1d9-151a-4d67-ae52-0678e8566746",
             "id": "92391dfa-5c75-44e6-8cc8-58893bccd521",
             "unlock": [
@@ -350,11 +340,23 @@
             "components": [],
             "x": 904,
             "y": 539
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "a92e0029-26f9-4f8e-9e09-472d7aa56f8e",
+            "label": "upperTile",
+            "scope": "CLASS",
+            "components": [],
+            "tilemapId": "c2e13629-5134-4909-b87a-cbcdd040de56",
+            "layerName": "upperTile",
+            "tilesets": [
+                "new_ciudad_tiles"
+            ]
         }
     ],
     "plainObjects": [
         {
-            "id": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "id": "3446539a-7854-46b1-ab96-f7ba50cbccae",
             "type": "Tilemap",
             "label": "mapa",
             "key": "new_level2",
@@ -366,7 +368,7 @@
             ]
         },
         {
-            "id": "67ecd760-fbda-4f59-bf35-c424dad395f6",
+            "id": "c2e13629-5134-4909-b87a-cbcdd040de56",
             "type": "Tilemap",
             "label": "new_level2",
             "key": "new_level2",

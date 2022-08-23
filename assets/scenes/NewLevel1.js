@@ -14,6 +14,12 @@ class NewLevel1 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel1Pack", "assets/NewLevel1Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -32,10 +38,10 @@ class NewLevel1 extends BaseScene {
 		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
-		// nocollide2_1
+		// nocollide
 		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
 
-		// nocollide
+		// nocollide_1
 		mapa.createLayer("nocollide", [], 0, 0);
 
 		// layer
@@ -44,9 +50,6 @@ class NewLevel1 extends BaseScene {
 		// player
 		const player = new Player(this, 113, 723);
 		this.add.existing(player);
-
-		// upperTile
-		const upperTile = new_level1.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
 		// powerPodium
 		this.add.image(1524, 674, "PowerPodium");
@@ -89,6 +92,9 @@ class NewLevel1 extends BaseScene {
 
 		// lightBean
 		this.add.image(962, 715, "lightBean");
+
+		// upperTile
+		const upperTile = new_level1.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
 		// lists
 		const doors = [];
@@ -135,6 +141,10 @@ class NewLevel1 extends BaseScene {
 	player;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	upperTile;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level1;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

@@ -14,6 +14,12 @@ class NewLevel4 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel4Pack", "assets/NewLevel4Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -164,6 +170,10 @@ class NewLevel4 extends BaseScene {
 	player;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	upperTile;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level4;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

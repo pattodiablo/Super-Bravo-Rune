@@ -126,13 +126,13 @@ class Toll extends Phaser.GameObjects.Sprite {
 
 					//console.log("no tengo plata solo tengo " + currentMoney + "y eso cuesta " + toll.tollCost )
 					var diffToll = toll.tollCost - currentMoney;
-					this.textBox=this.scene.createTextBox(this.x-40,this.y-100, diffToll+" rings to go");
+				//	this.textBox=this.scene.createTextBox(this.x-40,this.y-100, diffToll+" rings to go");
 
 					var reloadTimer = this.scene.time.addEvent({
 						delay: 3000,                // ms
 						callback: function(){
 
-							this.textBox.destroy();
+							//this.textBox.destroy();
 
 						},
 						//args: [],

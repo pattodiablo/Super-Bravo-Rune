@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="newSupaAnimationsRune2Powers.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cannonStrike0000" x="1" y="1" width="43" height="32" pivotX="21.45" pivotY="15.6"/>
+	<SubTexture name="cannonStrike0001" x="45" y="1" width="43" height="32"/>
+	<SubTexture name="cannonStrike0002" x="89" y="1" width="43" height="32"/>
+	<SubTexture name="cannonStrike0003" x="133" y="1" width="43" height="32"/>
+	<SubTexture name="cannonStrike0004" x="177" y="1" width="43" height="32"/>
+	<SubTexture name="cannonStrike0005" x="1" y="34" width="43" height="32"/>
+	<SubTexture name="cannonStrike0006" x="45" y="34" width="43" height="32"/>
+	<SubTexture name="cannonStrike0007" x="89" y="34" width="43" height="32"/>
+	<SubTexture name="cannonStrike0008" x="133" y="34" width="43" height="32"/>
+	<SubTexture name="cannonStrike0009" x="177" y="34" width="43" height="32"/>
+	<SubTexture name="cannonStrike0010" x="1" y="67" width="43" height="32"/>
+	<SubTexture name="cannonStrike0011" x="45" y="67" width="43" height="32"/>
+	<SubTexture name="cannonStrike0012" x="89" y="67" width="43" height="32"/>
+	<SubTexture name="doubleJump0000" x="133" y="67" width="51" height="38" pivotX="24.85" pivotY="18.4"/>
+	<SubTexture name="doubleJump0001" x="185" y="67" width="51" height="38"/>
+	<SubTexture name="doubleJump0002" x="1" y="106" width="51" height="38"/>
+	<SubTexture name="doubleJump0003" x="53" y="106" width="51" height="38"/>
+	<SubTexture name="doubleJump0004" x="105" y="106" width="51" height="38"/>
+	<SubTexture name="doubleJump0005" x="157" y="106" width="51" height="38"/>
+	<SubTexture name="doubleJump0006" x="1" y="145" width="51" height="38"/>
+	<SubTexture name="doubleJump0007" x="53" y="145" width="51" height="38"/>
+	<SubTexture name="doubleJump0008" x="105" y="145" width="51" height="38"/>
+	<SubTexture name="doubleJump0009" x="157" y="145" width="51" height="38"/>
+	<SubTexture name="doubleJump0010" x="1" y="184" width="51" height="38"/>
+	<SubTexture name="doubleJump0011" x="53" y="184" width="51" height="38"/>
+	<SubTexture name="doubleJump0012" x="105" y="184" width="51" height="38"/>
+</TextureAtlas>

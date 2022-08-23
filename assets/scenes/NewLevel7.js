@@ -14,6 +14,12 @@ class NewLevel7 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel7Pack", "assets/NewLevel7Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -174,6 +180,10 @@ class NewLevel7 extends BaseScene {
 	layer;
 	/** @type {Player} */
 	player;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level7;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

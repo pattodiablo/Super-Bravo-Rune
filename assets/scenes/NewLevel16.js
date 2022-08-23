@@ -14,6 +14,12 @@ class NewLevel16 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel16Pack", "assets/NewLevel16Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa

@@ -5,7 +5,9 @@
         "snapWidth": 32,
         "snapHeight": 32,
         "superClassName": "BaseScene",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "Super-Bravo-Rune/assets/NewLevel1Pack.json"
+        ],
         "createMethodName": "editorCreate",
         "sceneKey": "NewLevel1",
         "borderWidth": 320,
@@ -42,10 +44,10 @@
         },
         {
             "type": "TilemapLayer",
-            "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
-            "label": "nocollide2_1",
+            "id": "2b3ef598-d6d0-4054-99ae-75aa4ee34ba4",
+            "label": "nocollide",
             "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "tilemapId": "789cac58-208c-417a-b246-de816f76f7e8",
             "layerName": "nocollide2",
             "tilesets": [
                 "new_ciudad_tiles"
@@ -53,10 +55,10 @@
         },
         {
             "type": "TilemapLayer",
-            "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
-            "label": "nocollide",
+            "id": "569a3f27-49b9-4293-bd22-f7ed2054b90d",
+            "label": "nocollide_1",
             "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "tilemapId": "789cac58-208c-417a-b246-de816f76f7e8",
             "layerName": "nocollide",
             "tilesets": [
                 "new_ciudad_tiles"
@@ -64,11 +66,11 @@
         },
         {
             "type": "TilemapLayer",
-            "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
+            "id": "28e88094-2e0d-404f-9537-73789b206bcf",
             "label": "layer",
             "scope": "CLASS",
             "components": [],
-            "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "tilemapId": "789cac58-208c-417a-b246-de816f76f7e8",
             "layerName": "layer",
             "tilesets": [
                 "new_ciudad_tiles"
@@ -86,18 +88,6 @@
             "components": [],
             "x": 113,
             "y": 723
-        },
-        {
-            "type": "TilemapLayer",
-            "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
-            "label": "upperTile",
-            "scope": "CLASS",
-            "components": [],
-            "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
-            "layerName": "upperTile",
-            "tilesets": [
-                "new_ciudad_tiles"
-            ]
         },
         {
             "type": "Image",
@@ -227,11 +217,23 @@
             },
             "x": 962,
             "y": 715
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "2a197987-c619-4f21-a67f-4d3ced79444f",
+            "label": "upperTile",
+            "scope": "CLASS",
+            "components": [],
+            "tilemapId": "46a1e2a0-f605-478a-b471-d2844d657829",
+            "layerName": "upperTile",
+            "tilesets": [
+                "new_ciudad_tiles"
+            ]
         }
     ],
     "plainObjects": [
         {
-            "id": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
+            "id": "789cac58-208c-417a-b246-de816f76f7e8",
             "type": "Tilemap",
             "label": "mapa",
             "key": "new_level1",
@@ -243,7 +245,7 @@
             ]
         },
         {
-            "id": "67ecd760-fbda-4f59-bf35-c424dad395f6",
+            "id": "46a1e2a0-f605-478a-b471-d2844d657829",
             "type": "Tilemap",
             "label": "new_level1",
             "key": "new_level1",

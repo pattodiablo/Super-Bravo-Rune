@@ -14,6 +14,12 @@ class NewLevel2 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel2Pack", "assets/NewLevel2Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -32,11 +38,11 @@ class NewLevel2 extends BaseScene {
 		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
-		// nocollide2_1
-		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
+		// nocollide_1
+		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
 
 		// nocollide
-		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
+		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
 
 		// layer
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
@@ -123,12 +129,12 @@ class NewLevel2 extends BaseScene {
 		const stomper = new Stomper(this, 592, 513);
 		this.add.existing(stomper);
 
-		// upperTile
-		const upperTile = new_level2.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
-
 		// spike
 		const spike = new Spike(this, 904, 539);
 		this.add.existing(spike);
+
+		// upperTile
+		const upperTile = new_level2.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
 		// lists
 		const doors = [];

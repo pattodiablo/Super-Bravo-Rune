@@ -14,6 +14,12 @@ class NewLevel10 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel10Pack", "assets/NewLevel10Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -275,6 +281,10 @@ class NewLevel10 extends BaseScene {
 	upperTile;
 	/** @type {GuardBoss} */
 	guardBoss;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level10;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

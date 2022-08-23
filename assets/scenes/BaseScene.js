@@ -30,7 +30,9 @@ class BaseScene extends Phaser.Scene {
 
 	create(){
 		
-			
+
+
+	this.game.sound.mute=false;	
 	
 
 	console.log("level key " + this.scene.key);
@@ -61,7 +63,7 @@ class BaseScene extends Phaser.Scene {
 		}
 		
 		
-		this.isRestartingGame = false;
+		isRestartingGame = false;
 		this.isPowerPanelEnabled=true;
 	
 
@@ -109,30 +111,18 @@ class BaseScene extends Phaser.Scene {
 		this.superbravo_gameplay_chip01 = this.sound.add('superbravo_gameplay_chip01');
 		this.superbravo_gameplay_chip02 = this.sound.add('superbravo_gameplay_chip02');
 		this.superbravo_gameplay_chip03 = this.sound.add('superbravo_gameplay_chip03');
-		this.superbravo_gameplay_chip04 = this.sound.add('superbravo_gameplay_chip04');
 		this.superbravo_gameplay_chip05 = this.sound.add('superbravo_gameplay_chip05');
-		this.superbravo_gameplay_chip06 = this.sound.add('superbravo_gameplay_chip06');
-		this.superbravo_gameplay_chip07 = this.sound.add('superbravo_gameplay_chip07');
-		this.superbravo_gameplay_chip08 = this.sound.add('superbravo_gameplay_chip08');
-		this.superbravo_gameplay_chip09 = this.sound.add('superbravo_gameplay_chip09');
-		this.superbravo_gameplay_chip10 = this.sound.add('superbravo_gameplay_chip10');
-		this.superbravo_gameplay_tutorial = this.sound.add('superbravo_gameplay_tutorial');
+	
 		this.superbravo_gameplay_finalboss2 = this.sound.add('superbravo_gameplay_finalboss2');
 		
-		this.supajukebox = [this.superbravo_gameplay_tutorial,this.superbravo_gameplay_chip01,this.superbravo_gameplay_chip04,this.superbravo_gameplay_chip08,this.superbravo_gameplay_chip09,this.superbravo_gameplay_chip02,this.superbravo_gameplay_chip03,this.superbravo_gameplay_chip10,this.superbravo_gameplay_chip06,this.superbravo_gameplay_finalboss2,this.superbravo_gameplay_chip05,this.superbravo_gameplay_chip07];
+		this.supajukebox = [this.superbravo_gameplay_chip01,this.superbravo_gameplay_chip02,this.superbravo_gameplay_chip03];
 
 
 		this.superbravo_gameplay_chip01.loop = true;
 		this.superbravo_gameplay_chip02.loop = true;
 		this.superbravo_gameplay_chip03.loop = true;
-		this.superbravo_gameplay_chip04.loop = true;
 		this.superbravo_gameplay_chip05.loop = true;
-		this.superbravo_gameplay_chip06.loop = true;
-		this.superbravo_gameplay_chip07.loop = true;
-		this.superbravo_gameplay_chip08.loop = true;
-		this.superbravo_gameplay_chip09.loop = true;
-		this.superbravo_gameplay_chip10.loop = true;
-		this.superbravo_gameplay_tutorial.loop = true;
+
 		this.superbravo_gameplay_finalboss2.loop = true;
 		
 		//______________________________________________________________________________________________________________________________________________________________
@@ -360,7 +350,6 @@ class BaseScene extends Phaser.Scene {
 		this.fxcontainer.push(this.envi_switch_02);
 
 		//BOSSES FX
-
 		this.bossguard_alert01 = this.sound.add('bossguard_alert01');
 		this.bossguard_alert01.loop = false;
 		this.fxcontainer.push(this.bossguard_alert01);
@@ -424,6 +413,7 @@ class BaseScene extends Phaser.Scene {
 		this.bossguard_shot02 = this.sound.add('bossguard_shot02');
 		this.bossguard_shot02.loop = false;
 		this.fxcontainer.push(this.bossguard_shot02);
+
 
 		// FX PIRANHA
 		this.piranha_bite_01 = this.sound.add('piranha_bite_01');
@@ -876,34 +866,10 @@ class BaseScene extends Phaser.Scene {
 		const randomFx = Math.abs(Math.round(Math.random()*this.supajukebox.length-1));
 			//Math.random() * (max - min) + min;
 			//this.randomFx = Math.round((Math.random()*(7-6)+6));
-		
-		if(this.scene.key=="NewLevel0" || this.scene.key=="NewLevel0A" || this.scene.key=="NewLevel0B" || this.scene.key=="NewLevel0C"|| this.scene.key=="NewLevel0D"){
-			this.randomFx = Math.round((Math.random()*(2-1)+1));
-					
-		}else if(this.scene.key=="NewLevel1" || this.scene.key=="NewLevel1A" || this.scene.key=="NewLevel1B" || this.scene.key=="NewLevel1C" || this.scene.key=="NewLevel1D" || this.scene.key=="NewLevel1E" || this.scene.key=="NewLevel1F" || this.scene.key=="NewLevel1X" || this.scene.key=="NewLevel1Y" || this.scene.key=="NewLevel2" || this.scene.key=="NewLevel2A" || this.scene.key=="NewLevel2B" || this.scene.key=="NewLevel2C" || this.scene.key=="NewLevel2D" || this.scene.key=="NewLevel2E" || this.scene.key=="NewLevel2F" || this.scene.key=="NewLevel2G"){
-			this.randomFx = Math.round((Math.random()*(2-1)+1));
-			
 
-		}else if(this.scene.key=="NewLevel3" || this.scene.key=="NewLevel3A" || this.scene.key=="NewLevel3B" || this.scene.key=="NewLevel3C" || this.scene.key=="NewLevel3D" || this.scene.key=="NewLevel3E" || this.scene.key=="NewLevel3F" || this.scene.key=="NewLevel3X" || this.scene.key=="NewLevel3Y" || this.scene.key=="NewLevel4" || this.scene.key=="NewLevel4A" || this.scene.key=="NewLevel4B" || this.scene.key=="NewLevel4C" || this.scene.key=="NewLevel4D"){
-			this.randomFx = Math.round((Math.random()*(4-3)+3));
-			
-
-		}else if(this.scene.key=="NewLevel5" || this.scene.key=="NewLevel5A" || this.scene.key=="NewLevel5B" || this.scene.key=="NewLevel5C" || this.scene.key=="NewLevel5X" || this.scene.key=="NewLevel6" || this.scene.key=="NewLevel6A" || this.scene.key=="NewLevel6B" || this.scene.key=="NewLevel6C" || this.scene.key=="NewLevel6D"){
-			this.randomFx = Math.round((Math.random()*(6-5)+5));
-			
 		
-		}else if(this.scene.key=="NewLevel7" || this.scene.key=="NewLevel7A" || this.scene.key=="NewLevel7B" || this.scene.key=="NewLevel7C" || this.scene.key=="NewLevel7X" || this.scene.key=="NewLevel8" || this.scene.key=="NewLevel8A" || this.scene.key=="NewLevel8B" || this.scene.key=="NewLevel8C" || this.scene.key=="NewLevel8D" || this.scene.key=="NewLevel8S"){
-			this.randomFx = Math.round((Math.random()*(8-7)+7));
-
-	    }else if(this.scene.key=="NewLevel10X"){
-			this.randomFx = 9;
-		
-		}else{
-			this.randomFx = Math.round((Math.random()*(8-7)+7));
-				
-		}
 //	console.log("random fx " + this.randomFx);
-		this.supajukebox[this.randomFx].play();
+		this.supajukebox[randomFx].play();
 		
 	
 		this.wasMusicLaunched = true;
@@ -1513,20 +1479,22 @@ class BaseScene extends Phaser.Scene {
 
 	restartGame() {
 		console.log("trying restart")
-		if(!this.isRestartingGame && this.scene.key!="NewLevel20"){
+		console.log(isRestartingGame);
+		console.log(this.scene.key);
+		console.log(this)
+		if(!isRestartingGame && this.scene.key!="NewLevel20"){
 			
 			this.game.playerData.gotCannon = false;
 			this.game.playerData.doubleJump = false;
 			this.game.playerData.life = 5;
 
 			this.gotoLevel = this.scene.key;
-			this.isRestartingGame=true;
-			console.log(this.cameras)
+			isRestartingGame=true;
 			this.cameras.main.fadeOut(300);
 
 		//	this.player.body.enable = false;
 
-			this.game.sound.stopAll();
+			//this.game.sound.stopAll();
 		
 
 		

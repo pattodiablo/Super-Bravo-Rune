@@ -15,8 +15,9 @@ class Preloader extends Phaser.Scene {
 
 	/** @returns {void} */
 	editorPreload() {
-
-		this.load.pack("asset-pack", "assets/asset-pack.json");
+		
+		this.load.pack("asset-pack", "assets/new-asset-pack.json");
+	
 	}
 
 	/** @returns {void} */
@@ -53,7 +54,106 @@ class Preloader extends Phaser.Scene {
 
 	/* START-USER-CODE */
 
-	preload() {		
+	preload() {	
+		
+		this.wichLevel = "NewLevel0";
+		console.log(challengeNumber)
+		switch(challengeNumber){
+
+			case 1:
+				this.wichLevel="NewLevel0";
+			break;
+
+			case 2:
+				this.wichLevel="NewLevel1";
+			break;
+
+			case 3:
+				this.wichLevel="NewLevel2";
+			break;
+
+			case 4:
+				this.wichLevel="NewLevel3";
+			break;
+
+			case 5:
+				this.wichLevel="NewLevel4";
+			break;
+
+			case 6:
+			this.wichLevel="NewLevel5";
+			break;
+
+
+			case 7:
+			this.wichLevel="NewLevel6";
+			break;
+
+
+			case 8:
+			this.wichLevel="NewLevel7";
+			break;
+
+			case 9:
+			this.wichLevel="NewLevel8";
+			break;
+
+			case 10:
+			this.wichLevel="NewLevel9";
+			break;
+
+			case 11:
+			this.wichLevel="NewLevel10";
+			break;
+
+			case 12:
+			this.wichLevel="NewLevel11";
+			break;
+
+			case 13:
+			this.wichLevel="NewLevel12";
+			break;
+
+			case 14:
+			this.wichLevel="NewLevel13";
+			break;
+
+			case 15:
+			this.wichLevel="NewLevel14";
+			break;
+
+			case 16:
+			this.wichLevel="NewLevel15";
+			break;
+
+			case 17:
+			this.wichLevel="NewLevel16";
+			break;
+
+			case 18:
+			this.wichLevel="NewLevel17";
+			break;
+
+			case 19:
+			this.wichLevel="NewLevel18";
+			break;
+
+			case 20:
+			this.wichLevel="NewLevel19";
+			break;
+
+
+
+
+			default:
+		
+
+			this.wichLevel="NewLevel0";
+
+
+			break;
+		}
+		this.isPreloaded = 	this.load.sceneFile(this.wichLevel, 'assets/scenes/'+this.wichLevel+'.js');	
 
 		this.editorCreate();
 		this.cameras.main.setBackgroundColor('#f20f4f')
@@ -83,104 +183,19 @@ class Preloader extends Phaser.Scene {
 	}
 
 	create() {
-		console.log(challengeNumber)
-		switch(challengeNumber){
 
-			case 1:
-			var wichLevel="NewLevel0";
-			break;
-
-			case 2:
-			var wichLevel="NewLevel1";
-			break;
-
-			case 3:
-			var wichLevel="NewLevel2";
-			break;
-
-			case 4:
-			var wichLevel="NewLevel3";
-			break;
-
-			case 5:
-			var wichLevel="NewLevel4";
-			break;
-
-			case 6:
-			var wichLevel="NewLevel5";
-			break;
+		
+	Rune.init({
+			
+		restartGame:this.game.restartGame,
+		pauseGame:this.game.pauseGame,
+		resumeGame:this.game.resumeGame,
+		getScore:this.game.getScore,
+	  })
 
 
-			case 7:
-			var wichLevel="NewLevel6";
-			break;
+		this.scene.start(this.wichLevel);		
 
-
-			case 8:
-			var wichLevel="NewLevel7";
-			break;
-
-			case 9:
-			var wichLevel="NewLevel8";
-			break;
-
-			case 10:
-			var wichLevel="NewLevel9";
-			break;
-
-			case 11:
-			var wichLevel="NewLevel10";
-			break;
-
-			case 12:
-			var wichLevel="NewLevel11";
-			break;
-
-			case 13:
-			var wichLevel="NewLevel12";
-			break;
-
-			case 14:
-			var wichLevel="NewLevel13";
-			break;
-
-			case 15:
-			var wichLevel="NewLevel14";
-			break;
-
-			case 16:
-			var wichLevel="NewLevel15";
-			break;
-
-			case 17:
-			var wichLevel="NewLevel16";
-			break;
-
-			case 18:
-			var wichLevel="NewLevel17";
-			break;
-
-			case 19:
-			var wichLevel="NewLevel18";
-			break;
-
-			case 20:
-			var wichLevel="NewLevel19";
-			break;
-
-
-
-
-			default:
-
-			var wichLevel="NewLevel0";
-
-			break;
-		}
-
-
-	let quePasa =	this.scene.start(wichLevel);		
-	console.log(quePasa);
 	}
 
 	/* END-USER-CODE */

@@ -14,6 +14,12 @@ class NewLevel8 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel8Pack", "assets/NewLevel8Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -202,6 +208,10 @@ class NewLevel8 extends BaseScene {
 	player;
 	/** @type {GuardBoss} */
 	guardBoss;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level8;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

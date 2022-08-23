@@ -14,6 +14,12 @@ class NewLevel20 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel20Pack", "assets/NewLevel20Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -46,7 +52,7 @@ class NewLevel20 extends BaseScene {
 		this.add.existing(player);
 
 		// upperTile_1
-		new_level20.createLayer("upperTile", [], 0, 0);
+		new_level20.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
 		// lists
 		const doors = [];

@@ -261,14 +261,15 @@ class Player extends Phaser.GameObjects.Sprite {
 		if(powerName=="doubleJump"){
 			this.body.enable=false;
 
-		
-		this.textBox=this.scene.createTextBox(this.x,this.y-50,"Double jump");
+			const doubleJumpText = new DoubleJumpText(this.scene, this.x, this.y-60);
+			this.scene.add.existing(doubleJumpText);
+		//this.textBox=this.scene.createTextBox(this.x,this.y-50,"Double jump");
 
 			var reloadTimer = this.scene.time.addEvent({
-				delay: 3000,                // ms
+				delay: 2000,                // ms
 				callback: function(){
 					this.body.enable=true;
-					this.textBox.destroy();
+				
 				
 				},
 				//args: [],
@@ -280,14 +281,16 @@ class Player extends Phaser.GameObjects.Sprite {
 
 		if(powerName=="cannonStrike"){
 			this.body.enable=false;
-			
-			this.textBox=this.scene.createTextBox(this.x-80,this.y-150,"Cannon Strike");
+			const cannonStrikeText = new CannonStrikeText(this.scene, this.x, this.y-60);
+			this.scene.add.existing(cannonStrikeText);
+		//	this.textBox=this.scene.createTextBox(this.x-80,this.y-150,"Cannon Strike");
 
 			var reloadTimer = this.scene.time.addEvent({
-				delay: 3000,                // ms
+				delay: 2000,                // ms
 				callback: function(){
 					this.body.enable=true;
-					this.textBox.destroy();
+			
+				//	this.textBox.destroy();
 				},
 				//args: [],
 				callbackScope: this,
@@ -1076,7 +1079,7 @@ class Player extends Phaser.GameObjects.Sprite {
 					y: -100,
 					duration: 300,
 					onComplete: function(){
-					
+						console.log("calling game over")
 						Rune.gameOver();
 						
 					},
@@ -1868,6 +1871,7 @@ this.scene.game.playerData.life = this.playerLife;
 			onComplete: function () {
 				this.PowerX = 0;
 				this.PowerY = 0;
+				console.log("calling game over")
 				Rune.gameOver();
 			//	this.restartGame();
 			}

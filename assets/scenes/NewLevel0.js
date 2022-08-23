@@ -14,6 +14,12 @@ class NewLevel0 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel0Pack", "assets/NewLevel0Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -32,10 +38,6 @@ class NewLevel0 extends BaseScene {
 		const tilespriteBG = this.add.tileSprite(0, 0, 64, 64, "bg1TileBG");
 		tilespriteBG.setOrigin(0, 1);
 
-		// handPointer
-		const handPointer = new HandPointer(this, 688, 426);
-		this.add.existing(handPointer);
-
 		// nocollide2_1
 		mapa.createLayer("nocollide2", ["new_ciudad_tiles"], 0, 0);
 
@@ -46,7 +48,7 @@ class NewLevel0 extends BaseScene {
 		mapa.createLayer("nocollide", ["new_ciudad_tiles"], 0, 0);
 
 		// layer
-		const layer = mapa.createLayer("collide", ["new_ciudad_tiles"], 0, 0);
+		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
 		// player
 		const player = new Player(this, 87, 459);
@@ -165,6 +167,10 @@ class NewLevel0 extends BaseScene {
 	player;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	upperTile;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level0;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

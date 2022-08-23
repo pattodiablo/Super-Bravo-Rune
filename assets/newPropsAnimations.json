@@ -1427,6 +1427,178 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true
+        },
+        {
+            "key": "doubleJump",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "doubleJump0012",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "cannonStrike",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "newSupaAnimationsRune2Powers",
+                    "frame": "cannonStrike0012",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
         }
     ],
     "globalTimeScale": 1,

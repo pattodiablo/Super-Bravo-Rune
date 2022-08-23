@@ -14,6 +14,12 @@ class NewLevel3 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel3Pack", "assets/NewLevel3Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -121,6 +127,10 @@ class NewLevel3 extends BaseScene {
 	layer;
 	/** @type {Phaser.Tilemaps.TilemapLayer} */
 	upperTile;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level3;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

@@ -14,6 +14,12 @@ class NewLevel6 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel6Pack", "assets/NewLevel6Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa
@@ -208,6 +214,10 @@ class NewLevel6 extends BaseScene {
 	upperTile;
 	/** @type {GuardBoss} */
 	guardBoss;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	mapa;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	new_level6;
 	/** @type {Array<any>} */
 	doors;
 	/** @type {Array<any>} */

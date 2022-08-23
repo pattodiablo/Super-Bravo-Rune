@@ -5,6 +5,7 @@ var hasCannonPower = false;
 var renderer;
 var activeLeveles=[];
 var timesDead = 0;
+var isRestartingGame=false;
 const mapIds = [1,2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19] // Define your fixed list of maps
 
 var challengeNumber = Rune.getChallengeNumber(); // Get today's challenge number
@@ -185,11 +186,12 @@ window.addEventListener('load', function () {
 			activePointers: 1
 		}
 	});
-
+	
+	game.isRestartingGame=false;
 
 	
 	game.pauseGame=function(){
-		game.sound.mute=false;
+		//game.sound.mute=false;
 		for (const key in game.scene.keys) {
 			if (Object.hasOwnProperty.call(game.scene.keys, key)) {
 			  const element = game.scene.keys[key];
@@ -200,7 +202,7 @@ window.addEventListener('load', function () {
 	}
 
 	game.resumeGame=function(){
-		game.sound.mute=false;
+	//	game.sound.mute=false;
 					for (const key in game.scene.keys) {
 					  if (Object.hasOwnProperty.call(game.scene.keys, key)) {
 						const element = game.scene.keys[key];
@@ -211,46 +213,12 @@ window.addEventListener('load', function () {
 	}
 
 	game.restartGame=function(){
-
-	    
-	
-		for (const key in game.scene.keys) {
-			if (Object.hasOwnProperty.call(game.scene.keys, key)) {
-			  const element = game.scene.keys[key];
-			 
-			  if(game.scene.keys[key].scene.manager.isActive(key)){
-				var currentScene = game.scene.keys[key];
-			
-				
-			  }
-				//var score = element.scene.doScore();
-				//console.log(currentScene.scene.key)
-			}
-		  
-		}
-
-		switch(currentScene.scene.key){
-			case "Boot":
-				location.reload();
-			break;
-			case "Preloader":
-				location.reload();
-			break;
-			case "DemoScene":
-				location.reload();
-			break;
-			case "undefined":
-				location.reload();
-			break;
-			default:
-				currentScene.restartGame();
-			break
-		}
-
-	
-
-
+		
+		console.log("rune restart");
+		location.reload();
 	}
+
+	
 	
 	game.getScore=function(){
 
@@ -300,14 +268,6 @@ window.addEventListener('load', function () {
 
 
 
-	Rune.init({
-			
-		restartGame:game.restartGame,
-		pauseGame:game.pauseGame,
-		resumeGame:game.resumeGame,
-		getScore:game.getScore,
-	  })
-
 	  
 
    }
@@ -326,12 +286,6 @@ class Boot extends Phaser.Scene {
 		//	this.load.video("pruebaVideo", "assets/video/pruebaVideo.mp4");
 		//	this.load.video("ending", "assets/video/ending.mp4");
 	
-				this.load.scenePlugin({
-					key: 'rexuiplugin',
-					url: 'lib/rexuiplugin.min.js',
-					sceneKey: 'rexUI'
-				});
-
 				
 			
 	}

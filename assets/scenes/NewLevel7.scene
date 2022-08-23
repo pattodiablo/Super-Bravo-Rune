@@ -5,7 +5,9 @@
         "snapWidth": 32,
         "snapHeight": 32,
         "superClassName": "BaseScene",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "Super-Bravo-Rune/assets/NewLevel7Pack.json"
+        ],
         "createMethodName": "editorCreate",
         "sceneKey": "NewLevel7",
         "borderWidth": 320,

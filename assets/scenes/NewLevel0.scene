@@ -5,7 +5,9 @@
         "snapWidth": 32,
         "snapHeight": 32,
         "superClassName": "BaseScene",
-        "preloadPackFiles": [],
+        "preloadPackFiles": [
+            "Super-Bravo-Rune/assets/NewLevel0Pack.json"
+        ],
         "createMethodName": "editorCreate",
         "sceneKey": "NewLevel0",
         "borderWidth": 320,
@@ -39,18 +41,6 @@
             "originY": 1,
             "width": 64,
             "height": 64
-        },
-        {
-            "prefabId": "1f5ce768-fa76-41bd-a1f4-a85fc1eb6292",
-            "id": "dcaa60a6-4695-4167-85ed-bf07163d68eb",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "handPointer",
-            "components": [],
-            "x": 688,
-            "y": 426
         },
         {
             "type": "TilemapLayer",
@@ -87,12 +77,12 @@
         },
         {
             "type": "TilemapLayer",
-            "id": "a4c6ee38-f3e9-4ad7-9404-49ea7c8528df",
+            "id": "a9469acc-89c4-4ed6-aee9-f48c9119bb79",
             "label": "layer",
             "scope": "CLASS",
             "components": [],
             "tilemapId": "a7f712c9-c796-4cba-b0e3-9ec7f8f27155",
-            "layerName": "collide",
+            "layerName": "layer",
             "tilesets": [
                 "new_ciudad_tiles"
             ]

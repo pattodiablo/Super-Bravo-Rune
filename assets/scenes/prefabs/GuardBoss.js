@@ -40,6 +40,9 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 	create(){
 
 
+		
+		
+		
 		this.startRunning = true;
 		this.direction = 1;
 		this.changinDirection = false;

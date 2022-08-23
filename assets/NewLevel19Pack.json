@@ -1,0 +1,93 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/BADEYES.png",
+                "type": "image",
+                "key": "BADEYES"
+            },
+            {
+                "url": "assets/images/crakedHead.png",
+                "type": "image",
+                "key": "crakedHead"
+            },
+            {
+                "url": "assets/images/damagedBossArm.png",
+                "type": "image",
+                "key": "damagedBossArm"
+            },
+            {
+                "url": "assets/images/Meteorito.png",
+                "type": "image",
+                "key": "Meteorito"
+            },
+            {
+                "url": "assets/images/mina.png",
+                "type": "image",
+                "key": "mina"
+            },
+            {
+                "url": "assets/images/mina1.png",
+                "type": "image",
+                "key": "mina1"
+            },
+            {
+                "url": "assets/images/mina2.png",
+                "type": "image",
+                "key": "mina2"
+            },
+            {
+                "url": "assets/maps/new_level19.json",
+                "type": "tilemapTiledJSON",
+                "key": "new_level19"
+            },
+            {
+                "url": "assets/scenes/NewLevel20.js",
+                "type": "sceneFile",
+                "key": "NewLevel20"
+            },
+            {
+                "url": "assets/images/sector1.png",
+                "type": "image",
+                "key": "sector1"
+            },
+            {
+                "url": "assets/images/sector3.png",
+                "type": "image",
+                "key": "sector3"
+            },
+            {
+                "url": "assets/images/Sector32.png",
+                "type": "image",
+                "key": "Sector32"
+            },
+            {
+                "url": "assets/images/Sector4.png",
+                "type": "image",
+                "key": "Sector4"
+            },
+            {
+                "url": "assets/images/supaHead.png",
+                "type": "image",
+                "key": "supaHead"
+            },
+            {
+                "url": "assets/images/traverso1.png",
+                "type": "image",
+                "key": "traverso1"
+            },
+            {
+                "url": "assets/images/traverso2.png",
+                "type": "image",
+                "key": "traverso2"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

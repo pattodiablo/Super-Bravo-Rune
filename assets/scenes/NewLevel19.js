@@ -14,6 +14,12 @@ class NewLevel19 extends BaseScene {
 	}
 
 	/** @returns {void} */
+	preload() {
+
+		this.load.pack("NewLevel19Pack", "assets/NewLevel19Pack.json");
+	}
+
+	/** @returns {void} */
 	editorCreate() {
 
 		// mapa

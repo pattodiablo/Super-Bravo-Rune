@@ -213,9 +213,21 @@ window.addEventListener('load', function () {
 	}
 
 	game.restartGame=function(){
+
+		currentScene=game.scene.keys[activeLeveles];
+		if(typeof currentScene !== "undefined"){
+				var sceneToGo = currentScene.scene.get("InterludeMap");
+				activeLeveles=[];
+				console.log(currentScene.scene.key);
+				sceneToGo.setLevel(currentScene.scene.key,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
+				sceneToGo.isMainScene = false;
+				currentScene.scene.start("InterludeMap");
+				currentScene.scene.remove(currentScene.scene.keys);
+				console.log(sceneToGo);
+
+		}
+	
 		
-		console.log("rune restart");
-		location.reload();
 	}
 
 	
@@ -275,6 +287,7 @@ window.addEventListener('load', function () {
   
 
 });
+
 
 class Boot extends Phaser.Scene {
 

@@ -1080,13 +1080,14 @@ class Player extends Phaser.GameObjects.Sprite {
 					duration: 300,
 					onComplete: function(){
 						console.log("calling game over")
+						isFinal =  true;
 						Rune.gameOver();
 						
 					},
 					ease: 'Linear',
 					repeat: 0
 		
-				});
+				},this);
 
 				flyAway.play();
 

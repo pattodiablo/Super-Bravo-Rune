@@ -1,0 +1,168 @@
+{
+    "anims": [
+        {
+            "key": "supaDrop",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "supaDrop0024",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 30,
+            "skipMissedFrames": true,
+            "repeat": -1
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    }
+}

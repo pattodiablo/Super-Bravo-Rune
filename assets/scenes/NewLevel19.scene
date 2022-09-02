@@ -77,6 +77,20 @@
             ]
         },
         {
+            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
+            "id": "fd4c4e0c-7826-4b4e-a69e-5f007405afe8",
+            "unlock": [
+                "x",
+                "y",
+                "distance"
+            ],
+            "label": "platform2",
+            "distance": 550,
+            "components": [],
+            "x": 224,
+            "y": 648
+        },
+        {
             "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
             "id": "d2800736-9db9-492e-85d2-5b568e6c820d",
             "unlock": [
@@ -114,20 +128,6 @@
             "x": 817,
             "y": 593,
             "nestedPrefabs": []
-        },
-        {
-            "prefabId": "93b28f2d-f948-468c-a24f-7260b651587d",
-            "id": "fd4c4e0c-7826-4b4e-a69e-5f007405afe8",
-            "unlock": [
-                "x",
-                "y",
-                "distance"
-            ],
-            "label": "platform2",
-            "distance": 550,
-            "components": [],
-            "x": 224,
-            "y": 648
         },
         {
             "prefabId": "990c1d28-45db-4edc-a374-8720ae900806",

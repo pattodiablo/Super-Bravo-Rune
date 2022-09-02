@@ -5,6 +5,7 @@ var hasCannonPower = false;
 var renderer;
 var activeLeveles=[];
 var timesDead = 0;
+var isFinal=false;
 var isRestartingGame=false;
 const mapIds = [1,2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19] // Define your fixed list of maps
 
@@ -215,11 +216,14 @@ window.addEventListener('load', function () {
 	game.restartGame=function(){
 
 		currentScene=game.scene.keys[activeLeveles];
-		if(typeof currentScene !== "undefined"){
+		if(typeof currentScene !== "	"){
 				var sceneToGo = currentScene.scene.get("InterludeMap");
 				activeLeveles=[];
 				console.log(currentScene.scene.key);
 				sceneToGo.setLevel(currentScene.scene.key,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
+				currentScene.game.playerData.life=5;
+				currentScene.game.playerData.doubleJump=false;
+				currentScene.game.playerData.gotCannon=false;
 				sceneToGo.isMainScene = false;
 				currentScene.scene.start("InterludeMap");
 				currentScene.scene.remove(currentScene.scene.keys);

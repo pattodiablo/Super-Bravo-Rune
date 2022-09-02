@@ -47,6 +47,10 @@ class NewLevel19 extends BaseScene {
 		// layer
 		const layer = mapa.createLayer("layer", ["new_ciudad_tiles"], 0, 0);
 
+		// platform2
+		const platform2 = new Platform2(this, 224, 648);
+		this.add.existing(platform2);
+
 		// player
 		const player = new Player(this, 49, 648);
 		this.add.existing(player);
@@ -57,10 +61,6 @@ class NewLevel19 extends BaseScene {
 		// BigBoss
 		const bigBoss = new EnemyBody(this, 817, 593);
 		this.add.existing(bigBoss);
-
-		// platform2
-		const platform2 = new Platform2(this, 224, 648);
-		this.add.existing(platform2);
 
 		// card
 		const card = new Card(this, 66, 47);

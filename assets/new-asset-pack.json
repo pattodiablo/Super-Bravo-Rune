@@ -368,6 +368,11 @@
                 "key": "DroneShot"
             },
             {
+                "url": "assets/images/eggBomb.png",
+                "type": "image",
+                "key": "eggBomb"
+            },
+            {
                 "url": [
                     "assets/scenes/prefabs/EggBomb.js"
                 ],
@@ -1547,6 +1552,13 @@
             },
             {
                 "url": [
+                    "assets/scenes/prefabs/SupaDropAnim.js"
+                ],
+                "type": "scripts",
+                "key": "SupaDropAnim"
+            },
+            {
+                "url": [
                     "assets/scenes/prefabs/SupaJet.js"
                 ],
                 "type": "scripts",
@@ -1670,6 +1682,17 @@
                 "textureURL": "assets/atlas/traversoFly.png",
                 "type": "atlas",
                 "key": "traversoFly"
+            },
+            {
+                "url": "tutorialAnimations.json",
+                "type": "animation",
+                "key": "tutorialAnimations"
+            },
+            {
+                "atlasURL": "assets/atlas/tutorials.json",
+                "textureURL": "assets/atlas/tutorials.png",
+                "type": "atlas",
+                "key": "tutorials"
             },
             {
                 "url": "assets/images/upgradeHalo.png",

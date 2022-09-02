@@ -309,6 +309,18 @@
             "y": 739,
             "scaleX": 0.8354946468322224,
             "scaleY": 0.8354946468322224
+        },
+        {
+            "prefabId": "5c938b6f-4fa9-45b6-a9f9-a7fb658a1608",
+            "id": "be2fca4b-f58f-4436-80e8-584f64f74298",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "supaDropAnimTuto",
+            "components": [],
+            "x": 104,
+            "y": 374
         }
     ],
     "plainObjects": [

@@ -45,11 +45,8 @@ class Traverso extends Phaser.GameObjects.Sprite {
 
 	killPlayer(){
 
-		if(!this.body.touching.up){
-			this.scene.player.playerhurt();
-
-		}
 	
+			this.scene.player.playerhurt();
 
 		
 
@@ -332,7 +329,7 @@ class Traverso extends Phaser.GameObjects.Sprite {
 
 					targets: this,
 					y: 900,
-					duration: 800,
+					duration: 1000,
 					ease: 'Linear',
 					repeat: 0,
 					callbackScope: this,

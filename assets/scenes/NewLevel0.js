@@ -122,6 +122,10 @@ class NewLevel0 extends BaseScene {
 		sideDoor.scaleX = 0.8354946468322224;
 		sideDoor.scaleY = 0.8354946468322224;
 
+		// supaDropAnimTuto
+		const supaDropAnimTuto = new SupaDropAnim(this, 104, 374);
+		this.add.existing(supaDropAnimTuto);
+
 		// lists
 		const doors = [];
 		const switches = [];

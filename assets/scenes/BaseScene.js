@@ -736,7 +736,17 @@ class BaseScene extends Phaser.Scene {
 
 	doScore(){
 		
-		var score=(this.coinsCollected*this.coinsValue)-this.initialTime;
+	
+		var score=(this.coinsCollected*this.coinsValue);
+		if(isFinal){
+
+			var bonus = Math.round(5000-this.initialTime);
+			
+			if(bonus<=0){
+				bonus=0;
+			}
+			score+=bonus;
+		}
 		
 
 		if(score<=0){

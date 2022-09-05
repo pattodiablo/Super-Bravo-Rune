@@ -273,6 +273,11 @@
                 "key": "Catapulta"
             },
             {
+                "url": "assets/images/closeBtn.png",
+                "type": "image",
+                "key": "closeBtn"
+            },
+            {
                 "url": [
                     "assets/scenes/prefabs/CloseBtn.js"
                 ],
@@ -905,6 +910,25 @@
                 ],
                 "type": "scripts",
                 "key": "HeartBtn"
+            },
+            {
+                "url": "assets/images/info.png",
+                "type": "image",
+                "key": "info"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/InfoBG.js"
+                ],
+                "type": "scripts",
+                "key": "InfoBG"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/infoButton.js"
+                ],
+                "type": "scripts",
+                "key": "infoButton"
             },
             {
                 "url": "assets/scenes/InterludeMap.js",
@@ -1566,6 +1590,13 @@
             },
             {
                 "url": [
+                    "assets/scenes/prefabs/SupaJumpAnim.js"
+                ],
+                "type": "scripts",
+                "key": "SupaJumpAnim"
+            },
+            {
+                "url": [
                     "assets/scenes/prefabs/SupaPoiner.js"
                 ],
                 "type": "scripts",
@@ -1577,6 +1608,20 @@
                 ],
                 "type": "scripts",
                 "key": "SupaShotBtn"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/SupaStopAnim.js"
+                ],
+                "type": "scripts",
+                "key": "SupaStopAnim"
+            },
+            {
+                "url": [
+                    "assets/scenes/prefabs/SupaWalkAnim.js"
+                ],
+                "type": "scripts",
+                "key": "SupaWalkAnim"
             },
             {
                 "url": [
@@ -1684,6 +1729,56 @@
                 "key": "traversoFly"
             },
             {
+                "url": "assets/images/1x/tuto1.png",
+                "type": "image",
+                "key": "tuto1"
+            },
+            {
+                "url": "assets/images/1x/tuto10.png",
+                "type": "image",
+                "key": "tuto10"
+            },
+            {
+                "url": "assets/images/1x/tuto2.png",
+                "type": "image",
+                "key": "tuto2"
+            },
+            {
+                "url": "assets/images/1x/tuto3.png",
+                "type": "image",
+                "key": "tuto3"
+            },
+            {
+                "url": "assets/images/1x/tuto4.png",
+                "type": "image",
+                "key": "tuto4"
+            },
+            {
+                "url": "assets/images/1x/tuto5.png",
+                "type": "image",
+                "key": "tuto5"
+            },
+            {
+                "url": "assets/images/1x/tuto6.png",
+                "type": "image",
+                "key": "tuto6"
+            },
+            {
+                "url": "assets/images/1x/tuto7.png",
+                "type": "image",
+                "key": "tuto7"
+            },
+            {
+                "url": "assets/images/1x/tuto8.png",
+                "type": "image",
+                "key": "tuto8"
+            },
+            {
+                "url": "assets/images/1x/tuto9.png",
+                "type": "image",
+                "key": "tuto9"
+            },
+            {
                 "url": "tutorialAnimations.json",
                 "type": "animation",
                 "key": "tutorialAnimations"
@@ -1705,6 +1800,11 @@
                 ],
                 "type": "scripts",
                 "key": "UpgradeHalo"
+            },
+            {
+                "url": "assets/sprites/wall.png",
+                "type": "image",
+                "key": "wall"
             },
             {
                 "url": [

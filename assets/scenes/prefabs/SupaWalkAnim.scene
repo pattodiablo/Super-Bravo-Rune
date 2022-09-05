@@ -1,5 +1,5 @@
 {
-    "id": "5c938b6f-4fa9-45b6-a9f9-a7fb658a1608",
+    "id": "0d59cef2-f081-4923-8afd-87525c1c300f",
     "sceneType": "PREFAB",
     "settings": {
         "preloadMethodName": "",
@@ -11,16 +11,16 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "615e5ecb-0c07-4b1d-9746-9741de4926fc",
-            "label": "supaDropAnimTuto",
+            "id": "1e1d569e-f0d0-49dd-8e3f-1276c7b16cb5",
+            "label": "supaWalkAnim",
             "components": [
                 "StartAnimation",
                 "FixedToCamera"
             ],
-            "StartAnimation.animationKey": "supaDrop",
+            "StartAnimation.animationKey": "supaWalkAnim",
             "texture": {
                 "key": "tutorials",
-                "frame": "supaDrop0000"
+                "frame": "walk instancia 10000"
             }
         }
     ],

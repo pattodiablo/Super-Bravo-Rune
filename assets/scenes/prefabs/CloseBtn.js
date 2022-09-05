@@ -27,10 +27,7 @@ class CloseBtn extends Phaser.GameObjects.Sprite {
 		this.scene.fxcontainer.push(this.envi_button_01);
 		
 			this.setInteractive().on('pointerdown', function(pointer, localX, localY, event){
-			
-					this.parentContainer.close();
-			
-			this.envi_button_01.play();
+			this.scene.handleInfoPanels();
 			});
 
 	}

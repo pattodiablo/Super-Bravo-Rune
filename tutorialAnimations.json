@@ -158,6 +158,543 @@
             "frameRate": 30,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "supaWalkAnim",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "walk instancia 10033",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "supaJumpAnim",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "jump instancia 10020",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "supaStopAnim",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tutorials",
+                    "frame": "stop instancia 10029",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

@@ -3,14 +3,14 @@
 
 /* START OF COMPILED CODE */
 
-class SupaDropAnim extends Phaser.GameObjects.Sprite {
+class InfoBG extends Phaser.GameObjects.Sprite {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 0, y ?? 0, texture || "tutorials", frame ?? "supaDrop0000");
+		super(scene, x ?? 0, y ?? 0, texture || "wall", frame);
+
+		this.setOrigin(0, 0);
 
 		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "supaDrop";
 		new FixedToCamera(this);
 
 		/* START-USER-CTR-CODE */

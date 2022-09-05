@@ -86,6 +86,7 @@ class BaseScene extends Phaser.Scene {
 
 		this.mainDoorActive = true;
 		this.isfirstMainScene = true;
+		this.tutoOpen=true;
 
 
 		if(this.bgLevel1 !== undefined){
@@ -527,7 +528,44 @@ class BaseScene extends Phaser.Scene {
 		warning.emit("prefab-awake");
 		this.Warning = warning;
 
+			// infoBG
+		// infoGB
+		const infoGB = new InfoBG(this, 66, 197);
+		this.add.existing(infoGB);
+		this.infoGB = infoGB;
+
+			// supaDropTuto
+			const supaDropTuto = new SupaDropAnim(this, 291, 374);
+			this.add.existing(supaDropTuto);
+			this.supaDropTuto = supaDropTuto;
+
+				// supaWalkAnim
+		const supaWalkAnim = new SupaWalkAnim(this, 441, 241);
+		this.add.existing(supaWalkAnim);
+		this.supaWalkAnim = supaWalkAnim;
+	
+		// supaStopAnim
+		const supaStopAnim = new SupaStopAnim(this, 616, 408);
+		this.add.existing(supaStopAnim);
+		this.supaStopAnim = supaStopAnim;
+
+		// supaJumpAnim
+		const supaJumpAnim = new SupaJumpAnim(this, 523, 203);
+		this.add.existing(supaJumpAnim);
+		this.supaJumpAnim = supaJumpAnim;
+
+			// info
+			const info = new infoButton(this, 101, 402);
+			this.add.existing(info);
+			this.info = info;
+
+			const closeBtn = new CloseBtn(this, 197, 323);
+			this.add.existing(closeBtn);
+			this.closeBtn = closeBtn;
+
+
 		
+
 
 		const powerPanel = new PowerPanel(this, this.cameras.main.centerX, this.cameras.main.centerY);
 		this.add.existing(powerPanel);
@@ -633,7 +671,7 @@ class BaseScene extends Phaser.Scene {
 		this.handlePowerPanel();
 		this.checkSoundStatus();
 		this.initLevel();
-
+		this.handleInfoPanels();
 	
 		this.coinText.text = this.coins.length;
 		
@@ -642,7 +680,8 @@ class BaseScene extends Phaser.Scene {
 		
 		this.handlePowerPanel()
 		
-	
+		
+
 		
 
 	}, this);
@@ -657,6 +696,61 @@ class BaseScene extends Phaser.Scene {
 	}
 
 
+	}
+
+	handleInfoPanels(){
+		if(!this.tutoOpen){
+		
+			this.infoGB.visible=true;
+			this.infoGB.x=0;
+			this.infoGB.y=0;
+			this.infoGB.displayWidth=this.cameras.main.width;
+			this.infoGB.displayHeight=this.cameras.main.height;
+			this.infoGB.setDepth(98);
+
+		
+			this.supaWalkAnim.visible=true; 
+			this.supaWalkAnim.setDepth(99);
+			this.supaWalkAnim.x=this.cameras.main.width/2-100;
+			this.supaWalkAnim.y=200;
+			
+			this.supaStopAnim.visible=true; 
+			this.supaStopAnim.setDepth(99);
+			this.supaStopAnim.x=this.cameras.main.width/2+100;
+			this.supaStopAnim.y=220;
+
+			this.supaJumpAnim.visible=true; 
+			this.supaJumpAnim.setDepth(99);
+			this.supaJumpAnim.x=this.cameras.main.width/2-80;
+			this.supaJumpAnim.y=380;
+
+			this.supaDropTuto.visible=true;
+			this.supaDropTuto.setDepth(99);
+			this.supaDropTuto.x=this.cameras.main.width/2+100;
+			this.supaDropTuto.y=300;
+
+			
+
+			this.closeBtn.visible=true;
+			this.closeBtn.x=this.cameras.main.width/2;
+			this.closeBtn.y=30;
+			this.closeBtn.setDepth(99);
+			this.tutoOpen=true;
+
+		}else{
+		
+			this.infoGB.visible=false;
+			this.supaDropTuto.visible=false;
+			this.supaWalkAnim.visible=false;
+			this.supaStopAnim.visible=false;
+			this.supaJumpAnim.visible=false;
+			this.closeBtn.visible=false;
+			this.tutoOpen=false;
+
+		}
+	
+
+	
 	}
 
 	formatTime(seconds){

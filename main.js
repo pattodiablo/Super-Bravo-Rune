@@ -160,8 +160,8 @@ window.addEventListener('load', function () {
 	
 	var game = new Phaser.Game({
 
-		width: finalWidht,
-		height:  finalHeight,
+		width: 480,
+		height:  720,
 		type: renderer,
 		backgroundColor: "#000000",
 		scale: {

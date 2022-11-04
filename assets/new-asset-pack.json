@@ -1639,27 +1639,6 @@
             },
             {
                 "url": [
-                    "assets/audio/music/superbravo_gameplay_chip02.mp3"
-                ],
-                "type": "audio",
-                "key": "superbravo_gameplay_chip02"
-            },
-            {
-                "url": [
-                    "assets/audio/music/superbravo_gameplay_chip03.mp3"
-                ],
-                "type": "audio",
-                "key": "superbravo_gameplay_chip03"
-            },
-            {
-                "url": [
-                    "assets/audio/music/superbravo_gameplay_chip05.mp3"
-                ],
-                "type": "audio",
-                "key": "superbravo_gameplay_chip05"
-            },
-            {
-                "url": [
                     "assets/audio/music/superbravo_gameplay_finalboss2.mp3"
                 ],
                 "type": "audio",

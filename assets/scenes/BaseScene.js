@@ -110,20 +110,15 @@ class BaseScene extends Phaser.Scene {
 		}
 		//MUSIC
 		this.superbravo_gameplay_chip01 = this.sound.add('superbravo_gameplay_chip01');
-		this.superbravo_gameplay_chip02 = this.sound.add('superbravo_gameplay_chip02');
-		this.superbravo_gameplay_chip03 = this.sound.add('superbravo_gameplay_chip03');
-		this.superbravo_gameplay_chip05 = this.sound.add('superbravo_gameplay_chip05');
+
 	
 		this.superbravo_gameplay_finalboss2 = this.sound.add('superbravo_gameplay_finalboss2');
 		
-		this.supajukebox = [this.superbravo_gameplay_chip01,this.superbravo_gameplay_chip02,this.superbravo_gameplay_chip03];
+		this.supajukebox = [this.superbravo_gameplay_chip01];
 
 
 		this.superbravo_gameplay_chip01.loop = true;
-		this.superbravo_gameplay_chip02.loop = true;
-		this.superbravo_gameplay_chip03.loop = true;
-		this.superbravo_gameplay_chip05.loop = true;
-
+	
 		this.superbravo_gameplay_finalboss2.loop = true;
 		
 		//______________________________________________________________________________________________________________________________________________________________
@@ -973,7 +968,7 @@ class BaseScene extends Phaser.Scene {
 
 		
 //	console.log("random fx " + this.randomFx);
-		this.supajukebox[randomFx].play();
+		this.supajukebox[0].play();
 		
 	
 		this.wasMusicLaunched = true;

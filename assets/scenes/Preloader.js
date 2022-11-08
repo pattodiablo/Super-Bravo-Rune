@@ -57,8 +57,8 @@ class Preloader extends Phaser.Scene {
 	preload() {	
 		
 		this.wichLevel = "NewLevel0";
-		console.log(challengeNumber)
-		switch(challengeNumber){
+		console.log("mapId " + mapId)
+		switch(mapId){
 
 			case 1:
 				this.wichLevel="NewLevel0";

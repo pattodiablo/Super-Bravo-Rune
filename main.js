@@ -7,10 +7,10 @@ var activeLeveles=[];
 var timesDead = 0;
 var isFinal=false;
 var isRestartingGame=false;
-const mapIds = [1,2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19] // Define your fixed list of maps
+const mapIds = [1,2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19,20] // Define your fixed list of maps
 
 var challengeNumber = Rune.getChallengeNumber(); // Get today's challenge number
-
+var mapId = mapIds[challengeNumber % mapIds.length]
 
 function getOS() {
 

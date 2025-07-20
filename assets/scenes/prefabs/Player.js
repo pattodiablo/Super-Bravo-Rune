@@ -182,7 +182,8 @@ class Player extends Phaser.GameObjects.Sprite {
 
 		downKey.on('down', this.wannaGoDown, this)
 
-	
+	// ...dentro de create()
+this.shiftKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
 
 	}
 
@@ -234,12 +235,15 @@ class Player extends Phaser.GameObjects.Sprite {
 		
 	}
 
-	enableKeyBoard() {
-    // Control inmediato con teclado, sin afectar controles por mouse/pointer
+enableKeyBoard() {
+    // Shift para correr exactamente igual que pointer
+    const shiftMultiplier = this.shiftKey.isDown ? (this.maxVelorunning / this.maxVelowalking) : 1;
+    const maxVelo = this.maxVelowalking * shiftMultiplier;
+
     if (this.cursors.left.isDown || this.keys.left.isDown) {
-        this.body.setVelocityX(-this.maxVelowalking);
+        this.body.setVelocityX(-maxVelo);
     } else if (this.cursors.right.isDown || this.keys.right.isDown) {
-        this.body.setVelocityX(this.maxVelowalking);
+        this.body.setVelocityX(maxVelo);
     } else {
         // Si no se presiona ninguna, frena suavemente solo si no hay control por mouse
         if (!this.actionBegin && !this.actionEnd) {

@@ -9,7 +9,7 @@ var isFinal=false;
 var isRestartingGame=false;
 const mapIds = [1,2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,16,17,18,19,20] // Define your fixed list of maps
 
-var challengeNumber = Rune.getChallengeNumber(); // Get today's challenge number
+var challengeNumber = 1; // Get today's challenge number
 var mapId = mapIds[challengeNumber % mapIds.length]
 
 function getOS() {
@@ -160,8 +160,8 @@ window.addEventListener('load', function () {
 	
 	var game = new Phaser.Game({
 
-		width: 480,
-		height:  720,
+		width: 1031,
+		height:  580,
 		type: renderer,
 		backgroundColor: "#000000",
 		scale: {

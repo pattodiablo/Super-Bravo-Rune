@@ -1,4 +1,3 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
@@ -132,7 +131,6 @@ class Player extends Phaser.GameObjects.Sprite {
 
 		this.createJetPackBullets();
 
-
 		
 
 		//sonidos para saltos
@@ -162,6 +160,13 @@ class Player extends Phaser.GameObjects.Sprite {
 		this.createCoins();
 	
 		this.cursors = this.scene.input.keyboard.createCursorKeys();
+		// Añadir soporte para WASD
+		this.keys = this.scene.input.keyboard.addKeys({
+			up: Phaser.Input.Keyboard.KeyCodes.W,
+			down: Phaser.Input.Keyboard.KeyCodes.S,
+			left: Phaser.Input.Keyboard.KeyCodes.A,
+			right: Phaser.Input.Keyboard.KeyCodes.D
+		});
 		this.KeyBoardPower=0;
 		this.maxKeyWalkPower = 1350;
 		this.KeyboardIncreasPowerX = 325;
@@ -229,31 +234,29 @@ class Player extends Phaser.GameObjects.Sprite {
 		
 	}
 
-	enableKeyBoard(){
+	enableKeyBoard() {
+    // Control inmediato con teclado, sin afectar controles por mouse/pointer
+    if (this.cursors.left.isDown || this.keys.left.isDown) {
+        this.body.setVelocityX(-this.maxVelowalking);
+    } else if (this.cursors.right.isDown || this.keys.right.isDown) {
+        this.body.setVelocityX(this.maxVelowalking);
+    } else {
+        // Si no se presiona ninguna, frena suavemente solo si no hay control por mouse
+        if (!this.actionBegin && !this.actionEnd) {
+            this.body.setVelocityX(0);
+        }
+    }
 
-			if (this.cursors.left.isDown)
-		{
-			this.KeyBoardPower-=this.KeyboardIncreasPowerX ;
-			if(this.KeyBoardPower<-this.maxKeyWalkPower){
-				this.KeyBoardPower=-this.maxKeyWalkPower;
-			}
-			
-			
-			this.body.setAccelerationX(this.KeyBoardPower);
-		}
-		else if (this.cursors.right.isDown)
-		{
-	
-			this.KeyBoardPower+=this.KeyboardIncreasPowerX;
-			if(this.KeyBoardPower>this.maxKeyWalkPower){
-				this.KeyBoardPower=this.maxKeyWalkPower;
-			}
-			
-			this.body.setAccelerationX(this.KeyBoardPower);
-		}
-		
-	
-	}
+    // Salto con W o flecha arriba
+    if ((this.cursors.up.isDown || this.keys.up.isDown) && !this.jumping) {
+        this.spaceBarIsDown();
+    }
+
+    // Bajarse con S o flecha abajo
+    if ((this.cursors.down.isDown || this.keys.down.isDown) && this.jumping) {
+        this.wannaGoDown();
+    }
+}
 
 
 	gotPower(powerName){
@@ -994,12 +997,13 @@ class Player extends Phaser.GameObjects.Sprite {
 									if (this.supaDJumps > 0) {
 	
 										this.play("walkDoubleJump", true);
-										this.particles.emitters.list[0].lifespan.propertyValue = 0;
+									 this.particles.emitters.list[0].lifespan.propertyValue = 0;
 	
 									} else {
 	
 										this.play("supa/walk", true);
-										this.particles.emitters.list[0].lifespan.propertyValue = 0;
+									 this.particles.emitters.list[0].lifespan.propertyValue = 0;
+	
 									}
 								}
 	
@@ -1701,11 +1705,11 @@ this.scene.game.playerData.life = this.playerLife;
 			});
 
 			HurtTimeline.add({
-				targets: this,
-				alpha: 1,
-				duration: 30,
-				ease: 'Linear',
-				repeat: 0,
+			 targets: this,
+			 alpha: 1,
+			 duration: 30,
+			 ease: 'Linear',
+			 repeat: 0,
 
 			});
 

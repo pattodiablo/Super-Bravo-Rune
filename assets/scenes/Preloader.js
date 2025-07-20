@@ -184,14 +184,6 @@ class Preloader extends Phaser.Scene {
 
 	create() {
 
-		
-	Rune.init({
-			
-		restartGame:this.game.restartGame,
-		pauseGame:this.game.pauseGame,
-		resumeGame:this.game.resumeGame,
-		getScore:this.game.getScore,
-	  })
 
 
 		this.scene.start(this.wichLevel);		

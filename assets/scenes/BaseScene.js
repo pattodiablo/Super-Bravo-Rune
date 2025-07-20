@@ -1599,16 +1599,13 @@ class BaseScene extends Phaser.Scene {
 		
 			this.cameras.main.once('camerafadeoutcomplete', function (camera) {	
 			
-					var nombreDeEstaEscena=this.scene.key;
+					var nombreDeEstaEscena=this.nextLevel;
 		
 					this.scene.remove(this.scene.keys);
 					var sceneToGo = this.scene.get("InterludeMap");
 					console.log(sceneToGo)
 					sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
 					sceneToGo.isMainScene = false;
-
-					
-			
 
 					activeLeveles.forEach(level => {
 						this.scene.remove(level)

@@ -106,7 +106,7 @@ class InterludeMap extends Phaser.Scene {
 			this.scene.start(this.levelTogo);
 		},this);
 
-		this.calculateStars();
+	//	this.calculateStars();
 		this.gotoLevel();
 
 
@@ -237,7 +237,7 @@ class InterludeMap extends Phaser.Scene {
 
 
 	gotoLevel(){
-
+console.log("entro a gotoLevel	");
 
 
 		var sceneToGo = this.scene.get(this.levelTogo);

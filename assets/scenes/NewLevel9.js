@@ -137,7 +137,7 @@ class NewLevel9 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-
+		this.nextLevel = "NewLevel10";
 		this.events.emit("scene-awake");
 	}
 

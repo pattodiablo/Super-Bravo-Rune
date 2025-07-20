@@ -184,7 +184,7 @@ class Player extends Phaser.GameObjects.Sprite {
 
 	// ...dentro de create()
 this.shiftKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
-
+this.jumpKeyPressed = false;
 	}
 
 	wannaGoDown(){
@@ -236,7 +236,6 @@ this.shiftKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.
 	}
 
 enableKeyBoard() {
-    // Shift para correr exactamente igual que pointer
     const shiftMultiplier = this.shiftKey.isDown ? (this.maxVelorunning / this.maxVelowalking) : 1;
     const maxVelo = this.maxVelowalking * shiftMultiplier;
 
@@ -245,15 +244,19 @@ enableKeyBoard() {
     } else if (this.cursors.right.isDown || this.keys.right.isDown) {
         this.body.setVelocityX(maxVelo);
     } else {
-        // Si no se presiona ninguna, frena suavemente solo si no hay control por mouse
         if (!this.actionBegin && !this.actionEnd) {
             this.body.setVelocityX(0);
         }
     }
 
-    // Salto con W o flecha arriba
-    if ((this.cursors.up.isDown || this.keys.up.isDown) && !this.jumping) {
+    // --- Salto solo una vez por pulsación ---
+    const jumpKeyDown = this.cursors.up.isDown || this.keys.up.isDown;
+    if (jumpKeyDown && !this.jumpKeyPressed && !this.jumping) {
         this.spaceBarIsDown();
+        this.jumpKeyPressed = true;
+    }
+    if (!jumpKeyDown) {
+        this.jumpKeyPressed = false;
     }
 
     // Bajarse con S o flecha abajo
@@ -1089,7 +1092,7 @@ enableKeyBoard() {
 					onComplete: function(){
 						console.log("calling game over")
 						isFinal =  true;
-						Rune.gameOver();
+							console.log(this.targets[0].scene.restartGame());
 						
 					},
 					ease: 'Linear',
@@ -1881,8 +1884,8 @@ this.scene.game.playerData.life = this.playerLife;
 				this.PowerX = 0;
 				this.PowerY = 0;
 				console.log("calling game over")
-				Rune.gameOver();
-			//	this.restartGame();
+				//Rune.gameOver();
+				this.restartGame();
 			}
 
 		});

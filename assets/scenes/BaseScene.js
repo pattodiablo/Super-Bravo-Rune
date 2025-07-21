@@ -1599,6 +1599,51 @@ class BaseScene extends Phaser.Scene {
 		
 			this.cameras.main.once('camerafadeoutcomplete', function (camera) {	
 			
+					var nombreDeEstaEscena=this.scene.key;
+		
+					this.scene.remove(this.scene.keys);
+					var sceneToGo = this.scene.get("InterludeMap");
+					console.log(sceneToGo)
+					sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
+					sceneToGo.isMainScene = false;
+
+					activeLeveles.forEach(level => {
+						this.scene.remove(level)
+					});
+
+					activeLeveles=[];
+					this.scene.start("InterludeMap");
+
+
+			},this);
+
+		}
+		
+		
+	}
+
+nextLevelGame() {
+		console.log("going next level")
+
+
+		if(!isRestartingGame && this.scene.key!="NewLevel20"){
+			
+			this.game.playerData.gotCannon = false;
+			this.game.playerData.doubleJump = false;
+			this.game.playerData.life = 5;
+
+			this.gotoLevel = this.scene.key;
+			isRestartingGame=true;
+			this.cameras.main.fadeOut(300);
+
+		//	this.player.body.enable = false;
+
+			//this.game.sound.stopAll();
+		
+
+		
+			this.cameras.main.once('camerafadeoutcomplete', function (camera) {	
+			
 					var nombreDeEstaEscena=this.nextLevel;
 		
 					this.scene.remove(this.scene.keys);
@@ -1631,7 +1676,7 @@ class BaseScene extends Phaser.Scene {
 	update(){
 	
 		this.checkElevator();
-	this.controlBG();
+		this.controlBG();
 
 		if(this.launchMusic){
 			this.iniciarMusica();

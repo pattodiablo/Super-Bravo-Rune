@@ -29,6 +29,20 @@ class SupaBiteBtn extends Phaser.GameObjects.Sprite {
 		this.OriginalY = this.y;
 		this.isOnScreen=false;
 		
+		this.downKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+		this.downKey.on('down', function(){
+		
+			
+		if(this.isActive){
+			this.enablePower();
+		}
+		
+		
+			
+			
+		
+		}, this)
+
 		this.setInteractive().on('pointerdown', function(pointer, localX, localY, event){
 
 		

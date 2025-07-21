@@ -161,12 +161,12 @@ class Preloader extends Phaser.Scene {
 		this.sBLogo.y=this.cameras.main.centerY-60;
 
 		this.weveanaLogo.x=this.cameras.main.centerX;
-		this.weveanaLogo.y=this.cameras.main.centerY+120;
+		this.weveanaLogo.y=this.cameras.main.centerY+160;
 
 		this.loading.x=this.cameras.main.centerX-this.loading.width/2;
-		this.loading.y=this.cameras.main.centerY;
+		this.loading.y=this.cameras.main.centerY+100;
 		this.loadingBorder.x=this.cameras.main.centerX;
-		this.loadingBorder.y=this.cameras.main.centerY;
+		this.loadingBorder.y=this.cameras.main.centerY+100;
 
 		this.loading.setOrigin(0,0.5);
 

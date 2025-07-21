@@ -1090,9 +1090,11 @@ enableKeyBoard() {
 					y: -100,
 					duration: 300,
 					onComplete: function(){
-						console.log("calling game over")
+						console.log("calling a new Level")
 						isFinal =  true;
-							console.log(this.targets[0].scene.restartGame());
+					
+						this.targets[0].scene.nextLevelGame();
+							
 						
 					},
 					ease: 'Linear',
@@ -1462,14 +1464,15 @@ enableKeyBoard() {
 		}
 		
 		if (this.supaBiteChances > 0 && this.isCannonNearby) {
-			
+		
 			if(!this.scene.biteBtn.isOnScreen){
-
+				this.scene.biteBtn.canPressEnter = true;
 				this.scene.biteBtn.activateBtn();
 			}
 			
 
 		} else {
+			this.scene.biteBtn.canPressEnter = false;
 			this.scene.biteBtn.deactivateBtn();
 
 		}
@@ -2008,6 +2011,14 @@ this.scene.game.playerData.life = this.playerLife;
 
 		this.scene.restartGame();
 		
+	}
+
+
+
+	nextLevel() {
+
+		this.scene.nextLevel();
+
 	}
 
 	appearAgain(){

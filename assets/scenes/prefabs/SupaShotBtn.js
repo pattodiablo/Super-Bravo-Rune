@@ -34,9 +34,10 @@ class SupaShotBtn extends Phaser.GameObjects.Sprite {
 		this.OriginalX = this.x;
 		this.OriginalY = this.y;
 		this.isOnScreen=false;
+		this.canPressEnter = false;
 		
 		this.setInteractive().on('pointerdown', function(pointer, localX, localY, event){
-		
+		console.log("SupaShotBtn clicked");
 			if(this.isActive){
 				this.pwrup_activate_03.play();
 				this.isActive=false;
@@ -45,6 +46,7 @@ class SupaShotBtn extends Phaser.GameObjects.Sprite {
 
 			
 		});
+
 
 	}
 

@@ -35,7 +35,7 @@ class BaseScene extends Phaser.Scene {
 	this.game.sound.mute=false;	
 	
 
-	console.log("level key " + this.scene.key);
+	//console.log("level key " + this.scene.key);
 		activeLeveles.push(this.scene.key);
 		//console.log("active leveles " + activeLeveles);
 
@@ -510,13 +510,13 @@ class BaseScene extends Phaser.Scene {
 		this.add.existing(biteBtn);
 		this.biteBtn = biteBtn;
 		this.biteBtn.depth = 11;
-
+/*
 		const menuPanel = new MenuPanel(this, this.cameras.main.centerX, -170);
 		this.add.existing(menuPanel);
 			// menuPanel (prefab fields)
 			menuPanel.emit("prefab-awake");
 			this.menuPanel = menuPanel;
-
+*/
 		const warning = new Warning(this, this.cameras.main.centerX, -170);
 		this.add.existing(warning);
 		// menuPanel (prefab fields)
@@ -640,13 +640,13 @@ class BaseScene extends Phaser.Scene {
 		this.readyText = readyText;
 
 			// menuBtn
-			const menuBtn = new MenuBtn(this, this.cameras.main.width-30, 37);
+		//	const menuBtn = new MenuBtn(this, this.cameras.main.width-30, 37);
 		//	this.add.existing(menuBtn);
 			// menuBtn (prefab fields)
-		menuBtn.emit("prefab-awake");
+	//	menuBtn.emit("prefab-awake");
 		// menuBtn (components)
-		menuBtn.emit("components-awake");
-		this.menuBtn = menuBtn;
+	//	menuBtn.emit("components-awake");
+	//	this.menuBtn = menuBtn;
 
 				// menuPanel
 
@@ -670,16 +670,16 @@ class BaseScene extends Phaser.Scene {
 	
 		this.coinText.text = this.coins.length;
 		
-		this.tooglePowerScreen = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
-		this.tooglePowerScreen.on('down', function(){
+		//this.tooglePowerScreen = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+		//this.tooglePowerScreen.on('down', function(){
 		
-		this.handlePowerPanel()
+		//this.handlePowerPanel()
 		
-		
-
 		
 
-	}, this);
+		
+
+	//}, this);
 
 	this.originalPlayerY= this.player.y;
 
@@ -1111,7 +1111,7 @@ class BaseScene extends Phaser.Scene {
 			
 
 		},this);
-		console.log("coins in level " + this.coins.length)
+	//	console.log("coins in level " + this.coins.length)
 		
 	}
 
@@ -1577,10 +1577,10 @@ class BaseScene extends Phaser.Scene {
 
 
 	restartGame() {
-		console.log("trying restart")
-		console.log(isRestartingGame);
-		console.log(this.scene.key);
-		console.log(this)
+		//console.log("trying restart")
+		//console.log(isRestartingGame);
+		//console.log(this.scene.key);
+		//console.log(this)
 		if(!isRestartingGame && this.scene.key!="NewLevel20"){
 			
 			this.game.playerData.gotCannon = false;
@@ -1603,7 +1603,7 @@ class BaseScene extends Phaser.Scene {
 		
 					this.scene.remove(this.scene.keys);
 					var sceneToGo = this.scene.get("InterludeMap");
-					console.log(sceneToGo)
+					//console.log(sceneToGo)
 					sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
 					sceneToGo.isMainScene = false;
 
@@ -1623,7 +1623,7 @@ class BaseScene extends Phaser.Scene {
 	}
 
 nextLevelGame() {
-		console.log("going next level")
+		//console.log("going next level")
 
 
 		if(!isRestartingGame && this.scene.key!="NewLevel20"){
@@ -1648,7 +1648,7 @@ nextLevelGame() {
 		
 					this.scene.remove(this.scene.keys);
 					var sceneToGo = this.scene.get("InterludeMap");
-					console.log(sceneToGo)
+					//console.log(sceneToGo)
 					sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
 					sceneToGo.isMainScene = false;
 

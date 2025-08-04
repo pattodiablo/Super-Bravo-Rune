@@ -205,7 +205,7 @@ this.jumpKeyPressed = false;
 	
 			if (!this.jumping) {
 				//saltando jump saltar
-			   console.log("inside jumping")
+			   //console.log("inside jumping")
 			   this.wannaLaunch = false;
 			   this.KeyBoardPowerY = 200;
 			   this.DirY = 1

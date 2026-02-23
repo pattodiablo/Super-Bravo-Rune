@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg1Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "49a12fd4-c924-4c52-b7fd-e3ad1d7a6b5f",
             "label": "nocollide_1",
-            "components": [],
             "tilemapId": "3446539a-7854-46b1-ab96-f7ba50cbccae",
             "layerName": "nocollide",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "94918efc-5e99-4357-a4d2-02a67e8f68f7",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "3446539a-7854-46b1-ab96-f7ba50cbccae",
             "layerName": "nocollide2",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "be845662-c5ca-42f3-8ea7-b7d77d0daec3",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "3446539a-7854-46b1-ab96-f7ba50cbccae",
             "layerName": "layer",
             "tilesets": [
@@ -85,7 +81,6 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 80,
             "y": 650
         },
@@ -97,7 +92,6 @@
                 "y"
             ],
             "label": "sampoShooter",
-            "components": [],
             "x": 397,
             "y": 139
         },
@@ -109,7 +103,6 @@
                 "y"
             ],
             "label": "sampoShooter_1",
-            "components": [],
             "x": 981,
             "y": 629
         },
@@ -123,7 +116,6 @@
                 "scaleY"
             ],
             "label": "blobber_1",
-            "components": [],
             "x": 376,
             "y": 240,
             "scaleX": 0.8472708286847896,
@@ -133,7 +125,6 @@
             "type": "Image",
             "id": "275d680e-e1f2-46c2-9dcd-444e8cabf395",
             "label": "wallLight",
-            "components": [],
             "texture": {
                 "key": "wallLight"
             },
@@ -144,7 +135,6 @@
             "type": "Image",
             "id": "62997e57-3015-44a8-b09d-f27ad89b51e4",
             "label": "lightBean",
-            "components": [],
             "texture": {
                 "key": "lightBean"
             },
@@ -155,7 +145,6 @@
             "type": "Image",
             "id": "a1994c6c-1d08-4273-a6e5-a2f537dbe3cc",
             "label": "powerPodium_1",
-            "components": [],
             "texture": {
                 "key": "PowerPodium"
             },
@@ -172,7 +161,6 @@
             ],
             "label": "upgradeHalo_1",
             "isCannonStrike": true,
-            "components": [],
             "x": 239,
             "y": 342
         },
@@ -186,7 +174,6 @@
             ],
             "label": "portalCannon",
             "IsFirstCannon": true,
-            "components": [],
             "x": 777,
             "y": 620
         },
@@ -199,7 +186,6 @@
                 "angle"
             ],
             "label": "portalCannon_1",
-            "components": [],
             "x": 786,
             "y": 224,
             "angle": 91
@@ -212,7 +198,6 @@
                 "y"
             ],
             "label": "heart",
-            "components": [],
             "x": 1174,
             "y": 228
         },
@@ -224,7 +209,6 @@
                 "y"
             ],
             "label": "catapulta",
-            "components": [],
             "x": 81,
             "y": 687
         },
@@ -236,7 +220,6 @@
                 "y"
             ],
             "label": "sampoShooter_1_1",
-            "components": [],
             "x": 655,
             "y": 779
         },
@@ -250,7 +233,6 @@
             ],
             "label": "portalCannon_2",
             "IsFirstCannon": true,
-            "components": [],
             "x": 1379,
             "y": 588
         },
@@ -265,7 +247,6 @@
             ],
             "label": "catapulta_1",
             "power": 500,
-            "components": [],
             "x": 236,
             "y": 814,
             "visible": true
@@ -279,7 +260,6 @@
                 "angle"
             ],
             "label": "portalCannon_1_1",
-            "components": [],
             "x": 1387,
             "y": 192,
             "angle": 91
@@ -294,7 +274,6 @@
                 "scaleY"
             ],
             "label": "sideDoor",
-            "components": [],
             "x": 180,
             "y": 675,
             "scaleX": 0.44228328314321896,
@@ -310,7 +289,6 @@
                 "scaleY"
             ],
             "label": "blobber",
-            "components": [],
             "x": 900,
             "y": 749,
             "scaleX": 0.7942268240577769,
@@ -324,10 +302,8 @@
                 "y"
             ],
             "label": "stomper",
-            "components": [],
             "x": 592,
-            "y": 513,
-            "nestedPrefabs": []
+            "y": 513
         },
         {
             "prefabId": "aa13d1d9-151a-4d67-ae52-0678e8566746",
@@ -337,7 +313,6 @@
                 "y"
             ],
             "label": "spike",
-            "components": [],
             "x": 904,
             "y": 539
         },
@@ -346,12 +321,23 @@
             "id": "a92e0029-26f9-4f8e-9e09-472d7aa56f8e",
             "label": "upperTile",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "c2e13629-5134-4909-b87a-cbcdd040de56",
             "layerName": "upperTile",
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "type": "Image",
+            "id": "b28f18ff-9a97-40e8-a918-c1683300a395",
+            "label": "tutiSupa7",
+            "texture": {
+                "key": "tutiSupa7"
+            },
+            "x": 243,
+            "y": 566,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [
@@ -381,10 +367,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {

@@ -1708,6 +1708,41 @@
                 "key": "traversoFly"
             },
             {
+                "url": "assets/images/tutiSupa1.png",
+                "type": "image",
+                "key": "tutiSupa1"
+            },
+            {
+                "url": "assets/images/tutiSupa2.png",
+                "type": "image",
+                "key": "tutiSupa2"
+            },
+            {
+                "url": "assets/images/tutiSupa3.png",
+                "type": "image",
+                "key": "tutiSupa3"
+            },
+            {
+                "url": "assets/images/tutiSupa4.png",
+                "type": "image",
+                "key": "tutiSupa4"
+            },
+            {
+                "url": "assets/images/tutiSupa5.png",
+                "type": "image",
+                "key": "tutiSupa5"
+            },
+            {
+                "url": "assets/images/tutiSupa6.png",
+                "type": "image",
+                "key": "tutiSupa6"
+            },
+            {
+                "url": "assets/images/tutiSupa7.png",
+                "type": "image",
+                "key": "tutiSupa7"
+            },
+            {
                 "url": "assets/images/1x/tuto1.png",
                 "type": "image",
                 "key": "tuto1"
@@ -1832,6 +1867,7 @@
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
         "version": 2,
-        "showAllFilesInBlocks": false
+        "showAllFilesInBlocks": false,
+        "visible": true
     }
 }

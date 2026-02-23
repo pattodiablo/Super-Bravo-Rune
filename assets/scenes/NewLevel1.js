@@ -51,13 +51,6 @@ class NewLevel1 extends BaseScene {
 		const player = new Player(this, 113, 723);
 		this.add.existing(player);
 
-		// powerPodium
-		this.add.image(1524, 674, "PowerPodium");
-
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 1525, 688);
-		this.add.existing(upgradeHalo);
-
 		// blobber
 		const blobber = new Blobber(this, 553, 687);
 		this.add.existing(blobber);
@@ -69,7 +62,7 @@ class NewLevel1 extends BaseScene {
 		this.add.existing(heart);
 
 		// sampoShooter
-		const sampoShooter = new SampoShooter(this, 891, 264);
+		const sampoShooter = new SampoShooter(this, 1205, 361);
 		this.add.existing(sampoShooter);
 
 		// sampoShooter_1
@@ -96,6 +89,36 @@ class NewLevel1 extends BaseScene {
 		// upperTile
 		const upperTile = new_level1.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
+		// tutiSupa1
+		const tutiSupa1 = this.add.image(128, 593, "tutiSupa1");
+		tutiSupa1.scaleX = 0.5;
+		tutiSupa1.scaleY = 0.5;
+
+		// tutiSupa2
+		const tutiSupa2 = this.add.image(776, 590, "tutiSupa2");
+		tutiSupa2.scaleX = 0.5;
+		tutiSupa2.scaleY = 0.5;
+
+		// tutiSupa3
+		const tutiSupa3 = this.add.image(1143, 593, "tutiSupa3");
+		tutiSupa3.scaleX = 0.5;
+		tutiSupa3.scaleY = 0.5;
+
+		// tutiSupa4
+		const tutiSupa4 = this.add.image(1148, 226, "tutiSupa4");
+		tutiSupa4.scaleX = 0.5;
+		tutiSupa4.scaleY = 0.5;
+
+		// tutiSupa5
+		const tutiSupa5 = this.add.image(533, 590, "tutiSupa5");
+		tutiSupa5.scaleX = 0.5;
+		tutiSupa5.scaleY = 0.5;
+
+		// tutiSupa6
+		const tutiSupa6 = this.add.image(308, 717, "tutiSupa6");
+		tutiSupa6.scaleX = 0.5;
+		tutiSupa6.scaleY = 0.5;
+
 		// lists
 		const doors = [];
 		const switches = [];
@@ -108,9 +131,6 @@ class NewLevel1 extends BaseScene {
 
 		// tilespriteBG (components)
 		new FixedToCamera(tilespriteBG);
-
-		// upgradeHalo (prefab fields)
-		upgradeHalo.isDoubleJump = true;
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
@@ -127,7 +147,6 @@ class NewLevel1 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel2";
 
 		this.events.emit("scene-awake");
 	}

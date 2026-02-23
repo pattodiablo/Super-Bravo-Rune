@@ -136,6 +136,11 @@ class NewLevel2 extends BaseScene {
 		// upperTile
 		const upperTile = new_level2.createLayer("upperTile", ["new_ciudad_tiles"], 0, 0);
 
+		// tutiSupa7
+		const tutiSupa7 = this.add.image(243, 566, "tutiSupa7");
+		tutiSupa7.scaleX = 0.5;
+		tutiSupa7.scaleY = 0.5;
+
 		// lists
 		const doors = [];
 		const switches = [];

@@ -1,6 +1,6 @@
 var coins = 0;
 var isDebug =  false;
-var isDoubleJump = false;
+var isDoubleJump = true;
 var hasCannonPower = false;
 var renderer;
 var activeLeveles=[];

@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg1Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "2b3ef598-d6d0-4054-99ae-75aa4ee34ba4",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "789cac58-208c-417a-b246-de816f76f7e8",
             "layerName": "nocollide2",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "569a3f27-49b9-4293-bd22-f7ed2054b90d",
             "label": "nocollide_1",
-            "components": [],
             "tilemapId": "789cac58-208c-417a-b246-de816f76f7e8",
             "layerName": "nocollide",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "28e88094-2e0d-404f-9537-73789b206bcf",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "789cac58-208c-417a-b246-de816f76f7e8",
             "layerName": "layer",
             "tilesets": [
@@ -85,34 +81,8 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 113,
             "y": 723
-        },
-        {
-            "type": "Image",
-            "id": "fe4a483c-b213-4296-8ef2-4dcc7efbe301",
-            "label": "powerPodium",
-            "components": [],
-            "texture": {
-                "key": "PowerPodium"
-            },
-            "x": 1524,
-            "y": 674
-        },
-        {
-            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
-            "id": "1d6ac821-ff39-42e3-9458-056c22ba053e",
-            "unlock": [
-                "x",
-                "y",
-                "isDoubleJump"
-            ],
-            "label": "upgradeHalo",
-            "isDoubleJump": true,
-            "components": [],
-            "x": 1525,
-            "y": 688
         },
         {
             "prefabId": "dae0c595-f7aa-48e4-92ff-be93ff062d2a",
@@ -124,7 +94,6 @@
                 "scaleY"
             ],
             "label": "blobber",
-            "components": [],
             "x": 553,
             "y": 687,
             "scaleX": 0.8472708286847896,
@@ -138,7 +107,6 @@
                 "y"
             ],
             "label": "heart",
-            "components": [],
             "x": 961,
             "y": 593
         },
@@ -150,9 +118,8 @@
                 "y"
             ],
             "label": "sampoShooter",
-            "components": [],
-            "x": 891,
-            "y": 264
+            "x": 1205,
+            "y": 361
         },
         {
             "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
@@ -162,7 +129,6 @@
                 "y"
             ],
             "label": "sampoShooter_1",
-            "components": [],
             "x": 1289,
             "y": 374
         },
@@ -175,7 +141,6 @@
                 "angle"
             ],
             "label": "spikeHorizontal",
-            "components": [],
             "x": 46,
             "y": 237,
             "angle": 0
@@ -190,7 +155,6 @@
                 "scaleY"
             ],
             "label": "blobber_1",
-            "components": [],
             "x": 1169,
             "y": 687,
             "scaleX": 0.8472708286847896,
@@ -200,7 +164,6 @@
             "type": "Image",
             "id": "275d680e-e1f2-46c2-9dcd-444e8cabf395",
             "label": "wallLight",
-            "components": [],
             "texture": {
                 "key": "wallLight"
             },
@@ -211,7 +174,6 @@
             "type": "Image",
             "id": "62997e57-3015-44a8-b09d-f27ad89b51e4",
             "label": "lightBean",
-            "components": [],
             "texture": {
                 "key": "lightBean"
             },
@@ -223,12 +185,83 @@
             "id": "2a197987-c619-4f21-a67f-4d3ced79444f",
             "label": "upperTile",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "46a1e2a0-f605-478a-b471-d2844d657829",
             "layerName": "upperTile",
             "tilesets": [
                 "new_ciudad_tiles"
             ]
+        },
+        {
+            "type": "Image",
+            "id": "3e6ebf6f-a546-4487-a988-599acda4cf78",
+            "label": "tutiSupa1",
+            "texture": {
+                "key": "tutiSupa1"
+            },
+            "x": 128,
+            "y": 593,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "5e9ad498-dc86-42de-b28b-4aef361d3ad4",
+            "label": "tutiSupa2",
+            "texture": {
+                "key": "tutiSupa2"
+            },
+            "x": 776,
+            "y": 590,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "2710e242-4abf-4978-a97d-41ec3651b19a",
+            "label": "tutiSupa3",
+            "texture": {
+                "key": "tutiSupa3"
+            },
+            "x": 1143,
+            "y": 593,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "7b80c6a1-3e8e-4c7a-9206-93dcaab8918e",
+            "label": "tutiSupa4",
+            "texture": {
+                "key": "tutiSupa4"
+            },
+            "x": 1148,
+            "y": 226,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "3425080f-06dd-4b1c-87a3-1d1c3d1996e3",
+            "label": "tutiSupa5",
+            "texture": {
+                "key": "tutiSupa5"
+            },
+            "x": 533,
+            "y": 590,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "f84bbd8f-3173-41f5-abc7-b190c07be370",
+            "label": "tutiSupa6",
+            "texture": {
+                "key": "tutiSupa6"
+            },
+            "x": 308,
+            "y": 717,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [
@@ -258,10 +291,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {

@@ -1,3 +1,26 @@
+const FIRST_PLAYABLE_LEVEL = 1;
+const MAX_PLAYABLE_LEVEL = 20;
+
+function computeNextLevelKey(currentKey) {
+	if (typeof currentKey !== "string" || currentKey.length === 0) {
+		return `NewLevel${FIRST_PLAYABLE_LEVEL}`;
+	}
+	const match = currentKey.match(/(\d+)(?!.*\d)/);
+	if (!match) {
+		return `NewLevel${FIRST_PLAYABLE_LEVEL}`;
+	}
+	const currentNumber = parseInt(match[1], 10);
+	if (Number.isNaN(currentNumber)) {
+		return `NewLevel${FIRST_PLAYABLE_LEVEL}`;
+	}
+	let nextNumber = currentNumber + 1;
+	if (currentNumber >= MAX_PLAYABLE_LEVEL) {
+		nextNumber = FIRST_PLAYABLE_LEVEL;
+	} else if (nextNumber < FIRST_PLAYABLE_LEVEL) {
+		nextNumber = FIRST_PLAYABLE_LEVEL;
+	}
+	return `NewLevel${nextNumber}`;
+}
 
 class BaseScene extends Phaser.Scene {
 	
@@ -1623,48 +1646,43 @@ class BaseScene extends Phaser.Scene {
 	}
 
 nextLevelGame() {
-		//console.log("going next level")
+	if(!isRestartingGame){
 
+		this.game.playerData.gotCannon = false;
+		this.game.playerData.doubleJump = false;
+		this.game.playerData.life = 5;
 
-		if(!isRestartingGame && this.scene.key!="NewLevel20"){
-			
-			this.game.playerData.gotCannon = false;
-			this.game.playerData.doubleJump = false;
-			this.game.playerData.life = 5;
+		const targetLevel = this.getNextLevelTarget();
+		this.gotoLevel = this.scene.key;
+		isRestartingGame=true;
+		this.cameras.main.fadeOut(300);
 
-			this.gotoLevel = this.scene.key;
-			isRestartingGame=true;
-			this.cameras.main.fadeOut(300);
-
-		//	this.player.body.enable = false;
-
-			//this.game.sound.stopAll();
+		this.cameras.main.once('camerafadeoutcomplete', function (camera) { 	
 		
+				var nombreDeEstaEscena = targetLevel;
 
-		
-			this.cameras.main.once('camerafadeoutcomplete', function (camera) {	
-			
-					var nombreDeEstaEscena=this.nextLevel;
-		
-					this.scene.remove(this.scene.keys);
-					var sceneToGo = this.scene.get("InterludeMap");
-					//console.log(sceneToGo)
-					sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false); //nombre de la escena a cargar, casillero en el mapa para trasladarse y casillero donde debe partir
-					sceneToGo.isMainScene = false;
+			this.scene.remove(this.scene.keys);
+			var sceneToGo = this.scene.get("InterludeMap");
+			sceneToGo.setLevel(nombreDeEstaEscena,1,1,0,0,false);
+			sceneToGo.isMainScene = false;
 
-					activeLeveles.forEach(level => {
-						this.scene.remove(level)
-					});
+			activeLeveles.forEach(level => {
+				this.scene.remove(level)
+			});
 
-					activeLeveles=[];
-					this.scene.start("InterludeMap");
+			activeLeveles=[];
+			this.scene.start("InterludeMap");
 
 
-			},this);
+		},this);
 
-		}
-		
-		
+	}
+
+
+}
+
+	getNextLevelTarget(){
+		return computeNextLevelKey(this.scene.key);
 	}
 
 	controlBG(){

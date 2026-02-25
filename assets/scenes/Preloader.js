@@ -55,104 +55,89 @@ class Preloader extends Phaser.Scene {
 	/* START-USER-CODE */
 
 	preload() {	
-		
-		this.wichLevel = "NewLevel0";
-		console.log("mapId " + mapId)
-		switch(mapId){
+		const DEFAULT_LEVEL = "NewLevel0";
+		const MAX_LEVEL_NUMBER = 20;
 
-			case 1:
-				this.wichLevel="NewLevel0";
-			break;
+		const readSavedLevel = () => {
+			if (typeof window === "undefined" || !window.localStorage) {
+				return null;
+			}
+			try {
+				return window.localStorage.getItem("lastCompletedLevel");
+			} catch (err) {
+				return null;
+			}
+		};
 
-			case 2:
-				this.wichLevel="NewLevel1";
-			break;
+		const computeNextLevelKey = (levelKey) => {
+			if (typeof levelKey !== "string" || !levelKey.length) {
+				return null;
+			}
+			const match = levelKey.match(/(\d+)(?!.*\d)/);
+			if (!match) {
+				return null;
+			}
+			const currentNumber = parseInt(match[1], 10);
+			if (Number.isNaN(currentNumber)) {
+				return null;
+			}
+			const nextNumber = currentNumber + 1;
+			if (nextNumber < 0 || nextNumber > MAX_LEVEL_NUMBER) {
+				return null;
+			}
+			return `NewLevel${nextNumber}`;
+		};
 
-			case 3:
-				this.wichLevel="NewLevel2";
-			break;
+		const resolveLevelFromMapId = () => {
+			switch (mapId) {
+				case 1:
+					return "NewLevel0";
+				case 2:
+					return "NewLevel1";
+				case 3:
+					return "NewLevel2";
+				case 4:
+					return "NewLevel3";
+				case 5:
+					return "NewLevel4";
+				case 6:
+					return "NewLevel5";
+				case 7:
+					return "NewLevel6";
+				case 8:
+					return "NewLevel7";
+				case 9:
+					return "NewLevel8";
+				case 10:
+					return "NewLevel9";
+				case 11:
+					return "NewLevel10";
+				case 12:
+					return "NewLevel11";
+				case 13:
+					return "NewLevel12";
+				case 14:
+					return "NewLevel13";
+				case 15:
+					return "NewLevel14";
+				case 16:
+					return "NewLevel15";
+				case 17:
+					return "NewLevel16";
+				case 18:
+					return "NewLevel17";
+				case 19:
+					return "NewLevel18";
+				case 20:
+					return "NewLevel19";
+				default:
+					return DEFAULT_LEVEL;
+			}
+		};
 
-			case 4:
-				this.wichLevel="NewLevel3";
-			break;
-
-			case 5:
-				this.wichLevel="NewLevel4";
-			break;
-
-			case 6:
-			this.wichLevel="NewLevel5";
-			break;
-
-
-			case 7:
-			this.wichLevel="NewLevel6";
-			break;
-
-
-			case 8:
-			this.wichLevel="NewLevel7";
-			break;
-
-			case 9:
-			this.wichLevel="NewLevel8";
-			break;
-
-			case 10:
-			this.wichLevel="NewLevel9";
-			break;
-
-			case 11:
-			this.wichLevel="NewLevel10";
-			break;
-
-			case 12:
-			this.wichLevel="NewLevel11";
-			break;
-
-			case 13:
-			this.wichLevel="NewLevel12";
-			break;
-
-			case 14:
-			this.wichLevel="NewLevel13";
-			break;
-
-			case 15:
-			this.wichLevel="NewLevel14";
-			break;
-
-			case 16:
-			this.wichLevel="NewLevel15";
-			break;
-
-			case 17:
-			this.wichLevel="NewLevel16";
-			break;
-
-			case 18:
-			this.wichLevel="NewLevel17";
-			break;
-
-			case 19:
-			this.wichLevel="NewLevel18";
-			break;
-
-			case 20:
-			this.wichLevel="NewLevel19";
-			break;
-
-
-
-
-			default:
-		
-
-			this.wichLevel="NewLevel0";
-
-
-			break;
-		}
+		const savedLevel = readSavedLevel();
+		const resumeLevel = computeNextLevelKey(savedLevel);
+		this.wichLevel = resumeLevel || resolveLevelFromMapId();
 		this.isPreloaded = 	this.load.sceneFile(this.wichLevel, 'assets/scenes/'+this.wichLevel+'.js');	
 
 		this.editorCreate();

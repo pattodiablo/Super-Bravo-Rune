@@ -126,6 +126,12 @@ class Coin extends Phaser.GameObjects.Sprite {
 
 	
 		if(this.scene.coins.length<=0){
+			if (typeof window !== "undefined" && window.localStorage) {
+				const finishedLevelKey = (this.scene.scene && this.scene.scene.key) || null;
+				if (finishedLevelKey) {
+					window.localStorage.setItem("lastCompletedLevel", finishedLevelKey);
+				}
+			}
 			this.scene.player.isWin();
 			this.scene.timerWorking.paused=true;
 		}

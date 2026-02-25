@@ -338,6 +338,18 @@
             "y": 566,
             "scaleX": 0.5,
             "scaleY": 0.5
+        },
+        {
+            "type": "Image",
+            "id": "53015af7-3787-4234-9829-78ca935c7cde",
+            "label": "tutiSupa8",
+            "texture": {
+                "key": "tutiSupa8"
+            },
+            "x": 779,
+            "y": 533,
+            "scaleX": 0.5,
+            "scaleY": 0.5
         }
     ],
     "plainObjects": [

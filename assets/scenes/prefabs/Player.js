@@ -147,7 +147,7 @@ class Player extends Phaser.GameObjects.Sprite {
 			this.supaBiteChances++;
 		}
 
-		if(this.scene.game.playerData.doubleJump){
+		if(isDoubleJump){
 		
 			this.supaDJumps++;
 			

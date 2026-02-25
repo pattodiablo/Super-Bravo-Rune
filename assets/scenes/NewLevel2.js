@@ -141,6 +141,11 @@ class NewLevel2 extends BaseScene {
 		tutiSupa7.scaleX = 0.5;
 		tutiSupa7.scaleY = 0.5;
 
+		// tutiSupa8
+		const tutiSupa8 = this.add.image(779, 533, "tutiSupa8");
+		tutiSupa8.scaleX = 0.5;
+		tutiSupa8.scaleY = 0.5;
+
 		// lists
 		const doors = [];
 		const switches = [];

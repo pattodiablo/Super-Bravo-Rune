@@ -95,7 +95,7 @@ class NewLevel4 extends BaseScene {
 		this.add.existing(heart);
 
 		// heart_1
-		const heart_1 = new Heart(this, 1073, 475);
+		const heart_1 = new Heart(this, 1075, 457);
 		this.add.existing(heart_1);
 
 		// sampoShooter
@@ -156,7 +156,7 @@ class NewLevel4 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel5";
+
 		this.events.emit("scene-awake");
 	}
 

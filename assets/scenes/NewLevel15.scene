@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg1Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
             "label": "nocollide2_1",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide2",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "layer",
             "tilesets": [
@@ -85,7 +81,6 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 133,
             "y": 448
         },
@@ -93,7 +88,6 @@
             "type": "TilemapLayer",
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
             "label": "upperTile_1",
-            "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
@@ -110,36 +104,8 @@
             ],
             "label": "card",
             "timeExpires": 10000,
-            "components": [],
             "x": 831,
             "y": 383
-        },
-        {
-            "type": "Image",
-            "id": "2ba12f24-7c79-4c42-9361-e15f761079b3",
-            "label": "powerPodium",
-            "components": [],
-            "texture": {
-                "key": "PowerPodium"
-            },
-            "x": 1541,
-            "y": 630,
-            "scaleX": 0.8367216303631883,
-            "scaleY": 0.8367216303631883
-        },
-        {
-            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
-            "id": "8fcc438f-9269-49a2-8530-f746db9a0f50",
-            "unlock": [
-                "x",
-                "y",
-                "isDoubleJump"
-            ],
-            "label": "upgradeHalo",
-            "isDoubleJump": true,
-            "components": [],
-            "x": 1542,
-            "y": 640
         },
         {
             "prefabId": "5aa80ba6-889a-4b80-81df-0d5f4ba5de86",
@@ -149,7 +115,6 @@
                 "y"
             ],
             "label": "misile",
-            "components": [],
             "x": 1770,
             "y": 447
         },
@@ -161,7 +126,6 @@
                 "y"
             ],
             "label": "misile_1",
-            "components": [],
             "x": 1733,
             "y": 174
         },
@@ -173,7 +137,6 @@
                 "y"
             ],
             "label": "supaBomb",
-            "components": [],
             "x": 388,
             "y": 323
         },
@@ -185,7 +148,6 @@
                 "y"
             ],
             "label": "supaBomb_1",
-            "components": [],
             "x": 662,
             "y": 161
         },
@@ -197,7 +159,6 @@
                 "y"
             ],
             "label": "supaBomb_2",
-            "components": [],
             "x": 979,
             "y": 426
         },
@@ -209,7 +170,6 @@
                 "y"
             ],
             "label": "supaBomb_3",
-            "components": [],
             "x": 1273,
             "y": 301
         },
@@ -221,7 +181,6 @@
                 "y"
             ],
             "label": "heart",
-            "components": [],
             "x": 396,
             "y": 154
         },
@@ -233,7 +192,6 @@
                 "y"
             ],
             "label": "heart_1",
-            "components": [],
             "x": 1381,
             "y": 19
         },
@@ -245,7 +203,6 @@
                 "y"
             ],
             "label": "heart_2",
-            "components": [],
             "x": 828,
             "y": 614
         }
@@ -277,10 +234,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {

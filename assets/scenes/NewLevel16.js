@@ -59,7 +59,7 @@ class NewLevel16 extends BaseScene {
 		this.add.existing(angrySpin);
 
 		// card
-		const card = new Card(this, 482, 1092);
+		const card = new Card(this, 480, 959);
 		this.add.existing(card);
 
 		// platform1
@@ -93,10 +93,6 @@ class NewLevel16 extends BaseScene {
 		const card_1 = new Card(this, 816, 308);
 		this.add.existing(card_1);
 
-		// upgradeHalo_1
-		const upgradeHalo_1 = new UpgradeHalo(this, 898, 846);
-		this.add.existing(upgradeHalo_1);
-
 		// sampoShooter
 		const sampoShooter = new SampoShooter(this, 726, 110);
 		this.add.existing(sampoShooter);
@@ -114,7 +110,7 @@ class NewLevel16 extends BaseScene {
 		this.add.existing(drone_1);
 
 		// cyberPigeon
-		const cyberPigeon = new CyberPigeon(this, 323, 666);
+		const cyberPigeon = new CyberPigeon(this, 334, 464);
 		this.add.existing(cyberPigeon);
 
 		// heart
@@ -168,10 +164,7 @@ class NewLevel16 extends BaseScene {
 		upgradeHalo.isCannonStrike = true;
 
 		// card_1 (prefab fields)
-		card_1.timeExpires = 5000;
-
-		// upgradeHalo_1 (prefab fields)
-		upgradeHalo_1.isDoubleJump = true;
+		card_1.timeExpires = 9000;
 
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
@@ -187,7 +180,7 @@ class NewLevel16 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel17";
+
 		this.events.emit("scene-awake");
 	}
 

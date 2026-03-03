@@ -82,13 +82,6 @@ class NewLevel8 extends BaseScene {
 		const supaBomb_1 = new SupaBomb(this, 1333, 626);
 		this.add.existing(supaBomb_1);
 
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 444, 241);
-		this.add.existing(upgradeHalo);
-
-		// powerPodium
-		this.add.image(444, 225, "PowerPodium");
-
 		// sideDoor
 		const sideDoor = new SideDoor(this, 788, 208);
 		this.add.existing(sideDoor);
@@ -163,9 +156,6 @@ class NewLevel8 extends BaseScene {
 		// tilespriteBG (components)
 		new FixedToCamera(tilespriteBG);
 
-		// upgradeHalo (prefab fields)
-		upgradeHalo.isDoubleJump = true;
-
 		// sideDoor (prefab fields)
 		sideDoor.isLocked = true;
 
@@ -194,7 +184,7 @@ class NewLevel8 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel9";
+
 		this.events.emit("scene-awake");
 	}
 

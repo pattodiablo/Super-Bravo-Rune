@@ -58,15 +58,6 @@ class NewLevel15 extends BaseScene {
 		const card = new Card(this, 831, 383);
 		this.add.existing(card);
 
-		// powerPodium
-		const powerPodium = this.add.image(1541, 630, "PowerPodium");
-		powerPodium.scaleX = 0.8367216303631883;
-		powerPodium.scaleY = 0.8367216303631883;
-
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 1542, 640);
-		this.add.existing(upgradeHalo);
-
 		// misile
 		const misile = new Misile(this, 1770, 447);
 		this.add.existing(misile);
@@ -119,9 +110,6 @@ class NewLevel15 extends BaseScene {
 		// card (prefab fields)
 		card.timeExpires = 10000;
 
-		// upgradeHalo (prefab fields)
-		upgradeHalo.isDoubleJump = true;
-
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
 		this.layer = layer;
@@ -136,7 +124,7 @@ class NewLevel15 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel16";
+
 		this.events.emit("scene-awake");
 	}
 

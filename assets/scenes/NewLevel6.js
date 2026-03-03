@@ -58,10 +58,6 @@ class NewLevel6 extends BaseScene {
 		const catapulta = new Catapulta(this, 79, 495);
 		this.add.existing(catapulta);
 
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 672, 241);
-		this.add.existing(upgradeHalo);
-
 		// powerPodium
 		this.add.image(672, 225, "PowerPodium");
 
@@ -162,9 +158,6 @@ class NewLevel6 extends BaseScene {
 		// tilespriteBG (components)
 		new FixedToCamera(tilespriteBG);
 
-		// upgradeHalo (prefab fields)
-		upgradeHalo.isDoubleJump = true;
-
 		// toll (prefab fields)
 		toll.tollCost = 20;
 
@@ -198,7 +191,7 @@ class NewLevel6 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel7";
+
 		this.events.emit("scene-awake");
 	}
 

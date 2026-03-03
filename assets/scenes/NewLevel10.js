@@ -62,13 +62,6 @@ class NewLevel10 extends BaseScene {
 		const card_instancia_10000 = new Card(this, 592, 294);
 		this.add.existing(card_instancia_10000);
 
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 321, 274);
-		this.add.existing(upgradeHalo);
-
-		// powerPodium
-		this.add.image(320, 257, "PowerPodium");
-
 		// supaBomb
 		const supaBomb = new SupaBomb(this, 738, 174);
 		this.add.existing(supaBomb);
@@ -215,9 +208,6 @@ class NewLevel10 extends BaseScene {
 		// tilespriteBG (components)
 		new FixedToCamera(tilespriteBG);
 
-		// upgradeHalo (prefab fields)
-		upgradeHalo.isDoubleJump = true;
-
 		// catapulta (prefab fields)
 		catapulta.power = 540;
 
@@ -265,7 +255,7 @@ class NewLevel10 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel11";
+
 		this.events.emit("scene-awake");
 	}
 

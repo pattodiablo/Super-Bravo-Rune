@@ -108,9 +108,9 @@ class GuardBoss extends Phaser.GameObjects.Sprite {
 					delay: 1500,                // ms
 					callback: function(){
 
-						this.superbravo_gameplay_chip05Available = this.scene.sound.get("superbravo_gameplay_chip05"); 
-						if(this.superbravo_gameplay_chip05Available){
-							this.scene.superbravo_gameplay_chip05.play();
+						this.superbravo_gameplay_finalboss2Available = this.scene.sound.get("superbravo_gameplay_finalboss2"); 
+						if(this.superbravo_gameplay_finalboss2Available){
+							this.scene.superbravo_gameplay_finalboss2.play();
 						}
 
 						

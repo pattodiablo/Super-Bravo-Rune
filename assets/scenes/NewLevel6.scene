@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg2Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
             "label": "nocollide2_1",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide2",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "layer",
             "tilesets": [
@@ -85,7 +81,6 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 144,
             "y": 707
         },
@@ -94,7 +89,6 @@
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
             "label": "upperTile",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
@@ -109,29 +103,13 @@
                 "y"
             ],
             "label": "catapulta",
-            "components": [],
             "x": 79,
             "y": 495
-        },
-        {
-            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
-            "id": "83f77d69-a21a-4477-a7a7-08455d73802e",
-            "unlock": [
-                "x",
-                "y",
-                "isDoubleJump"
-            ],
-            "label": "upgradeHalo",
-            "isDoubleJump": true,
-            "components": [],
-            "x": 672,
-            "y": 241
         },
         {
             "type": "Image",
             "id": "e2e180e1-fab8-4d90-9cb0-8ca24c83261b",
             "label": "powerPodium",
-            "components": [],
             "texture": {
                 "key": "PowerPodium"
             },
@@ -146,7 +124,6 @@
                 "y"
             ],
             "label": "sideDoorLocked",
-            "components": [],
             "x": 1473,
             "y": 109
         },
@@ -154,7 +131,6 @@
             "type": "Image",
             "id": "0d7b55fa-1a32-41cc-a2a4-1c3289249b70",
             "label": "alert_instance_10000",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -166,7 +142,6 @@
             "type": "Image",
             "id": "c94f3e41-96a2-48b6-8dc2-e2aece05b8c1",
             "label": "alert_instance_10000_1",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -178,7 +153,6 @@
             "type": "Image",
             "id": "3a048368-0119-46de-a01a-dea9a1b360d3",
             "label": "alert_instance_10000_1_1",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -190,7 +164,6 @@
             "type": "Image",
             "id": "dc0f697b-89ac-4f51-9b83-87d8412fd56a",
             "label": "alert_instance_10000_1_1_1",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -202,7 +175,6 @@
             "type": "Image",
             "id": "1f58089f-0166-40bf-8c12-1ca2c7d1c0b6",
             "label": "alert_instance_10000_1_1_1_1",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -214,7 +186,6 @@
             "type": "Image",
             "id": "4f33542f-09d2-4d4e-ab67-ec4f430e89e0",
             "label": "alert_instance_10000_1_1_1_1_1",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -232,7 +203,6 @@
             ],
             "label": "toll",
             "tollCost": 20,
-            "components": [],
             "x": 1217,
             "y": 398
         },
@@ -244,7 +214,6 @@
                 "y"
             ],
             "label": "supaBomb",
-            "components": [],
             "x": 765,
             "y": 678
         },
@@ -256,7 +225,6 @@
                 "y"
             ],
             "label": "supaBomb_1",
-            "components": [],
             "x": 966,
             "y": 379
         },
@@ -268,7 +236,6 @@
                 "y"
             ],
             "label": "supaBomb_1_1",
-            "components": [],
             "x": 1955,
             "y": 242
         },
@@ -284,7 +251,6 @@
             "label": "sampoShooter",
             "bulletEnable": false,
             "travelDistance": 100,
-            "components": [],
             "x": 563,
             "y": 659
         },
@@ -296,7 +262,6 @@
                 "y"
             ],
             "label": "proxySpyke",
-            "components": [],
             "x": 768,
             "y": 204
         },
@@ -308,7 +273,6 @@
                 "y"
             ],
             "label": "proxySpyke_1_1",
-            "components": [],
             "x": 399,
             "y": 621
         },
@@ -320,7 +284,6 @@
                 "y"
             ],
             "label": "supaBomb_1_1_1",
-            "components": [],
             "x": 1788,
             "y": 726
         },
@@ -332,7 +295,6 @@
                 "y"
             ],
             "label": "sampoShooter_1",
-            "components": [],
             "x": 1041,
             "y": 695
         },
@@ -346,7 +308,6 @@
             ],
             "label": "sampoShooter_1_1",
             "travelDistance": 120,
-            "components": [],
             "x": 1982,
             "y": 705
         },
@@ -358,7 +319,6 @@
                 "y"
             ],
             "label": "drone",
-            "components": [],
             "x": 584,
             "y": 217
         },
@@ -377,7 +337,6 @@
             "label": "activeZoneBoss",
             "isActive": true,
             "activateBoss": true,
-            "components": [],
             "x": 2858,
             "y": 541,
             "scaleX": 9.656250296739685,
@@ -395,7 +354,6 @@
             "label": "guardBoss",
             "scope": "CLASS",
             "ThingToDrop": "Coin",
-            "components": [],
             "x": 3059,
             "y": 657
         },
@@ -403,7 +361,6 @@
             "type": "Image",
             "id": "ed91eceb-f8e1-4918-b6c2-4f286823f62d",
             "label": "alert_instance_10000_1_1_1_1_1_1",
-            "components": [],
             "texture": {
                 "key": "misile",
                 "frame": "alert instance 10000"
@@ -419,7 +376,6 @@
                 "y"
             ],
             "label": "drone_1",
-            "components": [],
             "x": 3063,
             "y": 55
         }
@@ -451,10 +407,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {

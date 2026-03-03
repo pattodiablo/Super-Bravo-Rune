@@ -89,13 +89,6 @@ class NewLevel18 extends BaseScene {
 		const card_1 = new Card(this, 1523, 461);
 		this.add.existing(card_1);
 
-		// powerPodium
-		this.add.image(827, 352, "PowerPodium");
-
-		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 826, 367);
-		this.add.existing(upgradeHalo);
-
 		// drone
 		const drone = new Drone(this, 654, 282);
 		this.add.existing(drone);
@@ -172,9 +165,6 @@ class NewLevel18 extends BaseScene {
 		// card_1 (prefab fields)
 		card_1.timeExpires = 8000;
 
-		// upgradeHalo (prefab fields)
-		upgradeHalo.isDoubleJump = true;
-
 		this.bg1Tile = bg1Tile;
 		this.tilespriteBG = tilespriteBG;
 		this.layer = layer;
@@ -191,7 +181,7 @@ class NewLevel18 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel19";
+
 		this.events.emit("scene-awake");
 	}
 

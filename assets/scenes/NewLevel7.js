@@ -99,10 +99,10 @@ class NewLevel7 extends BaseScene {
 		this.add.existing(portalCannon);
 
 		// powerPodium
-		this.add.image(1216, 195, "PowerPodium");
+		this.add.image(1216, 293, "PowerPodium");
 
 		// upgradeHalo
-		const upgradeHalo = new UpgradeHalo(this, 1216, 211);
+		const upgradeHalo = new UpgradeHalo(this, 1214, 307);
 		this.add.existing(upgradeHalo);
 
 		// lists
@@ -168,7 +168,7 @@ class NewLevel7 extends BaseScene {
 		this.catapultas = catapultas;
 		this.revivingPods = revivingPods;
 		this.tutorials = tutorials;
-		this.nextLevel = "NewLevel8";
+
 		this.events.emit("scene-awake");
 	}
 

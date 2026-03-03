@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg2Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
             "label": "nocollide2_1",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide2",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "layer",
             "tilesets": [
@@ -85,7 +81,6 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 134,
             "y": 679
         },
@@ -93,7 +88,6 @@
             "type": "TilemapLayer",
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
             "label": "upperTile_1",
-            "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
@@ -108,7 +102,6 @@
                 "y"
             ],
             "label": "sampoShooter",
-            "components": [],
             "x": 365,
             "y": 676
         },
@@ -122,7 +115,6 @@
             ],
             "label": "sampoShooter_1",
             "RevivingPodID": "pod2",
-            "components": [],
             "x": 713,
             "y": 668
         },
@@ -136,7 +128,6 @@
             ],
             "label": "sampoShooter_1_1",
             "RevivingPodID": "pod3",
-            "components": [],
             "x": 1011,
             "y": 668
         },
@@ -150,7 +141,6 @@
             ],
             "label": "sampoShooter_1_1_1",
             "RevivingPodID": "pod2",
-            "components": [],
             "x": 1213,
             "y": 656
         },
@@ -162,7 +152,6 @@
                 "y"
             ],
             "label": "cart",
-            "components": [],
             "x": 1456,
             "y": 659
         },
@@ -176,10 +165,8 @@
             ],
             "label": "enemyCreator",
             "creationTime": 3000,
-            "components": [],
             "x": 204,
-            "y": 535,
-            "nestedPrefabs": []
+            "y": 535
         },
         {
             "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
@@ -193,10 +180,8 @@
             "label": "enemyCreator_1",
             "creationTime": 3000,
             "PodID": "pod2",
-            "components": [],
             "x": 718,
-            "y": 536,
-            "nestedPrefabs": []
+            "y": 536
         },
         {
             "prefabId": "3305649f-477c-45f5-a110-8182010b02f0",
@@ -210,10 +195,8 @@
             "label": "enemyCreator_1_1",
             "creationTime": 3000,
             "PodID": "pod3",
-            "components": [],
             "x": 1237,
-            "y": 535,
-            "nestedPrefabs": []
+            "y": 535
         },
         {
             "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
@@ -229,7 +212,6 @@
             "distance": 170,
             "timeTravel": 4000,
             "isHorizontal": true,
-            "components": [],
             "x": 327,
             "y": 212
         },
@@ -247,7 +229,6 @@
             "distance": 210,
             "timeTravel": 4000,
             "isHorizontal": true,
-            "components": [],
             "x": 842,
             "y": 212
         },
@@ -261,7 +242,6 @@
             ],
             "label": "portalCannon",
             "IsFirstCannon": true,
-            "components": [],
             "x": 1480,
             "y": 590
         },
@@ -269,12 +249,11 @@
             "type": "Image",
             "id": "1d9d6b43-2197-4140-9f7e-779fcbaf534f",
             "label": "powerPodium",
-            "components": [],
             "texture": {
                 "key": "PowerPodium"
             },
             "x": 1216,
-            "y": 195
+            "y": 293
         },
         {
             "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
@@ -286,9 +265,8 @@
             ],
             "label": "upgradeHalo",
             "isCannonStrike": true,
-            "components": [],
-            "x": 1216,
-            "y": 211
+            "x": 1214,
+            "y": 307
         }
     ],
     "plainObjects": [
@@ -318,10 +296,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {

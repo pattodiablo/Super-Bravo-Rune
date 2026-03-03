@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg2Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
             "label": "nocollide2_1",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide2",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "layer",
             "tilesets": [
@@ -85,7 +81,6 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 244,
             "y": 679
         },
@@ -99,10 +94,8 @@
             ],
             "label": "stomper",
             "retardo": 500,
-            "components": [],
             "x": 715,
-            "y": -26,
-            "nestedPrefabs": []
+            "y": -26
         },
         {
             "prefabId": "cbd440a8-d749-4f6a-9443-a8fb63b526b1",
@@ -114,10 +107,8 @@
             ],
             "label": "stomper_1",
             "retardo": 2000,
-            "components": [],
             "x": 850,
-            "y": -26,
-            "nestedPrefabs": []
+            "y": -26
         },
         {
             "prefabId": "cbd440a8-d749-4f6a-9443-a8fb63b526b1",
@@ -129,17 +120,14 @@
             ],
             "label": "stomper_2",
             "retardo": 3000,
-            "components": [],
             "x": 992,
-            "y": -26,
-            "nestedPrefabs": []
+            "y": -26
         },
         {
             "type": "TilemapLayer",
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
             "label": "upperTile",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
@@ -154,7 +142,6 @@
                 "y"
             ],
             "label": "cart",
-            "components": [],
             "x": 480,
             "y": 705
         },
@@ -166,7 +153,6 @@
                 "y"
             ],
             "label": "card",
-            "components": [],
             "x": 480,
             "y": 639
         },
@@ -181,7 +167,6 @@
             "label": "guardBoss",
             "scope": "CLASS",
             "ThingToDrop": "Heart",
-            "components": [],
             "x": 1310,
             "y": 465
         },
@@ -200,7 +185,6 @@
             "label": "activeZoneBoss",
             "isActive": true,
             "activateBoss": true,
-            "components": [],
             "x": 988,
             "y": 311,
             "scaleX": 3.5106386183856517,
@@ -217,34 +201,8 @@
             ],
             "label": "card_1",
             "timeExpires": 8000,
-            "components": [],
             "x": 1523,
             "y": 461
-        },
-        {
-            "type": "Image",
-            "id": "51adfcc0-06ec-4534-89d5-93a21152137a",
-            "label": "powerPodium",
-            "components": [],
-            "texture": {
-                "key": "PowerPodium"
-            },
-            "x": 827,
-            "y": 352
-        },
-        {
-            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
-            "id": "1eba6204-5e3c-429d-a4cf-4b3887361eed",
-            "unlock": [
-                "x",
-                "y",
-                "isDoubleJump"
-            ],
-            "label": "upgradeHalo",
-            "isDoubleJump": true,
-            "components": [],
-            "x": 826,
-            "y": 367
         },
         {
             "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
@@ -254,7 +212,6 @@
                 "y"
             ],
             "label": "drone",
-            "components": [],
             "x": 654,
             "y": 282
         },
@@ -266,7 +223,6 @@
                 "y"
             ],
             "label": "sampoShooter",
-            "components": [],
             "x": 1373,
             "y": 710
         },
@@ -278,7 +234,6 @@
                 "y"
             ],
             "label": "sampoShooter_1",
-            "components": [],
             "x": 871,
             "y": 700
         },
@@ -290,7 +245,6 @@
                 "y"
             ],
             "label": "heart",
-            "components": [],
             "x": 237,
             "y": 366
         },
@@ -302,7 +256,6 @@
                 "y"
             ],
             "label": "heart_1",
-            "components": [],
             "x": 1513,
             "y": 675
         },
@@ -314,10 +267,8 @@
                 "y"
             ],
             "label": "enemyCreator",
-            "components": [],
             "x": 456,
-            "y": 91,
-            "nestedPrefabs": []
+            "y": 91
         },
         {
             "prefabId": "f2c2ba10-5d18-44d1-b4bb-30e1d2aac783",
@@ -327,7 +278,6 @@
                 "y"
             ],
             "label": "drone_1",
-            "components": [],
             "x": 113,
             "y": 277
         },
@@ -339,7 +289,6 @@
                 "y"
             ],
             "label": "supaBomb",
-            "components": [],
             "x": 1211,
             "y": 258
         },
@@ -351,7 +300,6 @@
                 "y"
             ],
             "label": "spike",
-            "components": [],
             "x": 461,
             "y": 453
         },
@@ -363,7 +311,6 @@
                 "y"
             ],
             "label": "blobber",
-            "components": [],
             "x": 1246,
             "y": 625
         },
@@ -375,7 +322,6 @@
                 "y"
             ],
             "label": "heart_2",
-            "components": [],
             "x": 1208,
             "y": 143
         }
@@ -407,10 +353,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {

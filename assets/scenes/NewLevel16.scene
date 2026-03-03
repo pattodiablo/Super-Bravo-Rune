@@ -19,7 +19,6 @@
             "id": "bd618ef4-f589-480a-9a9a-c6abdeb6f3b0",
             "label": "bg1Tile",
             "scope": "CLASS",
-            "components": [],
             "texture": {
                 "key": "bg1Tile"
             },
@@ -46,7 +45,6 @@
             "type": "TilemapLayer",
             "id": "313d3c67-0555-4fe7-b4f9-9a9c76d4305c",
             "label": "nocollide2_1",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide2",
             "tilesets": [
@@ -57,7 +55,6 @@
             "type": "TilemapLayer",
             "id": "ba45af92-dd29-4b67-bdf6-8c50bf71dcd1",
             "label": "nocollide",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "nocollide",
             "tilesets": [
@@ -69,7 +66,6 @@
             "id": "1e095778-25a2-436b-a00d-7c82f4d10f2b",
             "label": "layer",
             "scope": "CLASS",
-            "components": [],
             "tilemapId": "ab6bd9aa-cd45-4bbc-9092-2c8c62331644",
             "layerName": "layer",
             "tilesets": [
@@ -85,7 +81,6 @@
             ],
             "label": "player",
             "scope": "CLASS",
-            "components": [],
             "x": 179,
             "y": 1395
         },
@@ -93,7 +88,6 @@
             "type": "TilemapLayer",
             "id": "d565e784-69a0-4233-845c-51bc1a6e4635",
             "label": "upperTile_1",
-            "components": [],
             "tilemapId": "67ecd760-fbda-4f59-bf35-c424dad395f6",
             "layerName": "upperTile",
             "tilesets": [
@@ -110,7 +104,6 @@
             ],
             "label": "angrySpin",
             "travelDistance": 500,
-            "components": [],
             "x": 177,
             "y": 1531
         },
@@ -124,9 +117,8 @@
             ],
             "label": "card",
             "timeExpires": 8000,
-            "components": [],
-            "x": 482,
-            "y": 1092
+            "x": 480,
+            "y": 959
         },
         {
             "prefabId": "3c2e0a0e-b56d-4b75-b43e-f2475de3560b",
@@ -142,7 +134,6 @@
             "distance": 800,
             "timeTravel": 6000,
             "isHorizontal": true,
-            "components": [],
             "x": 690,
             "y": 622
         },
@@ -154,7 +145,6 @@
                 "y"
             ],
             "label": "misile",
-            "components": [],
             "x": 1044,
             "y": 740
         },
@@ -167,7 +157,6 @@
                 "angle"
             ],
             "label": "portalCannon",
-            "components": [],
             "x": 478,
             "y": 61,
             "angle": 106
@@ -183,7 +172,6 @@
             ],
             "label": "portalCannon_1",
             "IsFirstCannon": true,
-            "components": [],
             "x": 480,
             "y": 1376,
             "angle": 0
@@ -192,7 +180,6 @@
             "type": "Image",
             "id": "43d66c47-1c63-4f4e-a2d4-3a1abd69f816",
             "label": "powerPodium",
-            "components": [],
             "texture": {
                 "key": "PowerPodium"
             },
@@ -211,7 +198,6 @@
             ],
             "label": "upgradeHalo",
             "isCannonStrike": true,
-            "components": [],
             "x": 124,
             "y": 311
         },
@@ -224,24 +210,9 @@
                 "timeExpires"
             ],
             "label": "card_1",
-            "timeExpires": 5000,
-            "components": [],
+            "timeExpires": 9000,
             "x": 816,
             "y": 308
-        },
-        {
-            "prefabId": "6afa43fe-4a45-41e6-9689-146c20a9cf1c",
-            "id": "61d1e087-6ec8-4535-9c76-38203eb50e99",
-            "unlock": [
-                "x",
-                "y",
-                "isDoubleJump"
-            ],
-            "label": "upgradeHalo_1",
-            "isDoubleJump": true,
-            "components": [],
-            "x": 898,
-            "y": 846
         },
         {
             "prefabId": "90b200d8-00c8-4e64-841c-42791d7bc769",
@@ -251,7 +222,6 @@
                 "y"
             ],
             "label": "sampoShooter",
-            "components": [],
             "x": 726,
             "y": 110
         },
@@ -263,7 +233,6 @@
                 "y"
             ],
             "label": "sampoShooter_1",
-            "components": [],
             "x": 206,
             "y": 90
         },
@@ -275,7 +244,6 @@
                 "y"
             ],
             "label": "drone",
-            "components": [],
             "x": 363,
             "y": 954
         },
@@ -287,7 +255,6 @@
                 "y"
             ],
             "label": "drone_1",
-            "components": [],
             "x": 626,
             "y": 952
         },
@@ -299,10 +266,8 @@
                 "y"
             ],
             "label": "cyberPigeon",
-            "components": [],
-            "x": 323,
-            "y": 666,
-            "nestedPrefabs": []
+            "x": 334,
+            "y": 464
         },
         {
             "prefabId": "e1306e17-6229-485c-81c5-fb8fe209c8da",
@@ -312,7 +277,6 @@
                 "y"
             ],
             "label": "heart",
-            "components": [],
             "x": 179,
             "y": 865
         },
@@ -324,7 +288,6 @@
                 "y"
             ],
             "label": "heart_1",
-            "components": [],
             "x": 64,
             "y": 520
         },
@@ -336,7 +299,6 @@
                 "y"
             ],
             "label": "heart_2",
-            "components": [],
             "x": 479,
             "y": 285
         },
@@ -348,7 +310,6 @@
                 "y"
             ],
             "label": "supaBomb",
-            "components": [],
             "x": 325,
             "y": 1440
         },
@@ -360,7 +321,6 @@
                 "y"
             ],
             "label": "supaBomb_1",
-            "components": [],
             "x": 645,
             "y": 1425
         }
@@ -392,10 +352,10 @@
         }
     ],
     "meta": {
-        "app": "Phaser Editor 2D - Scene Editor",
-        "url": "https://phasereditor2d.com",
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 5
     },
     "lists": [
         {
